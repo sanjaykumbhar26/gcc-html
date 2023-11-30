@@ -27,10 +27,10 @@ $(document).ready(function () {
   // Set default state
   $(".default-menu").hide(); // Hide the default menu initially
   // Handle click event
-  $(".cat-menu-list").on("click", function () {
-    $(".default-menu").slideToggle();
-    $(".dropdown-overlay").show();
-  });
+  // $(".cat-menu-list").on("click", function () {
+  //   $(".default-menu").slideToggle();
+  //   $(".dropdown-overlay").show();
+  // });
 
   $(".cat-menu-list").hover(
     function () {
@@ -44,7 +44,6 @@ $(document).ready(function () {
   }
 });
 
-//
 //
 $(function () {
   $(".minus, .plus").click(function () {
