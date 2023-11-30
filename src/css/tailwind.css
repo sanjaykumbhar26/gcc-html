@@ -443,6 +443,10 @@
   z-index: 1111;
 }
 
+.default-menu {
+  display: none
+}
+
 }
 
 @layer components {

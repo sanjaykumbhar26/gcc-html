@@ -1759,6 +1759,9 @@ input[type=range]:focus::-ms-fill-upper {
 .hs-mega-menu {
   z-index: 1111;
 }
+.default-menu {
+  display: none
+}
 
 /* Components */
 .container {
