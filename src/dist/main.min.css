@@ -594,6 +594,14 @@ input {
 .m-auto {
   margin: auto;
 }
+.mx-0 {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+.mx-0\.5 {
+  margin-left: 0.125rem;
+  margin-right: 0.125rem;
+}
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -673,6 +681,9 @@ input {
 }
 .mr-2 {
   margin-right: 0.5rem;
+}
+.mt-1 {
+  margin-top: 0.25rem;
 }
 .mt-10 {
   margin-top: 2.5rem;
@@ -1067,6 +1078,9 @@ input {
 .border-l-2 {
   border-left-width: 2px;
 }
+.border-r-2 {
+  border-right-width: 2px;
+}
 .border-t-2 {
   border-top-width: 2px;
 }
@@ -1104,9 +1118,22 @@ input {
   --tw-border-opacity: 1;
   border-color: rgb(141 128 74 / var(--tw-border-opacity));
 }
+.border-x-darkGrey {
+  --tw-border-opacity: 1;
+  border-left-color: rgb(96 96 96 / var(--tw-border-opacity));
+  border-right-color: rgb(96 96 96 / var(--tw-border-opacity));
+}
+.border-b-darkGrey {
+  --tw-border-opacity: 1;
+  border-bottom-color: rgb(96 96 96 / var(--tw-border-opacity));
+}
 .bg-black {
   --tw-bg-opacity: 1;
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+}
+.bg-darkBlack {
+  --tw-bg-opacity: 1;
+  background-color: rgb(25 25 25 / var(--tw-bg-opacity));
 }
 .bg-green-600 {
   --tw-bg-opacity: 1;
@@ -1272,6 +1299,9 @@ input {
 }
 .pt-10 {
   padding-top: 2.5rem;
+}
+.pt-3 {
+  padding-top: 0.75rem;
 }
 .pt-8 {
   padding-top: 2rem;
@@ -1855,6 +1885,10 @@ input[type=range]:focus::-ms-fill-upper {
 .hover\:bg-smokBlack:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(15 15 15 / var(--tw-bg-opacity));
+}
+.focus\:outline-none:focus {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
 }
 :is([dir="rtl"] .rtl\:rotate-180) {
   --tw-rotate: 180deg;

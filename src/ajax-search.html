@@ -35,8 +35,6 @@
     <link rel="stylesheet" href="dist/main.min.css">
   </noscript>
 
-  <link href="css/slimselect.css" rel="stylesheet">
-
   <script>
     function loadFonts() {
       var customFont = new FontFace('YourFont', 'url(./fonts/Poppins-Light.woff)');
@@ -135,9 +133,49 @@
         </div>
         <div class="flex items-center max-w-[30%] xl:max-w-[40%] w-full">
           <div class="relative w-full">
-            <input type="text" class="border-lightTaupe border-2" placeholder="Produktsuche">
+            <input type="text" class="border-lightTaupe border-2 text-f16 focus:outline-none"
+              placeholder="Search Products">
             <img class="absolute top-2 right-4 cursor-pointer" alt="search icon" width="30" height="30"
               src="./images/icons/icon_magnifying.png">
+            <div class="absolute w-full bg-darkBlack flex z-20">
+              <div class="border-l-2 border-r-2  border-x-darkGrey border-b-darkGrey pt-3 mt-1">
+                <div class="flex gap-3 p-3  mx-0.5 border-b-2 border-solid border-b-darkGrey pb-3">
+                  <div>
+                    <img alt="img" src="https://placehold.co/100x100/a79a66/fff.png">
+                  </div>
+                  <div>
+                    <h3 class="text-f16 font-bold">Original Thuringian grilled sausage, regional <span
+                        class="text-lightTaupe">€ 33.99</span></h3>
+                    <p class="text-lightGrey text-f14">Original Thuringian grilled sausage, regional</p>
+                  </div>
+                </div>
+                <div class="flex gap-3 p-3  mx-0.5 border-b-2 border-solid border-b-darkGrey pb-3">
+                  <div>
+                    <img alt="img" src="https://placehold.co/100x100/a79a66/fff.png">
+                  </div>
+                  <div>
+                    <h3 class="text-f16 font-bold">Original Thuringian grilled sausage, regional <span
+                        class="text-lightTaupe">€
+                        33.99</span></h3>
+                    <p class="text-lightGrey text-f14">Original Thuringian grilled sausage, regional</p>
+                  </div>
+                </div>
+                <div class="flex gap-3 mx-0.5 p-3">
+                  <div>
+                    <img alt="img" src="https://placehold.co/100x100/a79a66/fff.png">
+                  </div>
+                  <div>
+                    <h3 class="text-f16 font-bold">Original Thuringian grilled sausage, regional <span
+                        class="text-lightTaupe">€
+                        33.99</span></h3>
+                    <p class="text-lightGrey text-f14">Original Thuringian grilled sausage, regional</p>
+                  </div>
+                </div>
+                <div class="text-center p-2 text-f16 text-white pb-4 cursor-pointer">
+                  More results (99)
+                </div>
+              </div>
+            </div>
           </div>
         </div>
         <div class="flex items-center gap-x-4 justify-between max-w-[40%] xl:max-w-[34%] w-full">
@@ -927,85 +965,808 @@
     </nav>
   </header>
 
-  <!-- ========== My Acccount ========== -->
-  <section class="my-12">
-    <div class="container">
-      <h1 class="text-f26 font-bold mb-8">My Account </h1>
-      <div class="flex gap-10">
-
-        <!-- aside -->
-        <aside class="w-1/4">
-          <h2 class="font-bold text-f16 uppercase border-b-2 border-solid border-greyBlack pb-2 mb-2"> Main account
-          </h2>
-          <nav>
-            <ul class="sidebar-list">
-              <li class=" hover:bg-greyBlack w-full ">
-                <a class=" px-3 text-f14 flex min-h-[40px] items-center font-bold" href="my-account.html">Dashboard</a>
-              </li>
-              <li class=" hover:bg-greyBlack bg-greyBlack">
-                <a class=" px-3 text-f14 flex min-h-[40px] w-full items-center font-bold"
-                  href="memberships.html">Memberships</a>
-              </li>
-              <li class="hover:bg-greyBlack">
-                <a class=" px-3 text-f14 flex min-h-[40px] w-full items-center font-bold" href="orders.html">Orders</a>
-              </li>
-              <li class=" hover:bg-greyBlack">
-                <a class=" px-3 text-f14 flex min-h-[40px] w-full items-center font-bold"
-                  href="addresses.html">Addresses</a>
-              </li>
-              <li class=" hover:bg-greyBlack">
-                <a class=" px-3 text-f14 flex min-h-[40px] w-full items-center font-bold"
-                  href="payment-methods.html">Payment
-                  methods</a>
-              </li>
-              <li class=" hover:bg-greyBlack ">
-                <a class=" px-3 text-f14 flex min-h-[40px] w-full items-center font-bold"
-                  href="account-details.html">Account
-                  details</a>
-              </li>
-              <li class=" hover:bg-greyBlack">
-                <a class=" px-3 text-f14 flex min-h-[40px] w-full items-center font-bold"
-                  href="waitlist.html">Waitlist</a>
-              </li>
-              <li class=" hover:bg-greyBlack ">
-                <a class=" px-3 text-f14 flex min-h-[40px] w-full items-center font-bold"
-                  href="wishlist.html">Wishlist</a>
-              </li>
-              <li>
-                <a class="px-3 text-f14  flex min-h-[40px] hover:bg-greyBlack  w-full items-center font-bold"
-                  href="#">Logout</a>
-              </li>
-            </ul>
-          </nav>
-        </aside>
-        <div class="w-[1px] bg-greyBlack"></div>
-
-        <!-- Account details -->
-        <div class="w-3/4">
-          <div class="flex items-center p-4 mb-4 text-sm text-white bg-lightTaupe " role="alert">
-            <svg class="flex-shrink-0 inline w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="#fff"
-              viewBox="0 0 20 20">
-              <path
-                d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5ZM9.5 4a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM12 15H8a1 1 0 0 1 0-2h1v-3H8a1 1 0 0 1 0-2h2a1 1 0 0 1 1 1v4h1a1 1 0 0 1 0 2Z"
-                fill="#fff" />
-            </svg>
-            <div class="ml-2 text-f16">
-              Didn't receive an activation email?
-              <a class="underline" href="#">Send again.</a>
+  <!-- ========== HOME  SLIDER SECTION ========== -->
+  <section class="min-h-[392px] lg:bg-heroBg bg-heroBgm bg-cover flex items-center py-8 lg:p-0">
+    <div class="container relative">
+      <div class="slider-container lg:ml-[328px] ml-0">
+        <div class="slider">
+          <div class="slide">
+            <div>
+              <div class="flex h-full items-center flex-col lg:flex-row">
+                <div class="lg:max-w-[40%]">
+                  <h2 class="text-f32 font-bold mb-1">LOREM IPSUM</h2>
+                  <p class="text-f14 mb-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                    tempor
+                    incididunt
+                    ut labore et
+                    dolore magna aliqua.</p>
+                  <span class="text-f32 font-bold text-lightTaupe mb-2 flex">99.00 €</span>
+                  <a class="btn btn-outline max-w-fit" href="#">Jetzt Bestellen</a>
+                </div>
+                <figure>
+                  <img width="495" height="300" alt="img" src="./images/headline_meat.webp">
+                </figure>
+              </div>
             </div>
           </div>
-          <div>
-            <article>
-              <h1 class=" text-f22 mt-2 font-bold">MEMBERSHIP PLANS</h1>
-              <p class="text-f18 mt-2">You currently have no memberships without a subscription.</p>
-            </article>
+          <div class="slide">
+            <div>
+              <div class="flex h-full items-center flex-col lg:flex-row">
+                <div class="lg:max-w-[40%]">
+                  <h2 class="text-f32 font-bold mb-1">LOREM IPSUM</h2>
+                  <p class="text-f14 mb-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                    tempor
+                    incididunt
+                    ut labore et
+                    dolore magna aliqua.</p>
+                  <span class="text-f32 font-bold text-lightTaupe mb-2 flex">99.00 €</span>
+                  <a class="btn btn-outline max-w-fit" href="#">Jetzt Bestellen</a>
+                </div>
+                <figure>
+                  <img width="495" height="300" alt="img" src="./images/headline_meat.webp">
+                </figure>
+              </div>
+            </div>
           </div>
+          <div class="slide">
+            <div>
+              <div class="flex h-full items-center flex-col lg:flex-row">
+                <div class="lg:max-w-[40%]">
+                  <h2 class="text-f32 font-bold mb-1">LOREM IPSUM</h2>
+                  <p class="text-f14 mb-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                    tempor
+                    incididunt
+                    ut labore et
+                    dolore magna aliqua.</p>
+                  <span class="text-f32 font-bold text-lightTaupe mb-2 flex">99.00 €</span>
+                  <a class="btn btn-outline max-w-fit" href="#">Jetzt Bestellen</a>
+                </div>
+                <figure>
+                  <img width="495" height="300" alt="img" src="./images/headline_meat.webp">
+                </figure>
+              </div>
+            </div>
+          </div>
+          <!-- Add more slides as needed -->
         </div>
-
+        <div class="pagination"></div>
+        <div class="slider-controls">
+          <button type="button" class="prev">
+            <img alt="arrow left" width="30" height="30" src="./images/icons/icon_arrow_left.png">
+          </button>
+          <button type="button" class="next">
+            <img alt="arrow right" width="30" height="30" src="./images/icons/icon_arrow_right.png">
+          </button>
+        </div>
       </div>
     </div>
   </section>
 
+
+
+  <!-- ========== SERVICE SECTION ========== -->
+  <section class="py-16">
+    <div class="container">
+      <div class="mx-auto grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-4 text-f14 justify-center">
+        <div class="bg-smokBlack py-7 px-4 flex items-center gap-4">
+          <figure class="min-w-[120px]">
+            <img loading="lazy" alt="gcc" height="100" width="100" src="./images/icons/icon_premium_meat.webp">
+          </figure>
+          <div class="text-center">
+            <h2 class="text-f18 font-bold">PREMIUM-FLEISCH</h2>
+            <p class="font-medium text-f14 leading-normal">Nur die besten Produkte,
+              tierischartgerecht und selektiert
+              Für dich mit Liebe</p>
+          </div>
+        </div>
+        <div class="bg-smokBlack py-7 px-4 flex items-center gap-4">
+          <figure class="min-w-[120px]">
+            <img loading="lazy" alt="gcc" height="100" width="100" src="./images/icons/icon_delivery_date.webp">
+          </figure>
+          <div class="text-center">
+            <h2 class="text-f18 font-bold">LIEFERTERMIN</h2>
+            <p class="font-medium text-f14 leading-normal">Wählen Sie Ihre gewünschte
+              LieferungTag und wir liefern per
+              Expresszustellung.</p>
+          </div>
+        </div>
+        <div class="bg-smokBlack py-7 px-4 flex items-center gap-4">
+          <figure class="min-w-[120px]">
+            <img loading="lazy" alt="gcc" height="100" width="100" src="./images/icons/icon_snow_flake.webp">
+          </figure>
+          <div class="text-center">
+            <h2 class="text-f18 font-bold">GARANTIERTE KÜHLKETTE</h2>
+            <p class="font-medium text-f14 leading-normal">Ihr Fleisch ist garantiert
+              gut gekühlt ankommen.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========  NEW ARRIVALS ========== -->
+  <section>
+    <div class="container max-w-[1380px] mx-auto bg-smokBlack py-10">
+      <div class="max-w-[1280px] mx-auto">
+        <header class="flex flex-col lg:flex-row mb-10 gap-x-12 items-center">
+          <h1 class="text-f40 font-bold border-b-2 border-lightTaupe max-w-fit mb-5 lg:mb-0">
+            NEW ARRIVALS
+          </h1>
+          <nav class="flex items-center">
+            <ul class="flex gap-x-8" role="tablist">
+              <li role="tab" aria-selected="true" aria-label="View New Arrivals" data-toggle-target=".tab-content-1"
+                class="tab text-f20 font-medium cursor-pointer"> NEW
+              </li>
+              <li role="tab" aria-label="View Featured Items" data-toggle-target=".tab-content-2"
+                class="tab text-f20 font-medium cursor-pointer">
+                FEATURED </li>
+              <li role="tab" aria-label="View Best Sellers" data-toggle-target=".tab-content-3"
+                class="tab text-f20 font-medium cursor-pointer">BEST
+                SELLER</li>
+            </ul>
+          </nav>
+        </header>
+        <div class="tab-content tab-content-1 active " aria-live="polite">
+          <div class="flex gap-x-8 flex-col lg:flex-row gap-y-8 lg:gap-y-0">
+            <article class="flex w-full lg:w-[77%]">
+              <figure class="relative w-full">
+                <img loading="lazy" width="730" class="w-full h-full" height="730"
+                  src="https://placehold.co/730x730/a79a66/fff.png" alt="New Arrivals - Image 1">
+                <figcaption class="absolute left-8 bottom-8 z-10">
+                  <h2 class="text-f26 font-bold mb-1 leading-none">PLATEA PARTURIENT</h2>
+                  <span class="text-f40 text-lightTaupe leading-none">99.00 €</span>
+                </figcaption>
+              </figure>
+            </article>
+            <div class="flex flex-col gap-y-8 justify-between">
+              <figure class="relative">
+                <img loading="lazy" width="700" height="467" class="w-full"
+                  src="https://placehold.co/700x467/a79a66/fff.png" alt="New Arrivals - Image 2">
+                <figcaption class="absolute left-8 bottom-8 z-10">
+                  <h2 class="text-f22 font-bold mb-2 leading-none">DOLOR SIT AMET</h2>
+                  <span class="text-f32 text-lightTaupe leading-none">99.00 €</span>
+                </figcaption>
+              </figure>
+              <figure class="relative">
+                <img loading="lazy" width="700" height="467" class="w-full"
+                  src="https://placehold.co/700x467/a79a66/fff.png" alt="New Arrivals - Image 3">
+                <figcaption class="absolute left-8 bottom-8 z-10">
+                  <h2 class="text-f22 font-bold mb-2 leading-none">LOREM IPSUM</h2>
+                  <span class="text-f32 text-lightTaupe leading-none">99.00 €</span>
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+        </div>
+        <div class="tab-content tab-content-2  flex gap-x-8 flex-col lg:flex-row gap-y-8 lg:gap-y-0">
+          FEATURED
+        </div>
+        <div class="tab-content tab-content-3  flex gap-x-8 flex-col lg:flex-row gap-y-8 lg:gap-y-0">
+          BEST SELLER
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FEATURED CATEGORIES ========== -->
+  <section class="py-20">
+    <div class="container">
+      <div class="text-center mb-10">
+        <h2 class="font-bold text-f40">FEATURED CATEGORIES</h2>
+      </div>
+      <div class="mx-auto flex justify-center md:justify-between flex-col lg:flex-row gap-y-8 lg:gap-y-0">
+        <figure class="relative w-full px-2 flex-col lg:w-[40%]">
+          <img loading="lazy" width="486" class="w-full h-full" height="493" alt="img"
+            src="https://placehold.co/486x493/a79a66/fff.png">
+          <figcaption class="absolute bottom-5 left-5 font-bold text-f36">FEATURE</figcaption>
+        </figure>
+        <div class="mx-auto w-full px-2 lg:w-[60%] ">
+          <div class="flex flex-wrap gap-y-4 flex-col lg:flex-row">
+            <div class="lg:w-1/2 w-full pr-2 ">
+              <figure class="relative">
+                <img loading="lazy" width="361" class="w-full" height="241" alt="img"
+                  src="https://placehold.co/361x241/a79a66/fff.png">
+                <figcaption class="absolute bottom-5 left-5 font-bold text-f24">POULTRY</figcaption>
+              </figure>
+            </div>
+            <div class="lg:w-1/2 w-full pl-2">
+              <figure class="relative">
+                <img loading="lazy" width="361" class="w-full" height="241" alt="img"
+                  src="https://placehold.co/361x241/a79a66/fff.png">
+                <figcaption class="absolute bottom-5 left-5 font-bold text-f24">SEAFOOD</figcaption>
+              </figure>
+            </div>
+            <div class="lg:w-1/2 w-full pr-2">
+              <figure class="relative">
+                <img loading="lazy" width="361" class="w-full" height="241" alt="img"
+                  src="https://placehold.co/361x241/a79a66/fff.png">
+                <figcaption class="absolute bottom-5 left-5 font-bold text-f24">BEVERAGE</figcaption>
+              </figure>
+            </div>
+            <div class="lg:w-1/2 w-full pl-2">
+              <figure class="relative">
+                <img loading="lazy" width="361" class="w-full" height="241" alt="img"
+                  src="https://placehold.co/361x241/a79a66/fff.png">
+                <figcaption class="absolute bottom-5 left-5 font-bold text-f24">SAUCE</figcaption>
+              </figure>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PRODUCTS SECTION ========== -->
+  <section class="py-16 bg-featuredCatBg bg-cover bg-no-repeat relative">
+    <div class="container mx-auto relative z-10">
+      <div class="mx-auto flex flex-wrap justify-center md:justify-center">
+        <div
+          class="flex gap-5 items-center justify-center xl:justify-center xl:w-[25%] md:w-1/3 w-full px-2 md:mb-6 mb-6">
+          <figure class="h-20">
+            <img loading="lazy" alt="gcc" width="80" height="80" src="./images/icons/icon_cow.png">
+          </figure>
+          <div>
+            <h3 class="text-f24 font-bold">Rind</h3>
+            <p class="text-f14 font-normal">32 Products</p>
+          </div>
+        </div>
+        <div
+          class="flex gap-5 items-center justify-center xl:justify-center xl:w-[25%] md:w-1/3 w-full px-2 md:mb-6 mb-6">
+          <figure class="h-20 mi-w-20">
+            <img loading="lazy" alt="gcc" width="80" height="80" src="./images/icons/icon_pig.png">
+          </figure>
+          <div>
+            <h3 class="text-f24 font-bold">Schwein</h3>
+            <p class="text-f14 font-normal">12 Products</p>
+          </div>
+        </div>
+        <div
+          class="flex gap-5 items-center justify-center xl:justify-center xl:w-[25%] md:w-1/3 w-full px-2 md:mb-6 mb-6">
+          <figure class="h-20 mi-w-20">
+            <img loading="lazy" alt="gcc" width="80" height="80" src="./images/icons/icon_chick.png">
+          </figure>
+          <div>
+            <h3 class="text-f24 font-bold">Geflügel</h3>
+            <p class="text-f14 font-normal">27 Products</p>
+          </div>
+        </div>
+        <div
+          class="flex gap-5 items-center justify-center xl:justify-center xl:w-[25%] md:w-1/3 w-full px-2 md:mb-6 mb-6">
+          <figure class="h-20 mi-w-20">
+            <img loading="lazy" alt="gcc" width="80" height="80" src="./images/icons/icon_lamb.png">
+          </figure>
+          <div>
+            <h3 class="text-f24 font-bold">Lamm</h3>
+            <p class="text-f14 font-normal">13 Products</p>
+          </div>
+        </div>
+        <div
+          class="flex gap-5 items-center justify-center xl:justify-center xl:w-[25%] md:w-1/3 w-full px-2 md:mb-6 mb-6">
+          <figure class="h-20 mi-w-20">
+            <img loading="lazy" alt="gcc" width="80" height="80" src="./images/icons/icon_calb.png">
+          </figure>
+          <div>
+            <label class="text-f24 font-bold">Kalb</label>
+            <p class="text-f14 font-normal">13 Products</p>
+          </div>
+        </div>
+        <div
+          class="flex gap-5 items-center justify-center xl:justify-center xl:w-[25%] md:w-1/2 w-full px-2 md:mb-6 mb-6">
+          <figure class="h-20 mi-w-20">
+            <img loading="lazy" alt="gcc" width="80" height="80" src="./images/icons/icon_meat.png">
+          </figure>
+          <div>
+            <label class="text-f24 font-bold">Wurstwaren</label>
+            <p class="text-f14 font-normal">12 Products</p>
+          </div>
+        </div>
+        <div
+          class="flex gap-5 items-center justify-center xl:justify-center xl:w-[25%] md:w-1/2 w-full px-2 md:mb-6 mb-6">
+          <figure class="h-20 mi-w-20">
+            <img loading="lazy" alt="gcc" width="80" height="80" src="./images/icons/icon_wild.png">
+          </figure>
+          <div>
+            <label class="text-f24 font-bold">Wild</label>
+            <p class="text-f14 font-normal">14 Products</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ========== FEATURED PRODUCTS ========== -->
+  <section class="py-16">
+    <div class="container max-w-[1380px] mx-auto bg-featuredBg py-10">
+      <div class="text-center mb-10">
+        <h2 class="font-bold text-f40">FEATURED PRODUCTS</h2>
+      </div>
+      <div
+        class="max-w-[1286px] px-4 mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 text-f14">
+        <article class="flex flex-col h-full">
+          <figure class="relative w-full">
+            <img loading="lazy" class="w-full" width="294" height="196" alt="SIRLOIN STEAK, CREEKSTONE FARMS USA"
+              src="https://placehold.co/294x196/a79a66/fff.png">
+            <div class="featuredIcon">
+              <a href="#" aria-label="Add to Favorites">
+                <img loading="lazy" width="35" height="35" alt="Favorite" src="./images/icons/icon_love_white.png">
+              </a>
+              <a href="#" aria-label="Add to Cart">
+                <img loading="lazy" width="35" height="35" alt="Cart" src="./images/icons/icon_trolley.png">
+              </a>
+            </div>
+          </figure>
+          <div class="featuredInfo">
+            <div>
+              <h2 class="text-f18 font-bold">SIRLOIN STEAK, CREEKSTONE FARMS USA</h2>
+              <h3 class="text-f16 text-darkGrey">Content 1000g</h3>
+            </div>
+            <div class="flex flex-col mt-5">
+              <figure class="flex gap-1 mb-2">
+                <img loading="lazy" width="18" height="18" alt="Rating" src="./images/icons/star.svg">
+                <img loading="lazy" width="18" height="18" alt="Rating" src="./images/icons/star.svg">
+                <img loading="lazy" width="18" height="18" alt="Rating" src="./images/icons/star.svg">
+                <img loading="lazy" width="18" height="18" alt="Rating" src="./images/icons/star.svg">
+                <img loading="lazy" width="18" height="18" alt="Rating" src="./images/icons/star.svg">
+              </figure>
+              <span class="text-f36 font-semibold leading-9">99.00 €</span>
+              <span class="text-darkGrey text-f20 font-medium">99.00 €/kg</span>
+            </div>
+          </div>
+        </article>
+        <article class="flex flex-col h-full">
+          <figure class="relative  w-full">
+            <img loading="lazy" class="w-full" width="294" height="196" alt="BURGER PATTIES CREEKSTONE FARMS USA"
+              src="https://placehold.co/294x196/a79a66/fff.png">
+            <div class="featuredIcon">
+              <a href="#" aria-label="Add to Favorites">
+                <img loading="lazy" width="35" height="35" alt="Favorite" src="./images/icons/icon_love_white.png">
+              </a>
+              <a href="#" aria-label="Add to Cart">
+                <img loading="lazy" width="35" height="35" alt="Cart" src="./images/icons/icon_trolley.png">
+              </a>
+            </div>
+          </figure>
+          <div class="featuredInfo">
+            <div>
+              <h2 class="text-f18 font-bold">BURGER PATTIES CREEKSTONE FARMS USA</h2>
+              <h3 class="text-f16 text-darkGrey">Content 1000g</h3>
+            </div>
+            <div class="flex flex-col mt-5">
+              <figure class="flex gap-1 mb-2">
+                <img loading="lazy" width="18" height="18" alt="Rating" src="./images/icons/star.svg">
+                <img loading="lazy" width="18" height="18" alt="Rating" src="./images/icons/star.svg">
+                <img loading="lazy" width="18" height="18" alt="Rating" src="./images/icons/star.svg">
+                <img loading="lazy" width="18" height="18" alt="Rating" src="./images/icons/star.svg">
+                <img loading="lazy" width="18" height="18" alt="Rating" src="./images/icons/star.svg">
+              </figure>
+              <span class="text-f36 font-semibold leading-9">99.00 €</span>
+              <span class="text-darkGrey text-f20 font-medium">99.00 €/kg</span>
+            </div>
+          </div>
+        </article>
+        <article class="flex flex-col h-full">
+          <figure class="relative  w-full">
+            <img loading="lazy" class="w-full" width="294" height="196" alt="SIRLOIN STEAK, CREEKSTONE FARMS USA"
+              src="https://placehold.co/294x196/a79a66/fff.png">
+            <div class="featuredIcon">
+              <a href="#" aria-label="Add to Favorites">
+                <img loading="lazy" width="35" height="35" alt="Favorite" src="./images/icons/icon_love_white.png">
+              </a>
+              <a href="#" aria-label="Add to Cart">
+                <img loading="lazy" width="35" height="35" alt="Cart" src="./images/icons/icon_trolley.png">
+              </a>
+            </div>
+          </figure>
+          <div class="featuredInfo">
+            <div>
+              <h2 class="text-f18 font-bold">OSSO BUCO, CALF BRANDENBURG REGIONAL</h2>
+              <h3 class="text-f16 text-darkGrey">Content 1000g</h3>
+            </div>
+            <div class="flex flex-col mt-5">
+              <figure class="flex gap-1 mb-2">
+                <img loading="lazy" width="18" height="18" alt="Rating" src="./images/icons/star.svg">
+                <img loading="lazy" width="18" height="18" alt="Rating" src="./images/icons/star.svg">
+                <img loading="lazy" width="18" height="18" alt="Rating" src="./images/icons/star.svg">
+                <img loading="lazy" width="18" height="18" alt="Rating" src="./images/icons/star.svg">
+                <img loading="lazy" width="18" height="18" alt="Rating" src="./images/icons/star.svg">
+              </figure>
+              <span class="text-f36 font-semibold leading-9">99.00 €</span>
+              <span class="text-darkGrey text-f20 font-medium">99.00 €/kg</span>
+            </div>
+          </div>
+        </article>
+        <article class="flex flex-col h-full">
+          <figure class="relative  w-full">
+            <img loading="lazy" class="w-full" width="294" height="196" alt="ROAST BEEF HEIFER REGIONAL
+" src="https://placehold.co/294x196/a79a66/fff.png">
+            <div class="featuredIcon">
+              <a href="#" aria-label="Add to Favorites">
+                <img loading="lazy" width="35" height="35" alt="Favorite" src="./images/icons/icon_love_white.png">
+              </a>
+              <a href="#" aria-label="Add to Cart">
+                <img loading="lazy" width="35" height="35" alt="Cart" src="./images/icons/icon_trolley.png">
+              </a>
+            </div>
+          </figure>
+          <div class="featuredInfo">
+            <div>
+              <h2 class="text-f18 font-bold">ROAST BEEF HEIFER REGIONAL</h2>
+              <h3 class="text-f16 text-darkGrey">Content 1000g</h3>
+            </div>
+            <div class="flex flex-col mt-5">
+              <figure class="flex gap-1 mb-2">
+                <img loading="lazy" width="18" height="18" alt="Rating" src="./images/icons/star.svg">
+                <img loading="lazy" width="18" height="18" alt="Rating" src="./images/icons/star.svg">
+                <img loading="lazy" width="18" height="18" alt="Rating" src="./images/icons/star.svg">
+                <img loading="lazy" width="18" height="18" alt="Rating" src="./images/icons/star.svg">
+                <img loading="lazy" width="18" height="18" alt="Rating" src="./images/icons/star.svg">
+              </figure>
+              <span class="text-f36 font-semibold leading-9">99.00 €</span>
+              <span class="text-darkGrey text-f20 font-medium">99.00 €/kg</span>
+            </div>
+          </div>
+        </article>
+        <article class="flex flex-col h-full">
+          <figure class="relative  w-full">
+            <img loading="lazy" class="w-full" width="294" height="196" alt="BURGER PATTIES ANGUS, ARGENTINA
+" src="https://placehold.co/294x196/a79a66/fff.png">
+            <div class="featuredIcon">
+              <a href="#" aria-label="Add to Favorites">
+                <img loading="lazy" width="35" height="35" alt="Favorite" src="./images/icons/icon_love_white.png">
+              </a>
+              <a href="#" aria-label="Add to Cart">
+                <img loading="lazy" width="35" height="35" alt="Cart" src="./images/icons/icon_trolley.png">
+              </a>
+            </div>
+          </figure>
+          <div class="featuredInfo">
+            <div>
+              <h2 class="text-f18 font-bold">BURGER PATTIES ANGUS, ARGENTINA</h2>
+              <h3 class="text-f16 text-darkGrey">Content 1000g</h3>
+            </div>
+            <div class="flex flex-col mt-5">
+              <figure class="flex gap-1 mb-2">
+                <img loading="lazy" width="18" height="18" alt="Rating" src="./images/icons/star.svg">
+                <img loading="lazy" width="18" height="18" alt="Rating" src="./images/icons/star.svg">
+                <img loading="lazy" width="18" height="18" alt="Rating" src="./images/icons/star.svg">
+                <img loading="lazy" width="18" height="18" alt="Rating" src="./images/icons/star.svg">
+                <img loading="lazy" width="18" height="18" alt="Rating" src="./images/icons/star.svg">
+              </figure>
+              <span class="text-f36 font-semibold leading-9">99.00 €</span>
+              <span class="text-darkGrey text-f20 font-medium">99.00 €/kg</span>
+            </div>
+          </div>
+        </article>
+        <article class="flex flex-col h-full">
+          <figure class="relative  w-full">
+            <img loading="lazy" class="w-full" width="294" height="196" alt="VEAL CHEEKS BRANDENBURG REGIONAL
+" src="https://placehold.co/294x196/a79a66/fff.png">
+            <div class="featuredIcon">
+              <a href="#" aria-label="Add to Favorites">
+                <img loading="lazy" width="35" height="35" alt="Favorite" src="./images/icons/icon_love_white.png">
+              </a>
+              <a href="#" aria-label="Add to Cart">
+                <img loading="lazy" width="35" height="35" alt="Cart" src="./images/icons/icon_trolley.png">
+              </a>
+            </div>
+          </figure>
+          <div class="featuredInfo">
+            <div>
+              <h2 class="text-f18 font-bold">VEAL CHEEKS BRANDENBURG REGIONAL</h2>
+              <h3 class="text-f16 text-darkGrey">Content 1000g</h3>
+            </div>
+            <div class="flex flex-col mt-5">
+              <figure class="flex gap-1 mb-2">
+                <img loading="lazy" width="18" height="18" alt="Rating" src="./images/icons/star.svg">
+                <img loading="lazy" width="18" height="18" alt="Rating" src="./images/icons/star.svg">
+                <img loading="lazy" width="18" height="18" alt="Rating" src="./images/icons/star.svg">
+                <img loading="lazy" width="18" height="18" alt="Rating" src="./images/icons/star.svg">
+                <img loading="lazy" width="18" height="18" alt="Rating" src="./images/icons/star.svg">
+              </figure>
+              <span class="text-f36 font-semibold leading-9">99.00 €</span>
+              <span class="text-darkGrey text-f20 font-medium">99.00 €/kg</span>
+            </div>
+          </div>
+        </article>
+        <article class="flex flex-col h-full">
+          <figure class="relative  w-full">
+            <img loading="lazy" class="w-full" width="294" height="196" alt="BURGER PATTIES WAGYU REGIONAL"
+              src="https://placehold.co/294x196/a79a66/fff.png">
+            <div class="featuredIcon">
+              <a href="#" aria-label="Add to Favorites">
+                <img loading="lazy" width="35" height="35" alt="Favorite" src="./images/icons/icon_love_white.png">
+              </a>
+              <a href="#" aria-label="Add to Cart">
+                <img loading="lazy" width="35" height="35" alt="Cart" src="./images/icons/icon_trolley.png">
+              </a>
+            </div>
+          </figure>
+          <div class="featuredInfo">
+            <div>
+              <h2 class="text-f18 font-bold">BURGER PATTIES WAGYU REGIONAL</h2>
+              <h3 class="text-f16 text-darkGrey">Content 1000g</h3>
+            </div>
+            <div class="flex flex-col mt-5">
+              <figure class="flex gap-1 mb-2">
+                <img loading="lazy" width="18" height="18" alt="Rating" src="./images/icons/star.svg">
+                <img loading="lazy" width="18" height="18" alt="Rating" src="./images/icons/star.svg">
+                <img loading="lazy" width="18" height="18" alt="Rating" src="./images/icons/star.svg">
+                <img loading="lazy" width="18" height="18" alt="Rating" src="./images/icons/star.svg">
+                <img loading="lazy" width="18" height="18" alt="Rating" src="./images/icons/star.svg">
+              </figure>
+              <span class="text-f36 font-semibold leading-9">99.00 €</span>
+              <span class="text-darkGrey text-f20 font-medium">99.00 €/kg</span>
+            </div>
+          </div>
+        </article>
+        <article class="flex flex-col h-full">
+          <figure class="relative  w-full">
+            <img loading="lazy" class="w-full" width="294" height="196" alt="FLANK STEAK CREEKSTONE FARMS USA"
+              src="https://placehold.co/294x196/a79a66/fff.png">
+            <div class="featuredIcon">
+              <a href="#" aria-label="Add to Favorites">
+                <img loading="lazy" width="35" height="35" alt="Favorite" src="./images/icons/icon_love_white.png">
+              </a>
+              <a href="#" aria-label="Add to Cart">
+                <img loading="lazy" width="35" height="35" alt="Cart" src="./images/icons/icon_trolley.png">
+              </a>
+            </div>
+          </figure>
+          <div class="featuredInfo">
+            <div>
+              <h2 class="text-f18 font-bold">FLANK STEAK CREEKSTONE FARMS USA</h2>
+              <h3 class="text-f16 text-darkGrey">Content 1000g</h3>
+            </div>
+            <div class="flex flex-col mt-5">
+              <figure class="flex gap-1 mb-2">
+                <img loading="lazy" width="18" height="18" alt="Rating" src="./images/icons/star.svg">
+                <img loading="lazy" width="18" height="18" alt="Rating" src="./images/icons/star.svg">
+                <img loading="lazy" width="18" height="18" alt="Rating" src="./images/icons/star.svg">
+                <img loading="lazy" width="18" height="18" alt="Rating" src="./images/icons/star.svg">
+                <img loading="lazy" width="18" height="18" alt="Rating" src="./images/icons/star.svg">
+              </figure>
+              <span class="text-f36 font-semibold leading-9">99.00 €</span>
+              <span class="text-darkGrey text-f20 font-medium">99.00 €/kg</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== ABOUT OUR SHOP ========== -->
+  <section class="border-lightTaupe border-t-2">
+    <div class="container max-w-[1380px] mx-auto grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 gap-4">
+      <div class="w-full flex items-center">
+        <div class="lg:ml-20 py-5 text-center lg:text-left">
+          <div>
+            <h2 class="text-f40 font-bold">ABOUT OUR SHOP</h2>
+          </div>
+          <p class="mb-4 text-center lg:text-left">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+            dolore eu
+            fugiat
+            nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+            officia deserunt mollit anim id est laborum.</p>
+          <div class="flex gap-5 justify-center lg:justify-start">
+            <a class="btn btn-primary min-h-[50px]" href="#">READ MORE</a>
+            <a class="btn min-h-[50px] hover:bg-lightTaupe" href="#">CONTACT US</a>
+          </div>
+        </div>
+      </div>
+      <figure class="items-end justify-end hidden lg:flex">
+        <img loading="lazy" alt="about" width="522" height="343" src="./images/gcc_golden_foil.webp">
+      </figure>
+    </div>
+  </section>
+
+  <!-- ========== JOIN OUR NEWSLETTER NOW ========== -->
+  <section class="border-lightTaupe border-t-2">
+    <div class="container max-w-[1380px]  mx-auto grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 gap-4">
+      <figure class="hidden lg:flex">
+        <img loading="lazy" alt="newsletter" width="590" height="349" src="./images/newsletter_image.webp">
+      </figure>
+      <div class="py-4">
+        <div class="text-center mb-6">
+          <h2 class="font-bold text-f40">JOIN OUR NEWSLETTER NOW</h2>
+        </div>
+        <p class="text-center max-w-[488px] mx-auto text-base font-medium">
+          <span class="text-lightTaupe">If you register for the newsletter for the first time, you will receive the
+            shipping
+            costs</span> for
+          your
+          next order for free as soon as your registration is confirmed
+        </p>
+        <form class="flex gap-2 justify-center my-4">
+          <input type="email" placeholder="Your Email Address">
+          <button class="btn btn-outline" type="button">REGISTER NOW</button>
+        </form>
+        <p class="text-center max-w-[488px] mx-auto text-base font-medium">I have read the data protection regulations
+          and I
+          expressly agree to them with my registration.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== COSTUMER REVIEW ========== -->
+  <section class="py-8 md:py-16 border-t-2 border-lightTaupe">
+    <div class="container">
+      <div class="text-center mb-10">
+        <h2 class="font-bold text-f40">COSTUMER REVIEW</h2>
+      </div>
+      <div class="mx-auto grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-4 text-f14">
+        <article class=" bg-smokBlack p-4 flex gap-5">
+          <figure class="min-w-[80px]">
+            <img class="rounded-full" loading="lazy" alt="Michael K. - Customer 1" width="80" height="80"
+              src="https://placehold.co/80x80/a79a66/fff.png">
+          </figure>
+          <div class="h-full flex flex-col justify-between">
+            <div>
+              <h2 class="font-semibold text-f20 mb-4">Michael K.</h2>
+              <p class="text-f14 font-medium leading-5 mb-3">“The best meat I have ever eaten! I love it.”</p>
+            </div>
+            <figure class="flex gap-1">
+              <img loading="lazy" alt="5-star rating" width="18" height="18" src="./images/icons/star.svg">
+              <img loading="lazy" alt="5-star rating" width="18" height="18" src="./images/icons/star.svg">
+              <img loading="lazy" alt="5-star rating" width="18" height="18" src="./images/icons/star.svg">
+              <img loading="lazy" alt="5-star rating" width="18" height="18" src="./images/icons/star.svg">
+              <img loading="lazy" alt="5-star rating" width="18" height="18" src="./images/icons/star.svg">
+            </figure>
+          </div>
+        </article>
+        <article class=" bg-smokBlack p-4 flex gap-5">
+          <figure class="min-w-[80px]">
+            <img class="rounded-full" loading="lazy" alt="user" width="80" height="80"
+              src="https://placehold.co/80x80/a79a66/fff.png">
+          </figure>
+          <div class="h-full flex flex-col justify-between">
+            <div>
+              <h2 class="font-semibold text-f20 mb-4">Lolita</h2>
+              <p class="text-f14 font-medium leading-5 mb-3">“Fast packaging, perfectly adapted to the sensitive goods,
+                friendly, fast
+                service and the
+                quality of
+                the
+                goods is as expected.”</p>
+            </div>
+            <figure class="flex gap-1">
+              <img loading="lazy" alt="5-star rating" width="18" height="18" src="./images/icons/star.svg">
+              <img loading="lazy" alt="5-star rating" width="18" height="18" src="./images/icons/star.svg">
+              <img loading="lazy" alt="5-star rating" width="18" height="18" src="./images/icons/star.svg">
+              <img loading="lazy" alt="5-star rating" width="18" height="18" src="./images/icons/star.svg">
+              <img loading="lazy" alt="5-star rating" width="18" height="18" src="./images/icons/star.svg">
+            </figure>
+          </div>
+        </article>
+        <article class=" bg-smokBlack p-4 flex gap-5">
+          <figure class="min-w-[80px] ">
+            <img class="rounded-full" loading="lazy" alt="user" width="80" height="80"
+              src="https://placehold.co/80x80/a79a66/fff.png">
+          </figure>
+          <div class="h-full flex flex-col justify-between">
+            <div>
+              <h2 class="font-semibold text-f20 mb-4">Esmeralda</h2>
+              <p class="text-f14 font-medium leading-5 mb-3">“The ribeye was one of the best steaks I have ever had. Top
+                quality
+                stuff!.”</p>
+            </div>
+            <figure class="flex gap-1">
+              <img loading="lazy" alt="5-star rating" width="18" height="18" src="./images/icons/star.svg">
+              <img loading="lazy" alt="5-star rating" width="18" height="18" src="./images/icons/star.svg">
+              <img loading="lazy" alt="5-star rating" width="18" height="18" src="./images/icons/star.svg">
+              <img loading="lazy" alt="5-star rating" width="18" height="18" src="./images/icons/star.svg">
+              <img loading="lazy" alt="5-star rating" width="18" height="18" src="./images/icons/star.svg">
+            </figure>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== OUR LATEST NEW ========== -->
+  <section class="py-8 md:py-16 border-t-2 border-lightTaupe">
+    <div class="container">
+      <div class="text-center mb-10">
+        <h2 class="font-bold text-f40">OUR LATEST NEW</h2>
+      </div>
+      <div class="mx-auto grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-4">
+        <article class=" bg-smokBlack">
+          <figure class="relative">
+            <img loading="lazy" class="w-full" width="408" height="287"
+              src="https://placehold.co/408x287/a79a66/fff.png" alt="inspiration">
+            <figcaption class="date-badge ">
+              <span class="text-lg leading-4 font-medium mb-1">5</span>
+              <span class="text-xs leading-4 font-medium">JUN</span>
+            </figcaption>
+          </figure>
+          <div class="py-8 px-5 h-full">
+            <h2 class="text-f26 text-center font-medium leading-normal min-h-[73px]">IDEA: 10 RECIPES FOR COOKING</h2>
+            <div class="flex items-center justify-center gap-2.5 my-1.5">
+              <h3 class="text-gray font-medium">Post by John Doe</h3>
+              <span class="flex">
+                <a href="#">
+                  <img loading="lazy" width="30" height="30" src="./images/icons/icon_comment.png" alt="comment">
+                </a>
+                <a href="#">
+                  <img loading="lazy" width="30" height="30" src="./images/icons/icon_share.png" alt="share">
+                </a>
+              </span>
+            </div>
+            <p class="text-center text-f14">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+              tempor incididunt ut labore et
+              dolore
+              magna aliqua.</p>
+            <div class="text-center mt-8">
+              <a class="text-lightTaupe font-medium" href="#">CONTINUE READING</a>
+            </div>
+          </div>
+        </article>
+        <article class=" bg-smokBlack">
+          <figure class="relative">
+            <img loading="lazy" class="w-full" width="408" height="287"
+              src="https://placehold.co/408x287/a79a66/fff.png" alt="inspiration">
+            <figcaption class="date-badge">
+              <span class="text-lg leading-4 font-medium mb-1">5</span>
+              <span class="text-xs leading-4 font-medium">JUN</span>
+            </figcaption>
+          </figure>
+          <div class="py-8 px-5 h-full">
+            <h2 class="text-f26 text-center font-medium leading-normal min-h-[73px]">AMAZING! SPECIAL TUNA CHUNKS</h2>
+            <div class="flex items-center justify-center gap-2.5 my-1.5">
+              <h3 class="text-gray font-medium">Post by John Doe</h3>
+              <span class="flex">
+                <a href="#">
+                  <img loading="lazy" width="30" height="30" src="./images/icons/icon_comment.png" alt="comment">
+                </a>
+                <a href="#">
+                  <img loading="lazy" width="30" height="30" src="./images/icons/icon_share.png" alt="share">
+                </a>
+              </span>
+            </div>
+            <p class="text-center text-f14">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+              tempor incididunt ut labore et
+              dolore
+              magna aliqua.</p>
+            <div class="text-center mt-8">
+              <a class="text-lightTaupe font-medium" href="#">CONTINUE READING</a>
+            </div>
+          </div>
+        </article>
+        <article class=" bg-smokBlack">
+          <figure class="relative">
+            <img loading="lazy" class="w-full" width="408" height="287"
+              src="https://placehold.co/408x287/a79a66/fff.png" alt="inspiration">
+            <figcaption class="date-badge">
+              <span class="text-lg leading-4 font-medium mb-1">5</span>
+              <span class="text-xs leading-4 font-medium">JUN</span>
+            </figcaption>
+          </figure>
+          <div class="py-8 px-5 h-full">
+            <h2 class="text-f26 text-center font-medium leading-normal min-h-[73px]">HISTORY AND PRIDE</h2>
+            <div class="flex items-center justify-center gap-2.5 my-1.5">
+              <h3 class="text-gray font-medium">Post by John Doe</h3>
+              <span class="flex">
+                <a href="#">
+                  <img loading="lazy" width="30" height="30" src="./images/icons/icon_comment.png" alt="comment">
+                </a>
+                <a href="#">
+                  <img loading="lazy" width="30" height="30" src="./images/icons/icon_share.png" alt="share">
+                </a>
+              </span>
+            </div>
+            <p class="text-center text-f14">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod
+              tempor incididunt ut labore et
+              dolore
+              magna aliqua.</p>
+            <div class="text-center mt-8">
+              <a class="text-lightTaupe font-medium" href="#">CONTINUE READING</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
 
   <!-- ========== FOOTER ========== -->
   <footer class="bg-smokBlack font-medium text-f14 md:text-f16">
@@ -1125,8 +1886,6 @@
         </div>
       </div>
     </div>
-
-
     <!-- Footer-copy-right -->
     <div class="bg-lightBlack text-center py-6 md:py-8">
       <div class="container">
@@ -1361,7 +2120,7 @@
   <!-- Links of JS -->
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <script src="./js/slimselect.min.js"></script>
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script> -->
   <script src="./js/custom.js"></script>
 </body>
 
