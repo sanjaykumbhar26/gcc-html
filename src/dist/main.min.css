@@ -1645,7 +1645,7 @@ body.menuopen .light_menu_box {
     }
   }
 .range-lable {
-    background-image: url(../images/icons/icon_arrow_down.png);
+    background-image: url(../images/icons/chevron-down.svg);
     background-position: right center;
     background-repeat: no-repeat;
     background-size: 20px;
