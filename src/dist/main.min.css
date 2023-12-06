@@ -787,9 +787,6 @@ input {
 .w-0 {
   width: 0px;
 }
-.w-1\/4 {
-  width: 25%;
-}
 .w-10 {
   width: 2.5rem;
 }
@@ -805,9 +802,6 @@ input {
 .w-3 {
   width: 0.75rem;
 }
-.w-3\/4 {
-  width: 75%;
-}
 .w-4 {
   width: 1rem;
 }
@@ -816,9 +810,6 @@ input {
 }
 .w-\[180px\] {
   width: 180px;
-}
-.w-\[1px\] {
-  width: 1px;
 }
 .w-\[360px\] {
   width: 360px;
