@@ -16,6 +16,12 @@ npm install
 
 ```bash
 npm run build
+npm run start
+npm run serve
+
+# Also Run this in second terminal 
+npm run dev
+
 # or
 yarn build
 ```

@@ -4,9 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "serve": "concurrently \"postcss src/css/tailwind.css -o src/dist/main.min.css --minify\"  \"live-server ./src\"",
+    "serve": "concurrently \"postcss public/src/css/tailwind.css -o  public/src/dist/main.min.css --minify\"  \"live-server ./public/src\"",
     "build": "postcss src/css/tailwind.css -o src/dist/main.min.css --minify",
-    "start": "npm run serve"
+    "start": "sergey",
+    "dev": "sergey --watch"
   },
   "keywords": [],
   "author": "",
@@ -25,6 +26,7 @@
   "dependencies": {
     "@tailwindcss/forms": "^0.5.3",
     "postcss-minify": "^1.1.0",
+    "sergey": "^0.0.13",
     "tw-elements": "^1.0.0-beta2"
   }
 }

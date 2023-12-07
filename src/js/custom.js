@@ -229,7 +229,7 @@ new SlimSelect({
 })
 
 
-//
+
 
 
 function getValues(slide1, slide2) {
@@ -301,3 +301,5 @@ $(".toggle-password").click(function() {
     input.attr("type", "password");
   }
 });
+
+
