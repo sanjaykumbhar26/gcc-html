@@ -2031,6 +2031,9 @@ input[type=range]:focus::-ms-fill-upper {
   .lg\:h-\[342px\] {
     height: 342px;
   }
+  .lg\:max-h-\[497px\] {
+    max-height: 497px;
+  }
   .lg\:w-1\/2 {
     width: 50%;
   }
@@ -2043,8 +2046,14 @@ input[type=range]:focus::-ms-fill-upper {
   .lg\:w-\[28\%\] {
     width: 28%;
   }
+  .lg\:w-\[300px\] {
+    width: 300px;
+  }
   .lg\:w-\[40\%\] {
     width: 40%;
+  }
+  .lg\:w-\[50\%\] {
+    width: 50%;
   }
   .lg\:w-\[56\%\] {
     width: 56%;
@@ -2091,6 +2100,12 @@ input[type=range]:focus::-ms-fill-upper {
   }
   .lg\:p-2 {
     padding: 0.5rem;
+  }
+  .lg\:pl-2 {
+    padding-left: 0.5rem;
+  }
+  .lg\:pr-2 {
+    padding-right: 0.5rem;
   }
   .lg\:text-left {
     text-align: left;
