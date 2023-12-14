@@ -210,25 +210,43 @@ $(document).ready(function () {
 new SlimSelect({
   select: "#selectElement",
   settings: {
-     showSearch: false,
+    showSearch: false,
+    placeholderText: 'Custom Placeholder Text',
   }
 });
 
 new SlimSelect({
   select: '#multiple',
   settings: {
-     showSearch: false,
+    showSearch: false,
+    placeholderText: 'Custom Placeholder Text',
   }
 })
 
 new SlimSelect({
   select: '#multiple2',
   settings: {
-     showSearch: false,
+    showSearch: false,
+    placeholderText: 'Custom Placeholder Text',
   }
 })
 
+  
+var slim = new SlimSelect({
+  select: '#multiple3',
+  settings: {
+    showSearch: false,
+    placeholderText: 'Custom Placeholder Text',
+  },
+})
 
+var slim = new SlimSelect({
+  select: '#multiple4',
+  settings: {
+    showSearch: false,
+    placeholderText: 'Custom Placeholder Text',
+  },
+})
 
 
 
