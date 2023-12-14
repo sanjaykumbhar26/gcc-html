@@ -306,11 +306,11 @@ $(".toggle-password").click(function() {
 ///
 $(document).ready(function(){
      function AddReadMore() {
-      var carLmt = 100;
+      var carLmt = 160;
       var readMoreTxt = " ...read more";
       var readLessTxt = " read less";
-      $(".add-read-more").each(function () {
-         if ($(this).find(".first-section").length)
+      $(".add-read-more .term-description").each(function () {
+         if ($(this).find(".first-section .term-description").length)
             return;
          var allstr = $(this).text();
          if (allstr.length > carLmt) {
