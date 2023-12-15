@@ -210,25 +210,43 @@ $(document).ready(function () {
 new SlimSelect({
   select: "#selectElement",
   settings: {
-     showSearch: false,
+    showSearch: false,
+    placeholderText: 'Custom Placeholder Text',
   }
 });
 
 new SlimSelect({
   select: '#multiple',
   settings: {
-     showSearch: false,
+    showSearch: false,
+    placeholderText: 'Custom Placeholder Text',
   }
 })
 
 new SlimSelect({
   select: '#multiple2',
   settings: {
-     showSearch: false,
+    showSearch: false,
+    placeholderText: 'Custom Placeholder Text',
   }
 })
 
+  
+var slim = new SlimSelect({
+  select: '#multiple3',
+  settings: {
+    showSearch: false,
+    placeholderText: 'Custom Placeholder Text',
+  },
+})
 
+var slim = new SlimSelect({
+  select: '#multiple4',
+  settings: {
+    showSearch: false,
+    placeholderText: 'Custom Placeholder Text',
+  },
+})
 
 
 
@@ -306,11 +324,11 @@ $(".toggle-password").click(function() {
 ///
 $(document).ready(function(){
      function AddReadMore() {
-      var carLmt = 100;
+      var carLmt = 160;
       var readMoreTxt = " ...read more";
       var readLessTxt = " read less";
-      $(".add-read-more").each(function () {
-         if ($(this).find(".first-section").length)
+      $(".add-read-more .term-description").each(function () {
+         if ($(this).find(".first-section .term-description").length)
             return;
          var allstr = $(this).text();
          if (allstr.length > carLmt) {
