@@ -634,6 +634,9 @@ input {
   margin-top: 1.25rem;
   margin-bottom: 1.25rem;
 }
+.mb-0 {
+  margin-bottom: 0px;
+}
 .mb-1 {
   margin-bottom: 0.25rem;
 }
@@ -679,6 +682,9 @@ input {
 .ml-5 {
   margin-left: 1.25rem;
 }
+.ml-auto {
+  margin-left: auto;
+}
 .mr-2 {
   margin-right: 0.5rem;
 }
@@ -702,6 +708,9 @@ input {
 }
 .mt-5 {
   margin-top: 1.25rem;
+}
+.mt-6 {
+  margin-top: 1.5rem;
 }
 .mt-8 {
   margin-top: 2rem;
@@ -747,9 +756,6 @@ input {
 }
 .h-20 {
   height: 5rem;
-}
-.h-3 {
-  height: 0.75rem;
 }
 .h-4 {
   height: 1rem;
@@ -828,9 +834,6 @@ input {
 }
 .w-2\.5 {
   width: 0.625rem;
-}
-.w-3 {
-  width: 0.75rem;
 }
 .w-4 {
   width: 1rem;
@@ -1008,6 +1011,9 @@ input {
 .items-baseline {
   align-items: baseline;
 }
+.justify-start {
+  justify-content: flex-start;
+}
 .justify-end {
   justify-content: flex-end;
 }
@@ -1097,6 +1103,9 @@ input {
 .rounded {
   border-radius: 0.25rem;
 }
+.rounded-\[6px\] {
+  border-radius: 6px;
+}
 .rounded-full {
   border-radius: 9999px;
 }
@@ -1179,10 +1188,6 @@ input {
 .bg-darkBlack {
   --tw-bg-opacity: 1;
   background-color: rgb(25 25 25 / var(--tw-bg-opacity));
-}
-.bg-green-600 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(22 163 74 / var(--tw-bg-opacity));
 }
 .bg-greyBlack {
   --tw-bg-opacity: 1;
@@ -1360,6 +1365,9 @@ input {
 }
 .text-center {
   text-align: center;
+}
+.text-start {
+  text-align: start;
 }
 .text-base {
   font-size: 1rem;
@@ -1887,6 +1895,25 @@ input[type=range]:focus::-ms-fill-upper {
     visibility: hidden;
     transform: translateX(20px) translateZ(0);
   }
+.big-img{
+    position: relative;
+    width: 850px;
+    height: 650px;
+    border: 1px solid #ddd;
+    cursor: zoom-in;
+    overflow: hidden;
+  }
+.big-img img.zoom{
+    position: absolute;
+    transition: width 0.2s ease-out, opacity 0.2s ease-out 0.2s; 
+  }
+input:enabled:read-write:-webkit-any(:focus, :hover)::-webkit-inner-spin-button {
+   display: none
+}
+::-webkit-inner-spin-button, ::-webkit-outer-spin-button {
+    height: auto;
+    display: none
+}
 
 /* Components */
 .container {

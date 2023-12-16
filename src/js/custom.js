@@ -23,62 +23,68 @@
     },
   });
 
-$(document).ready(function () {
-  // Set default state
-  $(".default-menu").hide(); // Hide the default menu initially
-  // Handle click event
-  // $(".cat-menu-list").on("click", function () {
-  //   $(".default-menu").slideToggle();
-  //   $(".dropdown-overlay").show();
-  // });
-
-  $(".cat-menu-list").hover(
-    function () {
-      $(".default-menu").stop().slideToggle()
-    }
-  );
-
-  // Check if the "active" class is present initially
-  if ($(".cat-menu-list").hasClass("active")) {
-    $(".default-menu").removeAttr("style"); // Remove the style attribute
+jQuery(document).ready(function () {
+  jQuery(".default-menu").hide();
+  jQuery(".cat-menu-list").hover(function () {
+    jQuery(".default-menu").stop().slideToggle();
+  });
+  if (jQuery(".cat-menu-list").hasClass("active")) {
+    jQuery(".default-menu").removeAttr("style"); // Remove the style attribute
   }
 });
 
 //
-$(function () {
-  $(".minus, .plus").click(function () {
-    var $input = $(this).parent().find("input");
-    $input
-      .val(
-        Math.max(
-          1,
-          parseInt($input.val()) + ($(this).hasClass("minus") ? -1 : 1)
+jQuery(function () {
+  jQuery(".minus, .plus").click(function () {
+    var $input = jQuery(this).parent().find("input");
+    var currentValue = parseInt($input.val());
+
+    // Check if the current value is a valid non-negative integer
+    if (!isNaN(currentValue) && currentValue >= 0) {
+      // Increment or decrement only if the input value is a valid number
+      $input
+        .val(
+          currentValue +
+            (jQuery(this).hasClass("minus") && currentValue > 0 ? -1 : 1)
         )
-      )
-      .change();
+        .change();
+    } else {
+      // If the input is not a valid number, set the value to 0
+      $input.val(0).change();
+    }
+
     return false;
+    
   });
+// Add an input event listener to validate the input on each change
+  jQuery(".add-cart input").on("input", function () {
+    var sanitizedValue = jQuery(this)
+      .val()
+      .replace(/[^0-9]/g, ""); // Remove non-numeric characters
+    jQuery(this).val(sanitizedValue);
+  });
+  
 });
 
 // dropdown
-$(document).ready(function () {
-  $(".has-dropdown").each(function () {
-    $(this).on("click", function (e) {
+jQuery(document).ready(function () {
+  jQuery(".has-dropdown").each(function () {
+    jQuery(this).on("click", function (e) {
       e.stopPropagation();
-      $(this).find(".dropdown-panel").toggleClass("hidden");
-      $(".has-dropdown").not(this).find(".dropdown-panel").addClass("hidden");
+      jQuery(this).find(".dropdown-panel").toggleClass("hidden");
+      jQuery(".has-dropdown").not(this).find(".dropdown-panel").addClass("hidden");
     });
   });
-  $(document).on("click", function (e) {
-    if (!$(e.target).closest(".has-dropdown").length) {
-      $(".dropdown-panel").addClass("hidden");
+  jQuery(document).on("click", function (e) {
+    if (!jQuery(e.target).closest(".has-dropdown").length) {
+      jQuery(".dropdown-panel").addClass("hidden");
     }
   });
 });
 
 // cart
 var cartOpen = false;
-$("body").on("click", ".js-toggle-cart", toggleCart);
+jQuery("body").on("click", ".js-toggle-cart", toggleCart);
 
 function toggleCart(e) {
   e.preventDefault();
@@ -91,17 +97,17 @@ function toggleCart(e) {
 
 function openCart() {
   cartOpen = true;
-  $("body").addClass("open");
+  jQuery("body").addClass("open");
 }
 
 function closeCart() {
   cartOpen = false;
-  $("body").removeClass("open");
+  jQuery("body").removeClass("open");
 }
 
 // menu
 var menuOpen = false;
-$("body").on("click", ".js-toggle-menu", toggleMenu);
+jQuery("body").on("click", ".js-toggle-menu", toggleMenu);
 
 function toggleMenu(e) {
   e.preventDefault();
@@ -114,62 +120,61 @@ function toggleMenu(e) {
 
 function openMenu() {
   menuOpen = true;
-  $("body").addClass("menuopen");
+  jQuery("body").addClass("menuopen");
 }
 
 function closeMenu() {
   menuOpen = false;
-  $("body").removeClass("menuopen");
+  jQuery("body").removeClass("menuopen");
 }
 
 // nav
 // $('.nav').before('<a class="nav__link sub__close" href="#"><i class="fas fa-chevron-left"></i> Back</a>');
-$(document).on("click", ".sub__close", function (e) {
+jQuery(document).on("click", ".sub__close", function (e) {
   e.preventDefault();
-  var activeItems = $(".nav__sub.is-active");
+  var activeItems = jQuery(".nav__sub.is-active");
   if (activeItems.length > 0) {
     activeItems.last().removeClass("is-active");
   }
 });
-$(document).on("click", ".nav__link", function (e) {
+jQuery(document).on("click", ".nav__link", function (e) {
   e.preventDefault();
-  $(this).siblings(".nav__sub").addClass("is-active");
+  jQuery(this).siblings(".nav__sub").addClass("is-active");
 });
 
 //megaMenu
-$(document).ready(function () {
-  $("#megaMenu > li").on("mouseenter", function () {
-    $(this).find(".hs-mega-menu").stop(true, true).fadeIn(300);
+jQuery(document).ready(function () {
+  jQuery("#megaMenu > li").on("mouseenter", function () {
+    jQuery(this).find(".hs-mega-menu").stop(true, true).fadeIn(300);
   });
-  $("#megaMenu > li").on("mouseleave", function () {
-    $(this).find(".hs-mega-menu").stop(true, true).fadeOut(300);
+  jQuery("#megaMenu > li").on("mouseleave", function () {
+    jQuery(this).find(".hs-mega-menu").stop(true, true).fadeOut(300);
   });
   // Initially hide the mega menu items on page load
-  $(".hs-mega-menu").hide();
+  jQuery(".hs-mega-menu").hide();
 });
 
 //tab
-$(".tab").on("click", function (evt) {
+jQuery(".tab").on("click", function (evt) {
   evt.preventDefault();
-  $(".tab").removeClass("active");
-  $(this).addClass("active");
+  jQuery(".tab").removeClass("active");
+  jQuery(this).addClass("active");
   var sel = this.getAttribute("data-toggle-target");
-  $(".tab-content").removeClass("active");
-  $(sel).addClass("active");
+  jQuery(".tab-content").removeClass("active");
+  jQuery(sel).addClass("active");
 });
 
-
 // slide
-$(document).ready(function () {
+jQuery(document).ready(function () {
   var currentIndex = 0;
-  var slides = $(".slide");
+  var slides = jQuery(".slide");
   var totalSlides = slides.length;
   for (var i = 0; i < totalSlides; i++) {
-    $(".pagination").append('<span class="dot"></span>');
+    jQuery(".pagination").append('<span class="dot"></span>');
   }
   updatePagination();
 
-  $(".next").click(function () {
+  jQuery(".next").click(function () {
     if (currentIndex < totalSlides - 1) {
       currentIndex++;
     } else {
@@ -179,7 +184,7 @@ $(document).ready(function () {
     updatePagination();
   });
 
-  $(".prev").click(function () {
+  jQuery(".prev").click(function () {
     if (currentIndex > 0) {
       currentIndex--;
     } else {
@@ -189,20 +194,20 @@ $(document).ready(function () {
     updatePagination();
   });
 
-  $(".dot").click(function () {
-    currentIndex = $(this).index();
+  jQuery(".dot").click(function () {
+    currentIndex = jQuery(this).index();
     updateSlider();
     updatePagination();
   });
 
   function updateSlider() {
     var translateValue = -currentIndex * 100 + "%";
-    $(".slider").css("transform", "translateX(" + translateValue + ")");
+    jQuery(".slider").css("transform", "translateX(" + translateValue + ")");
   }
 
   function updatePagination() {
-    $(".dot").removeClass("active");
-    $(".dot").eq(currentIndex).addClass("active");
+    jQuery(".dot").removeClass("active");
+    jQuery(".dot").eq(currentIndex).addClass("active");
   }
 });
 
@@ -211,44 +216,83 @@ new SlimSelect({
   select: "#selectElement",
   settings: {
     showSearch: false,
-    placeholderText: 'Custom Placeholder Text',
-  }
+    placeholderText: "Custom Placeholder Text",
+    allowDeselect: true,
+  },
 });
 
 new SlimSelect({
-  select: '#multiple',
+  select: "#multiple",
   settings: {
     showSearch: false,
-    placeholderText: 'Custom Placeholder Text',
-  }
-})
+    placeholderText: "Custom Placeholder Text",
+     allowDeselect: true,
+  },
+});
 
 new SlimSelect({
-  select: '#multiple2',
+  select: "#multiple2",
   settings: {
     showSearch: false,
-    placeholderText: 'Custom Placeholder Text',
-  }
-})
-
-  
-var slim = new SlimSelect({
-  select: '#multiple3',
-  settings: {
-    showSearch: false,
-    placeholderText: 'Custom Placeholder Text',
+    placeholderText: "Custom Placeholder Text",
+     allowDeselect: true,
   },
-})
+});
 
 var slim = new SlimSelect({
-  select: '#multiple4',
+  select: "#multiple3",
   settings: {
     showSearch: false,
-    placeholderText: 'Custom Placeholder Text',
+    placeholderText: "Custom Placeholder Text",
+     allowDeselect: true,
   },
-})
+});
+
+var slim = new SlimSelect({
+  select: "#multiple4",
+  settings: {
+    showSearch: false,
+    placeholderText: "Custom Placeholder Text",
+     allowDeselect: true,
+  },
+});
 
 
+var slim = new SlimSelect({
+  select: "#multiple5",
+  settings: {
+    showSearch: false,
+    placeholderText: "Custom Placeholder Text",
+     allowDeselect: true,
+  },
+});
+
+var slim = new SlimSelect({
+  select: "#multiple6",
+  settings: {
+    showSearch: false,
+    placeholderText: "Custom Placeholder Text",
+     allowDeselect: true,
+  },
+});
+
+var slim = new SlimSelect({
+  select: "#multiple7",
+  settings: {
+    showSearch: false,
+    placeholderText: "Custom Placeholder Text",
+     allowDeselect: true,
+  },
+});
+
+var slim = new SlimSelect({
+  select: "#multiple8",
+  settings: {
+    showSearch: false,
+    placeholderText: "Custom Placeholder Text",
+     allowDeselect: true,
+  },
+});
 
 function getValues(slide1, slide2) {
   if (slide1 > slide2) {
@@ -285,34 +329,32 @@ window.onload = function () {
 
 //
 
-$(document).ready(function () {
+jQuery(document).ready(function () {
   // Toggle the range field visibility on click of the range label
-  $(".range-lable").click(function () {
-    $(".range-field").toggle();
+  jQuery(".range-lable").click(function () {
+    jQuery(".range-field").toggle();
   });
 });
 
-
 //
-$(document).ready(function() {
-    // Accordion functionality
-    $('.flex-col li').click(function() {
-      // Close all other accordion items
-      $('.flex-col li').not(this).removeClass('active');
-      $('.flex-col li').not(this).find('div').slideUp();
+jQuery(document).ready(function () {
+  // Accordion functionality
+  jQuery(".flex-col li").click(function () {
+    // Close all other accordion items
+    jQuery(".flex-col li").not(this).removeClass("active");
+    jQuery(".flex-col li").not(this).find("div").slideUp();
 
-      // Toggle current accordion item
-      $(this).toggleClass('active');
-      $(this).find('div').slideToggle();
-    });
+    // Toggle current accordion item
+    jQuery(this).toggleClass("active");
+    jQuery(this).find("div").slideToggle();
+  });
 });
-  
 
 //
 
-$(".toggle-password").click(function() {
-  $(this).toggleClass("eyes-slash");
-  var input = $($(this).attr("toggle"));
+jQuery(".toggle-password").click(function () {
+  jQuery(this).toggleClass("eyes-slash");
+  var input = jQuery(jQuery(this).attr("toggle"));
   if (input.attr("type") == "password") {
     input.attr("type", "text");
   } else {
@@ -320,31 +362,39 @@ $(".toggle-password").click(function() {
   }
 });
 
-
 ///
-$(document).ready(function(){
-     function AddReadMore() {
-      var carLmt = 160;
-      var readMoreTxt = " ...read more";
-      var readLessTxt = " read less";
-      $(".add-read-more .term-description").each(function () {
-         if ($(this).find(".first-section .term-description").length)
-            return;
-         var allstr = $(this).text();
-         if (allstr.length > carLmt) {
-            var firstSet = allstr.substring(0, carLmt);
-            var secdHalf = allstr.substring(carLmt, allstr.length);
-            var strtoadd = firstSet + "<span class='second-section'>" + secdHalf + "</span><span class='read-more'  title='Click to Show More'>" + readMoreTxt + "</span><span class='read-less' title='Click to Show Less'>" + readLessTxt + "</span>";
-            $(this).html(strtoadd);
-         }
-      });
-      $(document).on("click", ".read-more,.read-less", function () {
-         $(this).closest(".add-read-more").toggleClass("show-less-content show-more-content");
-      });
-   }
+jQuery(document).ready(function () {
+  function AddReadMore() {
+    var carLmt = 160;
+    var readMoreTxt = " ...read more";
+    var readLessTxt = " read less";
+    jQuery(".add-read-more .term-description").each(function () {
+      if ($(this).find(".first-section .term-description").length) return;
+      var allstr = $(this).text();
+      if (allstr.length > carLmt) {
+        var firstSet = allstr.substring(0, carLmt);
+        var secdHalf = allstr.substring(carLmt, allstr.length);
+        var strtoadd =
+          firstSet +
+          "<span class='second-section'>" +
+          secdHalf +
+          "</span><span class='read-more'  title='Click to Show More'>" +
+          readMoreTxt +
+          "</span><span class='read-less' title='Click to Show Less'>" +
+          readLessTxt +
+          "</span>";
+        jQuery(this).html(strtoadd);
+      }
+    });
+    jQuery(document).on("click", ".read-more,.read-less", function () {
+      jQuery(this)
+        .closest(".add-read-more")
+        .toggleClass("show-less-content show-more-content");
+    });
+  }
 
-   AddReadMore();
+  AddReadMore();
 });
 
-
+//
 

@@ -4,10 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "serve": "concurrently \"postcss public/src/css/tailwind.css -o  public/src/dist/main.min.css --minify\"  \"live-server ./public/src\"",
+  "serve": "concurrently \"postcss src/css/tailwind.css -o src/dist/main.min.css --minify\"  \"live-server ./src\"",
     "build": "postcss src/css/tailwind.css -o src/dist/main.min.css --minify",
-    "start": "sergey",
-    "dev": "sergey --watch"
+    "start": "npm run serve"
   },
   "keywords": [],
   "author": "",

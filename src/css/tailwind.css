@@ -502,6 +502,30 @@
     transform: translateX(20px) translateZ(0);
   }
 
+  .big-img{
+    position: relative;
+    width: 850px;
+    height: 650px;
+    border: 1px solid #ddd;
+    cursor: zoom-in;
+    overflow: hidden;
+  }
+
+  .big-img img.zoom{
+    position: absolute;
+    transition: width 0.2s ease-out, opacity 0.2s ease-out 0.2s; 
+  }
+
+  .display-img{
+    width: 100%;
+  }
+input:enabled:read-write:-webkit-any(:focus, :hover)::-webkit-inner-spin-button {
+   display: none
+}
+::-webkit-inner-spin-button, ::-webkit-outer-spin-button {
+    height: auto;
+    display: none
+}
 }
 
 @layer components {
