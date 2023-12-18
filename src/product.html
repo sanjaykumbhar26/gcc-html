@@ -34,7 +34,6 @@
   <noscript>
     <link rel="stylesheet" href="dist/main.min.css">
   </noscript>
-  <link href="css/slimselect.css" rel="stylesheet">
   <link href="css/splide.min.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" rel="stylesheet">
   <script>
@@ -1131,7 +1130,8 @@
                   <li class="splide__slide big-img">
                     <a data-fancybox="gallery" data-src="https://placehold.co/800x650/a79a66/fff.png"
                       data-caption="Castle on a Hill 1">
-                      <img alt="img2" width="850" height="650" src="https://placehold.co/800x650/a79a66/fff.png" />
+                      <img alt="img2" width="850" height="650"
+                        src="https://grosi.themejr.net/wp-content/uploads/2023/06/prod02.webp" />
                     </a>
                   </li>
                   <li class="splide__slide big-img">
@@ -2107,40 +2107,10 @@
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
-  <script src="./js/slimselect.min.js"></script>
   <script src="./js/splide.min.js"></script>
-  <script src="./js/custom.js"></script>
+  <script src="./js/single-product.js"></script>
   <script>
-    $(document).ready(function () {
-      var secondarySlider = new Splide('#secondary-slider', {
-        rewind: true,
-        fixedWidth: 150,
-        fixedHeight: 80,
-        isNavigation: true,
-        gap: 10,
-        focus: 'left',
-        pagination: false,
-        cover: true,
-        arrows: false,
-        breakpoints: {
-          '600': {
-            fixedWidth: 150,
-            fixedHeight: 50,
-          }
-        }
-      }).mount();
 
-      var primarySlider = new Splide('#primary-slider', {
-        rewind: true,
-        isNavigation: true,
-        type: 'fade',
-        pagination: false,
-        arrows: true,
-        cover: true,
-      });
-
-      primarySlider.sync(secondarySlider).mount();
-    });
     //
   </script>
 </body>
