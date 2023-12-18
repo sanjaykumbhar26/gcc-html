@@ -179,31 +179,15 @@ jQuery(document).ready(function () {
   }
 });
 
-//
+// Accordion
 jQuery(document).ready(function () {
-  // Accordion functionality
   jQuery(".flex-col li").click(function () {
-    // Close all other accordion items
     jQuery(".flex-col li").not(this).removeClass("active");
     jQuery(".flex-col li").not(this).find("div").slideUp();
-
-    // Toggle current accordion item
     jQuery(this).toggleClass("active");
     jQuery(this).find("div").slideToggle();
   });
 });
 
-//
 
-jQuery(".toggle-password").click(function () {
-  jQuery(this).toggleClass("eyes-slash");
-  var input = jQuery(jQuery(this).attr("toggle"));
-  if (input.attr("type") == "password") {
-    input.attr("type", "text");
-  } else {
-    input.attr("type", "password");
-  }
-});
-
-//
 
