@@ -33,15 +33,12 @@ jQuery(document).ready(function () {
   }
 });
 
-//
+// Minus Plus
 jQuery(function () {
   jQuery(".minus, .plus").click(function () {
     var $input = jQuery(this).parent().find("input");
     var currentValue = parseInt($input.val());
-
-    // Check if the current value is a valid non-negative integer
     if (!isNaN(currentValue) && currentValue >= 0) {
-      // Increment or decrement only if the input value is a valid number
       $input
         .val(
           currentValue +
@@ -49,24 +46,22 @@ jQuery(function () {
         )
         .change();
     } else {
-      // If the input is not a valid number, set the value to 0
       $input.val(0).change();
     }
 
     return false;
     
   });
-// Add an input event listener to validate the input on each change
   jQuery(".add-cart input").on("input", function () {
     var sanitizedValue = jQuery(this)
       .val()
-      .replace(/[^0-9]/g, ""); // Remove non-numeric characters
+      .replace(/[^0-9]/g, ""); 
     jQuery(this).val(sanitizedValue);
   });
   
 });
 
-// dropdown
+// Dropdown
 jQuery(document).ready(function () {
   jQuery(".has-dropdown").each(function () {
     jQuery(this).on("click", function (e) {
@@ -82,7 +77,7 @@ jQuery(document).ready(function () {
   });
 });
 
-// cart
+// Cart
 var cartOpen = false;
 jQuery("body").on("click", ".js-toggle-cart", toggleCart);
 
@@ -105,7 +100,7 @@ function closeCart() {
   jQuery("body").removeClass("open");
 }
 
-// menu
+// Menu
 var menuOpen = false;
 jQuery("body").on("click", ".js-toggle-menu", toggleMenu);
 
@@ -150,7 +145,6 @@ jQuery(document).ready(function () {
   jQuery("#megaMenu > li").on("mouseleave", function () {
     jQuery(this).find(".hs-mega-menu").stop(true, true).fadeOut(300);
   });
-  // Initially hide the mega menu items on page load
   jQuery(".hs-mega-menu").hide();
 });
 
@@ -211,7 +205,7 @@ jQuery(document).ready(function () {
   }
 });
 
-//
+// SlimSelect
 new SlimSelect({
   select: "#selectElement",
   settings: {
@@ -336,21 +330,17 @@ jQuery(document).ready(function () {
   });
 });
 
-//
+// Accordion
 jQuery(document).ready(function () {
-  // Accordion functionality
   jQuery(".flex-col li").click(function () {
-    // Close all other accordion items
     jQuery(".flex-col li").not(this).removeClass("active");
     jQuery(".flex-col li").not(this).find("div").slideUp();
-
-    // Toggle current accordion item
     jQuery(this).toggleClass("active");
     jQuery(this).find("div").slideToggle();
   });
 });
 
-//
+// Toggle Password
 
 jQuery(".toggle-password").click(function () {
   jQuery(this).toggleClass("eyes-slash");
@@ -362,7 +352,7 @@ jQuery(".toggle-password").click(function () {
   }
 });
 
-///
+// Read More
 jQuery(document).ready(function () {
   function AddReadMore() {
     var carLmt = 160;
@@ -395,6 +385,4 @@ jQuery(document).ready(function () {
 
   AddReadMore();
 });
-
-//
 
