@@ -33,38 +33,6 @@ jQuery(document).ready(function () {
   }
 });
 
-//
-jQuery(function () {
-  jQuery(".minus, .plus").click(function () {
-    var $input = jQuery(this).parent().find("input");
-    var currentValue = parseInt($input.val());
-
-    // Check if the current value is a valid non-negative integer
-    if (!isNaN(currentValue) && currentValue >= 0) {
-      // Increment or decrement only if the input value is a valid number
-      $input
-        .val(
-          currentValue +
-            (jQuery(this).hasClass("minus") && currentValue > 0 ? -1 : 1)
-        )
-        .change();
-    } else {
-      // If the input is not a valid number, set the value to 0
-      $input.val(0).change();
-    }
-
-    return false;
-    
-  });
-// Add an input event listener to validate the input on each change
-  jQuery(".add-cart input").on("input", function () {
-    var sanitizedValue = jQuery(this)
-      .val()
-      .replace(/[^0-9]/g, ""); // Remove non-numeric characters
-    jQuery(this).val(sanitizedValue);
-  });
-  
-});
 
 // dropdown
 jQuery(document).ready(function () {
@@ -154,64 +122,7 @@ jQuery(document).ready(function () {
   jQuery(".hs-mega-menu").hide();
 });
 
-//tab
-jQuery(".tab").on("click", function (evt) {
-  evt.preventDefault();
-  jQuery(".tab").removeClass("active");
-  jQuery(this).addClass("active");
-  var sel = this.getAttribute("data-toggle-target");
-  jQuery(".tab-content").removeClass("active");
-  jQuery(sel).addClass("active");
-});
-
-// slide
-jQuery(document).ready(function () {
-  var currentIndex = 0;
-  var slides = jQuery(".slide");
-  var totalSlides = slides.length;
-  for (var i = 0; i < totalSlides; i++) {
-    jQuery(".pagination").append('<span class="dot"></span>');
-  }
-  updatePagination();
-
-  jQuery(".next").click(function () {
-    if (currentIndex < totalSlides - 1) {
-      currentIndex++;
-    } else {
-      currentIndex = 0;
-    }
-    updateSlider();
-    updatePagination();
-  });
-
-  jQuery(".prev").click(function () {
-    if (currentIndex > 0) {
-      currentIndex--;
-    } else {
-      currentIndex = totalSlides - 1;
-    }
-    updateSlider();
-    updatePagination();
-  });
-
-  jQuery(".dot").click(function () {
-    currentIndex = jQuery(this).index();
-    updateSlider();
-    updatePagination();
-  });
-
-  function updateSlider() {
-    var translateValue = -currentIndex * 100 + "%";
-    jQuery(".slider").css("transform", "translateX(" + translateValue + ")");
-  }
-
-  function updatePagination() {
-    jQuery(".dot").removeClass("active");
-    jQuery(".dot").eq(currentIndex).addClass("active");
-  }
-});
-
-//
+// SlimSelect
 new SlimSelect({
   select: "#selectElement",
   settings: {
@@ -327,42 +238,15 @@ window.onload = function () {
   }
 };
 
-//
+// Range Dropdown
 
 jQuery(document).ready(function () {
-  // Toggle the range field visibility on click of the range label
   jQuery(".range-lable").click(function () {
     jQuery(".range-field").toggle();
   });
 });
 
-//
-jQuery(document).ready(function () {
-  // Accordion functionality
-  jQuery(".flex-col li").click(function () {
-    // Close all other accordion items
-    jQuery(".flex-col li").not(this).removeClass("active");
-    jQuery(".flex-col li").not(this).find("div").slideUp();
-
-    // Toggle current accordion item
-    jQuery(this).toggleClass("active");
-    jQuery(this).find("div").slideToggle();
-  });
-});
-
-//
-
-jQuery(".toggle-password").click(function () {
-  jQuery(this).toggleClass("eyes-slash");
-  var input = jQuery(jQuery(this).attr("toggle"));
-  if (input.attr("type") == "password") {
-    input.attr("type", "text");
-  } else {
-    input.attr("type", "password");
-  }
-});
-
-///
+//  Read More
 jQuery(document).ready(function () {
   function AddReadMore() {
     var carLmt = 160;
@@ -396,35 +280,3 @@ jQuery(document).ready(function () {
   AddReadMore();
 });
 
-//
-
-$(document).ready(function () {
-      var secondarySlider = new Splide('#secondary-slider', {
-        rewind: true,
-        fixedWidth: 150,
-        fixedHeight: 80,
-        isNavigation: true,
-        gap: 10,
-        focus: 'left',
-        pagination: false,
-        cover: true,
-        arrows: false,
-        breakpoints: {
-          '600': {
-            fixedWidth: 150,
-            fixedHeight: 50,
-          }
-        }
-      }).mount();
-
-      var primarySlider = new Splide('#primary-slider', {
-        rewind: true,
-        isNavigation: true,
-        type: 'fade',
-        pagination: false,
-        arrows: true,
-        cover: true,
-      });
-
-      primarySlider.sync(secondarySlider).mount();
-    });
