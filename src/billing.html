@@ -1151,7 +1151,6 @@
     <div class="container">
       <h1 class="text-f26 font-bold mb-8">My Account </h1>
       <div class="flex flex-col md:flex-row gap-10">
-
         <!-- aside -->
         <aside class="md:w-1/4 w-full">
           <h2 class="font-bold text-f16 uppercase border-b-2 border-solid border-greyBlack pb-2 mb-2"> Main account
@@ -1168,11 +1167,11 @@
               <li class="hover:bg-greyBlack">
                 <a class=" px-3 text-f14 flex min-h-[40px] w-full items-center font-bold" href="orders.html">Orders</a>
               </li>
-              <li class=" hover:bg-greyBlack">
+              <li class=" hover:bg-greyBlack bg-greyBlack">
                 <a class=" px-3 text-f14 flex min-h-[40px] w-full items-center font-bold"
                   href="addresses.html">Addresses</a>
               </li>
-              <li class=" hover:bg-greyBlack bg-greyBlack">
+              <li class=" hover:bg-greyBlack">
                 <a class=" px-3 text-f14 flex min-h-[40px] w-full items-center font-bold"
                   href="payment-methods.html">Payment
                   methods</a>
@@ -1198,13 +1197,10 @@
           </nav>
         </aside>
 
-
         <div class="md:w-[1px] w-full bg-greyBlack"></div>
 
         <!-- Account details -->
         <div class="md:w-3/4 w-full">
-
-
           <div class="flex items-center p-4 mb-4 text-sm text-white bg-lightTaupe " role="alert">
             <svg class="flex-shrink-0 inline w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="#fff"
               viewBox="0 0 20 20">
@@ -1218,27 +1214,96 @@
             </div>
           </div>
 
-          <div>
-            <article>
-              <div class="flex items-center p-4 mb-4 text-sm text-white bg-lightTaupe " role="alert">
-                <svg class="flex-shrink-0 inline w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-                  fill="#fff" viewBox="0 0 20 20">
-                  <path
-                    d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5ZM9.5 4a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM12 15H8a1 1 0 0 1 0-2h1v-3H8a1 1 0 0 1 0-2h2a1 1 0 0 1 1 1v4h1a1 1 0 0 1 0 2Z"
-                    fill="#fff" />
-                </svg>
-                <div class="ml-2 text-f16">
-                  No saved payment methods found.
-                </div>
+          <h1 class=" text-f22 mt-2 font-bold">Billing address</h1>
+
+          <div class="mt-5">
+            <div class="mx-auto grid grid-cols-1 md:grid-cols-2 gap-5 mb-5">
+              <div>
+                <label class="field-label" for="fname">First name <span class="text-red-600 ml-1">*</span></label>
+                <input class="input-field" type="text" name="fname">
               </div>
-              <a class="flex font-bold items-center p-4 px-8 mb-4 text-sm text-white hover:bg-[#bc9600] bg-lightTaupe max-w-fit"
-                href="add-payment-methods.html">ADD PAYMENT
-                METHOD</a>
-            </article>
+              <div>
+                <label class="field-label" for="Lname">Last name <span class="text-red-600 ml-1">*</span></label>
+                <input class="input-field" type="text" name="Lname">
+              </div>
+            </div>
+          </div>
+
+          <div class="mx-auto grid grid-cols-1 gap-5 mb-5">
+            <div>
+              <label class="field-label" for="fname">Company name (optional)<span
+                  class="text-red-600 ml-1">*</span></label>
+              <input class="input-field" type="text" name="fname">
+            </div>
+          </div>
+
+          <div class="mx-auto grid grid-cols-1 gap-5 mb-5">
+            <div>
+              <label class="field-label" for="fname">Country / Region</label>
+              <span class="text-f18 font-bold text-gray">Germany </span>
+            </div>
+          </div>
+
+          <div class="mx-auto grid grid-cols-1 gap-5 mb-5">
+            <div>
+              <label class="field-label" for="fname">Street and house number<span
+                  class="text-red-600 ml-1">*</span></label>
+              <input class="input-field mb-4" placeholder="Street and house number" type="text" name="fname">
+              <input class="input-field" placeholder="Adresszusatz (optional)" type="text" name="fname">
+            </div>
+          </div>
+
+
+          <div class="mx-auto grid grid-cols-1 gap-5 mb-5">
+            <div>
+              <label class="field-label" for="fname">Postal code<span class="text-red-600 ml-1">*</span></label>
+              <input class="input-field" type="text" name="fname">
+            </div>
+          </div>
+
+
+          <div class="mx-auto grid grid-cols-1 gap-5 mb-5">
+            <div>
+              <label class="field-label" for="fname">Location / City <span class="text-red-600 ml-1">*</span></label>
+              <input class="input-field" type="text" name="fname">
+            </div>
+          </div>
+
+          <div class="mx-auto grid grid-cols-1 gap-5 mb-5">
+            <div class="slect-filed">
+              <label class="field-label" for="fname">State / District(optional)</label>
+              <select id="selectElement2">
+                <option data-placeholder="true"></option>
+                <option>Option 1</option>
+                <option>Option 2</option>
+                <option>Option 3</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="mx-auto grid grid-cols-1 gap-5 mb-5">
+            <div>
+              <label class="field-label" for="fname">Mobile phone number<span class="text-red-600 ml-1">*</span></label>
+              <input class="input-field" type="text" name="fname">
+            </div>
+          </div>
+
+          <div class="mx-auto grid grid-cols-1 gap-5 mb-5">
+            <div>
+              <label class="field-label" for="fname">Email address
+                <span class="text-red-600 ml-1">*</span></label>
+              <input class="input-field" type="text" value="sanjay@gmail.com" name="fname">
+            </div>
+          </div>
+
+          <div class="mt-8 flex">
+            <button type="button"
+              class="text-white hover:text-white bg-lightTaupe focus:outline-none  px-5 py-2.5 text-f14 font-bold">
+              SAVE ADDRESS
+            </button>
           </div>
 
         </div>
-
 
       </div>
     </div>

@@ -502,7 +502,7 @@
     transform: translateX(20px) translateZ(0);
   }
 
-  .big-img{
+  .big-img {
     position: relative;
     width: 850px;
     height: 650px;
@@ -511,21 +511,65 @@
     overflow: hidden;
   }
 
-  .big-img img.zoom{
+  .big-img img.zoom {
     position: absolute;
-    transition: width 0.2s ease-out, opacity 0.2s ease-out 0.2s; 
+    transition: width 0.2s ease-out, opacity 0.2s ease-out 0.2s;
   }
 
-  .display-img{
+  .display-img {
     width: 100%;
   }
-input:enabled:read-write:-webkit-any(:focus, :hover)::-webkit-inner-spin-button {
-   display: none
-}
-::-webkit-inner-spin-button, ::-webkit-outer-spin-button {
+
+  input:enabled:read-write:-webkit-any(:focus, :hover)::-webkit-inner-spin-button {
+    display: none
+  }
+
+  ::-webkit-inner-spin-button,
+  ::-webkit-outer-spin-button {
     height: auto;
     display: none
-}
+  }
+
+  /* .dropdown:hover .dropdown-menu {
+    display: block;
+  } */
+
+  .dropdown:hover .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+
+  .dropdown-menu {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s, visibility 0.3s, transform 0.3s;
+    transform: translateY(-10px);
+  }
+
+  .slect-filed .ss-main {
+    border: 2px solid #a79a66;
+    padding-left: 10px;
+  }
+  input[type="radio"]+label span:hover,
+  input[type="radio"]+label:hover span {
+    transform: scale(1.2);
+  }
+
+  input[type="radio"]:checked+label span {
+    background-color: #a79a66;
+    box-shadow: 0px 0px 0px 2px #000 inset;
+    margin-right: 10px;
+     color: #a79a66;
+  }
+
+  input[type="radio"]:checked+label {
+    color: #ffffff;
+    font-weight: 600
+  }
+
+
+
 }
 
 @layer components {

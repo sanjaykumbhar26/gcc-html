@@ -42,7 +42,7 @@ jQuery(function () {
       $input
         .val(
           currentValue +
-            (jQuery(this).hasClass("minus") && currentValue > 0 ? -1 : 1)
+          (jQuery(this).hasClass("minus") && currentValue > 0 ? -1 : 1)
         )
         .change();
     } else {
@@ -50,15 +50,15 @@ jQuery(function () {
     }
 
     return false;
-    
+
   });
   jQuery(".add-cart input").on("input", function () {
     var sanitizedValue = jQuery(this)
       .val()
-      .replace(/[^0-9]/g, ""); 
+      .replace(/[^0-9]/g, "");
     jQuery(this).val(sanitizedValue);
   });
-  
+
 });
 
 // Dropdown
@@ -206,6 +206,16 @@ jQuery(document).ready(function () {
 });
 
 // SlimSelect
+
+new SlimSelect({
+  select: "#selectElement2",
+  settings: {
+    showSearch: true,
+    placeholderText: "Custom Placeholder Text",
+    allowDeselect: true,
+  },
+});
+
 new SlimSelect({
   select: "#selectElement",
   settings: {
@@ -220,7 +230,7 @@ new SlimSelect({
   settings: {
     showSearch: false,
     placeholderText: "Custom Placeholder Text",
-     allowDeselect: true,
+    allowDeselect: true,
   },
 });
 
@@ -229,7 +239,7 @@ new SlimSelect({
   settings: {
     showSearch: false,
     placeholderText: "Custom Placeholder Text",
-     allowDeselect: true,
+    allowDeselect: true,
   },
 });
 
@@ -238,7 +248,7 @@ var slim = new SlimSelect({
   settings: {
     showSearch: false,
     placeholderText: "Custom Placeholder Text",
-     allowDeselect: true,
+    allowDeselect: true,
   },
 });
 
@@ -247,7 +257,7 @@ var slim = new SlimSelect({
   settings: {
     showSearch: false,
     placeholderText: "Custom Placeholder Text",
-     allowDeselect: true,
+    allowDeselect: true,
   },
 });
 
@@ -257,7 +267,7 @@ var slim = new SlimSelect({
   settings: {
     showSearch: false,
     placeholderText: "Custom Placeholder Text",
-     allowDeselect: true,
+    allowDeselect: true,
   },
 });
 
@@ -266,7 +276,7 @@ var slim = new SlimSelect({
   settings: {
     showSearch: false,
     placeholderText: "Custom Placeholder Text",
-     allowDeselect: true,
+    allowDeselect: true,
   },
 });
 
@@ -275,7 +285,7 @@ var slim = new SlimSelect({
   settings: {
     showSearch: false,
     placeholderText: "Custom Placeholder Text",
-     allowDeselect: true,
+    allowDeselect: true,
   },
 });
 
@@ -284,7 +294,7 @@ var slim = new SlimSelect({
   settings: {
     showSearch: false,
     placeholderText: "Custom Placeholder Text",
-     allowDeselect: true,
+    allowDeselect: true,
   },
 });
 

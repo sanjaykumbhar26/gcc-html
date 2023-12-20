@@ -1147,6 +1147,7 @@
   </header>
 
   <!-- ========== My Acccount ========== -->
+
   <section class="my-12">
     <div class="container">
       <h1 class="text-f26 font-bold mb-8">My Account </h1>
@@ -1165,14 +1166,14 @@
                 <a class=" px-3 text-f14 flex min-h-[40px] w-full items-center font-bold"
                   href="memberships.html">Memberships</a>
               </li>
-              <li class="hover:bg-greyBlack">
+              <li class="hover:bg-greyBlack bg-greyBlack">
                 <a class=" px-3 text-f14 flex min-h-[40px] w-full items-center font-bold" href="orders.html">Orders</a>
               </li>
               <li class=" hover:bg-greyBlack">
                 <a class=" px-3 text-f14 flex min-h-[40px] w-full items-center font-bold"
                   href="addresses.html">Addresses</a>
               </li>
-              <li class=" hover:bg-greyBlack bg-greyBlack">
+              <li class=" hover:bg-greyBlack">
                 <a class=" px-3 text-f14 flex min-h-[40px] w-full items-center font-bold"
                   href="payment-methods.html">Payment
                   methods</a>
@@ -1198,55 +1199,149 @@
           </nav>
         </aside>
 
-
         <div class="md:w-[1px] w-full bg-greyBlack"></div>
 
         <!-- Account details -->
         <div class="md:w-3/4 w-full">
 
+          <div class="text-gray text-f16">
+            An order #<span class="bg-white py-1 px-2 text-black">44274</span> from the <span
+              class="bg-white py-1 px-2 text-black">May 10, 2021</span> is actual <span
+              class="bg-white py-1 px-2 text-black">Completed</span>
+          </div>
 
-          <div class="flex items-center p-4 mb-4 text-sm text-white bg-lightTaupe " role="alert">
-            <svg class="flex-shrink-0 inline w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="#fff"
-              viewBox="0 0 20 20">
-              <path
-                d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5ZM9.5 4a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM12 15H8a1 1 0 0 1 0-2h1v-3H8a1 1 0 0 1 0-2h2a1 1 0 0 1 1 1v4h1a1 1 0 0 1 0 2Z"
-                fill="#fff" />
-            </svg>
-            <div class="ml-2 text-f16">
-              Didn't receive an activation email?
-              <a class="underline" href="#">Send again.</a>
+          <!-- order Details -->
+          <div class="my-8">
+            <h2 class="text-f20 font-bold uppercase">order Details</h2>
+          </div>
+
+          <div class="mb-8">
+            <div class="flex justify-between border-b border-greyBlack ">
+              <div class="uppercase font-bold p-2">Product</div>
+              <div class="uppercase font-bold p-2">Total ( Including Tax )</div>
+            </div>
+            <!--  -->
+            <div class="flex items-center justify-between border-b border-greyBlack flex-wrap">
+              <div class="text-f16 text-gray p-2.5 flex flex-col">
+                <div>Filler, Angurs, Argentina - 1500g X 1 Weight 1500g</div>
+                <div><span class="text-white font-bold">Weight :</span> 1500g</div>
+              </div>
+              <div class="text-f16 text-lightTaupe p-2.5">
+                <span>109 $</span>
+              </div>
+            </div>
+            <!--  -->
+            <div class="flex items-center justify-between border-b border-greyBlack flex-wrap">
+              <div class="text-f16 text-gray p-2.5 flex flex-col">
+                <div>Filler, Angurs, Argentina - 1500g X 1 Weight 1500g</div>
+                <div><span class="text-white font-bold">Weight :</span> 1500g</div>
+              </div>
+              <div class="text-f16 text-lightTaupe p-2.5">
+                <span>109 $</span>
+              </div>
+            </div>
+            <!--  -->
+            <div class="flex items-center justify-between border-b border-greyBlack flex-wrap">
+              <div class="text-f16 text-gray p-2.5 flex flex-col">
+                <div><span class="text-white font-bold">Subtotal</span> </div>
+              </div>
+              <div class="text-f16 text-lightTaupe p-2.5">
+                <span>109 $</span>
+              </div>
+            </div>
+            <!--  -->
+            <div class="flex items-center justify-between border-b border-greyBlack flex-wrap">
+              <div class="text-f16 text-gray p-2.5 flex flex-col">
+                <div><span class="text-white font-bold">Delivery:</span> </div>
+              </div>
+              <div class="text-f16 text-gray p-2.5">
+                <span>Free delivery with DHL Express ( Tues-Fri )</span>
+              </div>
+            </div>
+            <!--  -->
+            <div class="flex items-center justify-between border-b border-greyBlack flex-wrap">
+              <div class="text-f16 text-gray p-2.5 flex flex-col">
+                <div><span class="text-white font-bold">Payment method</span> </div>
+              </div>
+              <div class="text-f16 text-gray p-2.5">
+                <span>Credit Card</span>
+              </div>
+            </div>
+
+            <!--  -->
+
+            <div class="flex items-center justify-between border-b border-greyBlack flex-wrap">
+              <div class="text-f16 text-gray p-2.5 flex flex-col">
+                <div><span class=" font-bold">Including 7% VAT.</span> </div>
+              </div>
+              <div class="text-f16 text-lightTaupe p-2.5">
+                <span>10 $</span>
+              </div>
+            </div>
+
+            <!--  -->
+            <div class="flex items-center justify-between border-b border-greyBlack flex-wrap">
+              <div class="text-f18 text-gray p-2.5 flex flex-col">
+                <div><span class="font-bold uppercase">IN Total</span> </div>
+              </div>
+              <div class="text-f18 font-bold text-lightTaupe p-2.5">
+                <span>109 $</span>
+              </div>
             </div>
           </div>
 
-          <div>
-            <article>
-              <div class="flex items-center p-4 mb-4 text-sm text-white bg-lightTaupe " role="alert">
-                <svg class="flex-shrink-0 inline w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-                  fill="#fff" viewBox="0 0 20 20">
-                  <path
-                    d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5ZM9.5 4a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM12 15H8a1 1 0 0 1 0-2h1v-3H8a1 1 0 0 1 0-2h2a1 1 0 0 1 1 1v4h1a1 1 0 0 1 0 2Z"
-                    fill="#fff" />
-                </svg>
-                <div class="ml-2 text-f16">
-                  No saved payment methods found.
-                </div>
-              </div>
-              <a class="flex font-bold items-center p-4 px-8 mb-4 text-sm text-white hover:bg-[#bc9600] bg-lightTaupe max-w-fit"
-                href="add-payment-methods.html">ADD PAYMENT
-                METHOD</a>
-            </article>
+          <div class="mt-8 flex">
+            <a href="#"
+              class="text-white hover:text-white bg-lightTaupe focus:outline-none focus:underline py-4 px-6 text-f14 uppercase leading-3">
+              Re order
+            </a>
           </div>
 
+          <!-- Delivery Details -->
+          <div class="mt-8 mb-4">
+            <h2 class="text-f20 font-bold ">Delivery Details</h2>
+          </div>
+          <ul class="text-gray ml-4">
+            <li class="list-disc">Delivery district: Carrier DHL Express ( Tues-Fri)</li>
+            <li class="list-disc"> Delivery date: 12.May 2021</li>
+          </ul>
+
+          <div class="mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-4 text-f14">
+            <div>
+              <div class="mt-8 mb-4">
+                <h2 class="text-f20 font-bold ">Billing Address</h2>
+              </div>
+              <div class="text-gray italic text-f16">
+                Hartmut Erichsen <br>
+                Obere Schlobleite <br>
+                15 <br>
+                96185 schonbrunnn i . Steigerwald <br>
+                01739861065 <br>
+                hartmut.erichsen@outlook.com
+              </div>
+            </div>
+            <div>
+              <div class="mt-8 mb-4 flex items-start text-left">
+                <h2 class="text-f20 font-bold ">Delivery Address</h2>
+              </div>
+              <div class="text-gray italic text-f16">
+                Hartmut Erichsen <br>
+                Obere Schlobleite <br>
+                15 <br>
+                96185 schonbrunnn i . Steigerwald <br>
+                01739861065 <br>
+              </div>
+            </div>
+          </div>
+
+
         </div>
-
-
       </div>
     </div>
   </section>
 
-
   <!-- ========== FOOTER ========== -->
-  <footer class="bg-smokBlack font-medium text-f14 md:text-f16">
+  <footer class=" bg-smokBlack font-medium text-f14 md:text-f16">
     <!-- Footer-bottom-widgets -->
     <div class="py-16">
       <div class="container">
@@ -1256,7 +1351,8 @@
               <img loading="lazy" width="190" height="145" src="./images/GCC_logo_gold.webp" title="logo" alt="gcc">
             </figure>
             <p class="mb-4">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+              labore et
               dolore magna aliqua.
             </p>
             <ul>
@@ -1394,7 +1490,8 @@
           <h3 class="text-f14 mb-1 leading-4 font-semibold">Sirloin Steak, Creekstone Farms USA</h3>
           <div class="flex flex-col">
             <span class="text-[#999999] font-bold text-xs">Content: 4000 g</span>
-            <span class="text-xs text-[#999999] font-medium">4 x <span class="text-yellow">99.00 €</span> (99.00 € / 1
+            <span class="text-xs text-[#999999] font-medium">4 x <span class="text-yellow">99.00 €</span>
+              (99.00 € / 1
               kg)</span>
           </div>
         </div>
@@ -1411,7 +1508,8 @@
           <h3 class="text-f14 mb-1 leading-4 font-semibold">Sirloin Steak, Creekstone Farms USA</h3>
           <div class="flex flex-col">
             <span class="text-[#999999] font-bold text-xs">Content: 4000 g</span>
-            <span class="text-xs text-[#999999] font-medium">4 x <span class="text-yellow">99.00 €</span> (99.00 € / 1
+            <span class="text-xs text-[#999999] font-medium">4 x <span class="text-yellow">99.00 €</span>
+              (99.00 € / 1
               kg)</span>
           </div>
         </div>
@@ -1428,7 +1526,8 @@
           <h3 class="text-f14 mb-1 leading-4 font-semibold">Sirloin Steak, Creekstone Farms USA</h3>
           <div class="flex flex-col">
             <span class="text-[#999999] font-bold text-xs">Content: 4000 g</span>
-            <span class="text-xs text-[#999999] font-medium">4 x <span class="text-yellow">99.00 €</span> (99.00 € / 1
+            <span class="text-xs text-[#999999] font-medium">4 x <span class="text-yellow">99.00 €</span>
+              (99.00 € / 1
               kg)</span>
           </div>
         </div>
