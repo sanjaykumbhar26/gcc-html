@@ -568,7 +568,35 @@
     font-weight: 600
   }
 
+.div-table .table {
+  display: table;
+  border-collapse: collapse;
+      width: 100%;
+}
+.div-table .table .tr {
+  display: table-row;
+    border-bottom: 2px solid rgb(39 39 39 / 1);
+}
+.div-table .table .tr:first-child {
+  font-weight: bold;
+  border-bottom: 2px solid rgb(39 39 39 / 1);
+}
+.div-table .table .tr .td {
+  display: table-cell;
+}
+.div-table .table .tr .td:first-child {
+  border-left: 0;
+}
 
+/* Not necessary for table styling */
+.table-tag {
+  float: left;
+  margin: 2em;
+}
+.div-table .title, .table-tag .title {
+  text-align: center;
+  padding-bottom: 0.5em;
+}
 
 }
 
