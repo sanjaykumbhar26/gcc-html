@@ -413,6 +413,11 @@
     max-height: inherit;
   }
 
+  .home-slider .featuredIcon img {
+    max-width: 18px;
+    width: 100% !important;
+  }
+
   .home-slider .splide__slide img {
     margin: inherit;
     width: inherit;

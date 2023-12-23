@@ -194,7 +194,8 @@ $(document).ready(function () {
   var splide = new Splide('#home-slider', {
     type: 'loop',
     perPage: 4,
-    gap: 10,
+    gap: 20,
+    pagination: false,
     breakpoints: {
       1024: {
         perPage: 2,
@@ -205,6 +206,23 @@ $(document).ready(function () {
     }
   });
   splide.mount();
+
+  var splide = new Splide('#home-slider-tow', {
+    type: 'loop',
+    perPage: 3,
+    gap: 20,
+    pagination: false,
+    breakpoints: {
+      1024: {
+        perPage: 2,
+      },
+      767: {
+        perPage: 1,
+      },
+    }
+  });
+  splide.mount();
+
 });
 
 

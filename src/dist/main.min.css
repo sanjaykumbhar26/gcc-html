@@ -2009,6 +2009,10 @@ input[type=range]:focus::-ms-fill-upper {
     max-width: 18px;
     max-height: inherit;
   }
+.home-slider .featuredIcon img {
+    max-width: 18px;
+    width: 100% !important;
+  }
 .home-slider .splide__slide img {
     margin: inherit;
     width: inherit;
@@ -2398,6 +2402,9 @@ input[type="radio"]:checked+label {
   .lg\:w-\[28\%\] {
     width: 28%;
   }
+  .lg\:w-\[30\%\] {
+    width: 30%;
+  }
   .lg\:w-\[300px\] {
     width: 300px;
   }
@@ -2418,6 +2425,9 @@ input[type="radio"]:checked+label {
   }
   .lg\:w-\[60\%\] {
     width: 60%;
+  }
+  .lg\:w-\[70\%\] {
+    width: 70%;
   }
   .lg\:w-\[77\%\] {
     width: 77%;
