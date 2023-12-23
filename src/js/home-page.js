@@ -189,5 +189,23 @@ jQuery(document).ready(function () {
   });
 });
 
+// Slider
+$(document).ready(function () {
+  var splide = new Splide('#home-slider', {
+    type: 'loop',
+    perPage: 4,
+    gap: 10,
+    breakpoints: {
+      1024: {
+        perPage: 2,
+      },
+      767: {
+        perPage: 1,
+      },
+    }
+  });
+  splide.mount();
+});
+
 
 

@@ -206,7 +206,6 @@ jQuery(document).ready(function () {
 });
 
 // SlimSelect
-
 new SlimSelect({
   select: "#selectElement2",
   settings: {

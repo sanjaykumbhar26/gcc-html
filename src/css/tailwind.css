@@ -403,6 +403,22 @@
     margin-bottom: 20px;
   }
 
+  .home-slider .splide__slide {
+    height: auto;
+    width: auto;
+  }
+
+  .home-slider .featuredInfo img {
+    max-width: 18px;
+    max-height: inherit;
+  }
+
+  .home-slider .splide__slide img {
+    margin: inherit;
+    width: inherit;
+    height: inherit;
+  }
+
   .splide__slide {
     display: flex;
     justify-content: center;
@@ -551,6 +567,7 @@
     border: 2px solid #a79a66;
     padding-left: 10px;
   }
+
   input[type="radio"]+label span:hover,
   input[type="radio"]+label:hover span {
     transform: scale(1.2);
@@ -560,7 +577,7 @@
     background-color: #a79a66;
     box-shadow: 0px 0px 0px 2px #000 inset;
     margin-right: 10px;
-     color: #a79a66;
+    color: #a79a66;
   }
 
   input[type="radio"]:checked+label {
@@ -568,49 +585,56 @@
     font-weight: 600
   }
 
-.div-table .table {
-  display: table;
-  border-collapse: collapse;
-      width: 100%;
-}
-.div-table .table .tr {
-  display: table-row;
+  .div-table .table {
+    display: table;
+    border-collapse: collapse;
+    width: 100%;
+  }
+
+  .div-table .table .tr {
+    display: table-row;
     border-bottom: 2px solid rgb(39 39 39 / 1);
-}
-.div-table .table .tr:first-child {
-  font-weight: bold;
-  border-bottom: 2px solid rgb(39 39 39 / 1);
-}
-.div-table .table .tr .td {
-  display: table-cell;
-}
-.div-table .table .tr .td:first-child {
-  border-left: 0;
-}
+  }
 
-/* Not necessary for table styling */
-.table-tag {
-  float: left;
-  margin: 2em;
-}
-.div-table .title, .table-tag .title {
-  text-align: center;
-  padding-bottom: 0.5em;
-}
+  .div-table .table .tr:first-child {
+    font-weight: bold;
+    border-bottom: 2px solid rgb(39 39 39 / 1);
+  }
 
-.page-header {
-  position: relative;
-}
-.page-header::after{
- content: '';
- width: 100%;
- height: 100%;
- position: absolute;
- left: 0;
- top: 0;
- z-index: 0;
- background-color: rgb(0 0 0 / 60%);
-}
+  .div-table .table .tr .td {
+    display: table-cell;
+  }
+
+  .div-table .table .tr .td:first-child {
+    border-left: 0;
+  }
+
+  /* Not necessary for table styling */
+  .table-tag {
+    float: left;
+    margin: 2em;
+  }
+
+  .div-table .title,
+  .table-tag .title {
+    text-align: center;
+    padding-bottom: 0.5em;
+  }
+
+  .page-header {
+    position: relative;
+  }
+
+  .page-header::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 0;
+    background-color: rgb(0 0 0 / 60%);
+  }
 
 
 }
