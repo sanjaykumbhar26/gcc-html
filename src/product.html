@@ -1375,10 +1375,23 @@
               <p class="text-f14 text-lightGrey">Your email address will not be published. Required fields are marked *
               </p>
               <form class="mt-3">
-
                 <div class="mb-4">
                   <label class="mb-2 flex">Your rating <span class="text-red-600 ml-1">*</span></label>
-                  <div class="">
+                  <div class="rating-container">
+                    <span class="star" data-rating="1" onclick="handleRating(1)">★</span>
+                    <span class="star" data-rating="2" onclick="handleRating(2)">★</span>
+                    <span class="star" data-rating="3" onclick="handleRating(3)">★</span>
+                    <span class="star" data-rating="4" onclick="handleRating(4)">★</span>
+                    <span class="star" data-rating="5" onclick="handleRating(5)">★</span>
+                    <select id="ratingDropdown" onchange="updateIcon()">
+                      <option value="1">1 Star</option>
+                      <option value="2">2 Stars</option>
+                      <option value="3">3 Stars</option>
+                      <option value="4">4 Stars</option>
+                      <option value="5">5 Stars</option>
+                    </select>
+                  </div>
+                  <!-- <div>
                     <figure class="flex gap-1 mb-2 cursor-pointer">
                       <img loading="lazy" width="18" height="18" alt="Rating" src="./images/icons/star.svg">
                       <img loading="lazy" width="18" height="18" alt="Rating" src="./images/icons/star.svg">
@@ -1386,7 +1399,7 @@
                       <img loading="lazy" width="18" height="18" alt="Rating" src="./images/icons/star.svg">
                       <img loading="lazy" width="18" height="18" alt="Rating" src="./images/icons/star.svg">
                     </figure>
-                  </div>
+                  </div> -->
                 </div>
 
                 <div class="mb-4">

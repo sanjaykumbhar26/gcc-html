@@ -2188,6 +2188,25 @@ input[type="radio"]:checked+label {
     z-index: 0;
     background-color: rgb(0 0 0 / 60%);
   }
+.rating-container {
+    display: inline-block;
+    position: relative;
+    font-size: 31px;
+    cursor: pointer;
+    line-height: 1;
+  }
+.star {
+    color: #ccc;
+  }
+.star:hover,
+  .star.active {
+    color: #a79a66;
+  }
+#ratingDropdown {
+    position: absolute;
+    top: -9999px;
+    /* Move the select off-screen */
+  }
 
 /* Components */
 .container {

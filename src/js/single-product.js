@@ -24,7 +24,7 @@
   });
 
 // Cat
-  
+
 jQuery(document).ready(function () {
   jQuery(".default-menu").hide();
   jQuery(".cat-menu-list").hover(function () {
@@ -45,7 +45,7 @@ jQuery(function () {
       $input
         .val(
           currentValue +
-            (jQuery(this).hasClass("minus") && currentValue > 0 ? -1 : 1)
+          (jQuery(this).hasClass("minus") && currentValue > 0 ? -1 : 1)
         )
         .change();
     } else {
@@ -53,7 +53,7 @@ jQuery(function () {
     }
 
     return false;
-    
+
   });
   jQuery(".add-cart input").on("input", function () {
     var sanitizedValue = jQuery(this)
@@ -61,7 +61,7 @@ jQuery(function () {
       .replace(/[^0-9]/g, ""); // Remove non-numeric characters
     jQuery(this).val(sanitizedValue);
   });
-  
+
 });
 
 // dropdown
@@ -223,32 +223,54 @@ jQuery(document).ready(function () {
 // Slider
 
 $(document).ready(function () {
-      var secondarySlider = new Splide('#secondary-slider', {
-        rewind: true,
+  var secondarySlider = new Splide('#secondary-slider', {
+    rewind: true,
+    fixedWidth: 150,
+    fixedHeight: 80,
+    isNavigation: true,
+    gap: 10,
+    focus: 'left',
+    pagination: false,
+    cover: true,
+    arrows: false,
+    breakpoints: {
+      '600': {
         fixedWidth: 150,
-        fixedHeight: 80,
-        isNavigation: true,
-        gap: 10,
-        focus: 'left',
-        pagination: false,
-        cover: true,
-        arrows: false,
-        breakpoints: {
-          '600': {
-            fixedWidth: 150,
-            fixedHeight: 50,
-          }
-        }
-      }).mount();
+        fixedHeight: 50,
+      }
+    }
+  }).mount();
 
-      var primarySlider = new Splide('#primary-slider', {
-        rewind: true,
-        isNavigation: true,
-        type: 'fade',
-        pagination: false,
-        arrows: true,
-        cover: true,
-      });
+  var primarySlider = new Splide('#primary-slider', {
+    rewind: true,
+    isNavigation: true,
+    type: 'fade',
+    pagination: false,
+    arrows: true,
+    cover: true,
+  });
 
-      primarySlider.sync(secondarySlider).mount();
-    });
+  primarySlider.sync(secondarySlider).mount();
+});
+
+
+// rating
+
+let selectedRating = 0;
+function handleRating(rating) {
+  selectedRating = rating;
+  updateIcon();
+  const dropdown = document.getElementById('ratingDropdown');
+  dropdown.value = rating;
+  dropdown.dispatchEvent(new Event('change'));
+}
+function updateIcon() {
+  const stars = document.querySelectorAll('.star');
+  stars.forEach((star, index) => {
+    if (index < selectedRating) {
+      star.classList.add('active');
+    } else {
+      star.classList.remove('active');
+    }
+  });
+}
