@@ -1000,9 +1000,6 @@ input {
 .min-w-\[120px\] {
   min-width: 120px;
 }
-.min-w-\[190px\] {
-  min-width: 190px;
-}
 .min-w-\[230px\] {
   min-width: 230px;
 }
@@ -1020,9 +1017,6 @@ input {
 }
 .min-w-\[60px\] {
   min-width: 60px;
-}
-.min-w-\[800px\] {
-  min-width: 800px;
 }
 .min-w-\[80px\] {
   min-width: 80px;
@@ -1539,8 +1533,14 @@ input {
 .pl-4 {
   padding-left: 1rem;
 }
+.pl-5 {
+  padding-left: 1.25rem;
+}
 .pr-2 {
   padding-right: 0.5rem;
+}
+.pr-5 {
+  padding-right: 1.25rem;
 }
 .pt-1 {
   padding-top: 0.25rem;
@@ -2261,6 +2261,10 @@ input[type="radio"]:checked+label {
     position: absolute;
     top: -9999px;
     /* Move the select off-screen */
+  }
+#update-btn:not(:disabled) {
+    background-color: #a79a66;
+    color: #fff;
   }
 
 /* Components */

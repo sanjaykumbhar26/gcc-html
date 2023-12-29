@@ -664,6 +664,11 @@
     /* Move the select off-screen */
   }
 
+  #update-btn:not(:disabled) {
+    background-color: #a79a66;
+    color: #fff;
+  }
+
 }
 
 @layer components {
