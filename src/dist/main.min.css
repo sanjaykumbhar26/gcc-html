@@ -585,6 +585,9 @@ input {
 .top-\[12px\] {
   top: 12px;
 }
+.top-\[13px\] {
+  top: 13px;
+}
 .top-full {
   top: 100%;
 }
@@ -1535,6 +1538,12 @@ input {
 }
 .pl-5 {
   padding-left: 1.25rem;
+}
+.pl-6 {
+  padding-left: 1.5rem;
+}
+.pr-10 {
+  padding-right: 2.5rem;
 }
 .pr-2 {
   padding-right: 0.5rem;

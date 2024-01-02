@@ -226,4 +226,10 @@ $(document).ready(function () {
 });
 
 
+//  Alert 
+$(".alert-close").on("click", function () {
+  $("#alert-icon").addClass("hidden");
+});
+
+
 
