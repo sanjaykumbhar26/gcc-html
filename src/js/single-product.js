@@ -189,11 +189,11 @@ jQuery(".toggle-password").click(function () {
 
 jQuery(document).ready(function () {
   function AddReadMore() {
-    var carLmt = 160;
+    var carLmt = 960;
     var readMoreTxt = " ...read more";
     var readLessTxt = " read less";
     jQuery(".add-read-more .term-description").each(function () {
-      if ($(this).find(".first-section .term-description").length) return;
+      if ($(this).find(".term-description").length) return;
       var allstr = $(this).text();
       if (allstr.length > carLmt) {
         var firstSet = allstr.substring(0, carLmt);
@@ -226,7 +226,7 @@ $(document).ready(function () {
   var secondarySlider = new Splide('#secondary-slider', {
     rewind: true,
     fixedWidth: 150,
-    fixedHeight: 80,
+    fixedHeight: 100,
     isNavigation: true,
     gap: 10,
     focus: 'left',
@@ -274,3 +274,14 @@ function updateIcon() {
     }
   });
 }
+
+
+// 
+new SlimSelect({
+  select: "#selectElement2",
+  settings: {
+    showSearch: false,
+    placeholderText: "Wähle eine Option",
+    allowDeselect: true,
+  },
+});
