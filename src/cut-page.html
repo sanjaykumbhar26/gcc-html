@@ -1040,7 +1040,7 @@
   <!-- ========== breadcrumbs  ========== -->
   <div class="pt-4 pb-4">
     <div class="container max-w-[1380px] mx-auto">
-      <ol class="list-reset rounded flex  bg-grey-light text-grey">
+      <ol class="list-reset rounded flex flex-wrap bg-grey-light text-grey">
         <li class="pr-2"><a href="#" class="no-underline text-f16 font-medium text-lightGrey">Home</a></li>
         <li class="text-lightGrey">/</li>
         <li class="px-2"><a href="#" class="no-underline text-f16 font-medium text-lightGrey">Shop</a></li>
@@ -1075,8 +1075,8 @@
       </div>
       <!-- ========== FILTER  ========== -->
       <div class="pb-6">
-        <div class="w-full flex gap-8 text-f14 justify-between">
-          <div class="w-full flex lg:justify-between lg:w-[88%] gap-8">
+        <div class="w-full flex gap-8 text-f14 justify-between flex-col xl:flex-row">
+          <div class="w-full flex  flex-col lg:flex-row lg:justify-between lg:w-[100%] xl:w-[88%] gap-8">
             <div class="w-full">
               <select id="origin" multiple>
                 <option value="value 1">Value 1</option>
@@ -1211,6 +1211,7 @@
         </article>
 
       </div>
+
 
       <div class="mb-4 mt-10 gap-4 xl:gap-12 flex items-center justify-center product-pagination">
         <div class="items-center justify-center">
@@ -1481,32 +1482,32 @@
         <h2 class="font-bold text-f32 text-lightTaupe">BRISKET RECIPE</h2>
       </div>
       <div class="mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-8 text-f14">
-        <article class="bg-smokBlack flex flex-col h-full img-hover">
+        <article class="bg-smokBlack flex flex-col h-full img-hover relative">
           <figure class="relative w-full flex items-center justify-center overflow-hidden lg:h-[272px]">
             <img loading="lazy" class="w-full product-img" width="294" height="196" alt="HOME MADE BRISKET STEAK RECIPE"
               src="https://placehold.co/494x496/a79a66/fff.png">
           </figure>
-          <div class="featuredInfo">
+          <div class="featuredInfo !pb-[4.5rem]">
             <div class="min-h-[65px]">
               <h2 class="text-f18 font-bold">HOME MADE BRISKET STEAK
                 RECIPE
               </h2>
             </div>
-            <div class="flex gap-3 mt-10 justify-between">
-              <div class="flex items-center gap-2 justify-start">
-                <div>
+            <div class="flex gap-3 mt-10 justify-between w-full absolute left-0 px-4 right-4 bottom-4">
+              <div class="flex items-center gap-2 justify-start w-1/2">
+                <div class="flex basis-1/3">
                   <img alt="cooking" width="50px" class="h-auto" height="50px" src="images/cooking-icon.png">
                 </div>
-                <div class="flex flex-col gap-1 leading-none">
+                <div class="flex flex-col gap-1 leading-none basis-2/3">
                   <span>Dauer</span>
                   <label class="font-bold">140 Min</label>
                 </div>
               </div>
-              <div class="flex items-center gap-2 justify-start">
-                <div>
+              <div class="flex items-center gap-2 justify-start w-1/2">
+                <div class="flex basis-1/3">
                   <img alt="cooking" width="50px" class="h-auto" height="50px" src="images/serving-icon.png">
                 </div>
-                <div class="flex flex-col gap-1 leading-none">
+                <div class="flex flex-col gap-1 leading-none basis-2/3">
                   <span>Gang</span>
                   <label class="font-bold">VORSPEISE</label>
                 </div>
@@ -1514,63 +1515,62 @@
             </div>
           </div>
         </article>
-        <article class="bg-smokBlack flex flex-col h-full img-hover">
+        <article class="bg-smokBlack flex flex-col h-full img-hover relative">
           <figure class="relative w-full flex items-center justify-center overflow-hidden lg:h-[272px]">
             <img loading="lazy" class="w-full product-img" width="294" height="196"
               alt="BURGER PATTIES CREEKSTONE FARMS USA" src="https://placehold.co/494x496/a79a66/fff.png">
           </figure>
-          <div class="featuredInfo">
-            <div>
-              <h2 class="text-f18 font-bold min-h-[65px]">RIB EYE STEAK CUT FOR FAMILY
-                DINNER STYLE RECIPE
+          <div class="featuredInfo !pb-[4.5rem]">
+            <div class="min-h-[65px]">
+              <h2 class="text-f18 font-bold">RIB EYE STEAK CUT FOR FAMILY
               </h2>
-              <div class="flex gap-3 mt-10 justify-between">
-                <div class="flex items-center gap-2 justify-start">
-                  <div>
-                    <img alt="cooking" width="50px" class="h-auto" height="50px" src="images/cooking-icon.png">
-                  </div>
-                  <div class="flex flex-col gap-1 leading-none">
-                    <span>Dauer</span>
-                    <label class="font-bold">140 Min</label>
-                  </div>
+            </div>
+            <div class="flex gap-3 mt-10 justify-between w-full absolute left-0 px-4 right-4 bottom-4">
+              <div class="flex items-center gap-2 justify-start w-1/2">
+                <div class="flex basis-1/3">
+                  <img alt="cooking" width="50px" class="h-auto" height="50px" src="images/cooking-icon.png">
                 </div>
-                <div class="flex items-center gap-2 justify-start">
-                  <div>
-                    <img alt="cooking" width="50px" class="h-auto" height="50px" src="images/serving-icon.png">
-                  </div>
-                  <div class="flex flex-col gap-1 leading-none">
-                    <span>Gang</span>
-                    <label class="font-bold">VORSPEISE</label>
-                  </div>
+                <div class="flex flex-col gap-1 leading-none basis-2/3">
+                  <span>Dauer</span>
+                  <label class="font-bold">140 Min</label>
+                </div>
+              </div>
+              <div class="flex items-center gap-2 justify-start w-1/2">
+                <div class="flex basis-1/3">
+                  <img alt="cooking" width="50px" class="h-auto" height="50px" src="images/serving-icon.png">
+                </div>
+                <div class="flex flex-col gap-1 leading-none basis-2/3">
+                  <span>Gang</span>
+                  <label class="font-bold">VORSPEISE</label>
                 </div>
               </div>
             </div>
           </div>
         </article>
-        <article class="bg-smokBlack flex flex-col h-full img-hover">
+        <article class="bg-smokBlack flex flex-col h-full img-hover relative">
           <figure class="relative w-full flex items-center justify-center overflow-hidden lg:h-[272px]">
             <img loading="lazy" class="w-full product-img" width="294" height="196"
               alt="SIRLOIN STEAK, CREEKSTONE FARMS USA" src="https://placehold.co/494x496/a79a66/fff.png">
           </figure>
-          <div class="featuredInfo">
-            <div>
+          <div class="featuredInfo !pb-[4.5rem]">
+            <div class="min-h-[65px]">
               <h2 class="text-f18 font-bold">OSSO BUCO, CALF BRANDENBURG REGIONAL</h2>
             </div>
-            <div class="flex gap-3 mt-10 justify-between">
-              <div class="flex items-center gap-2 justify-start">
-                <div>
+            <div class="flex gap-3 mt-10 justify-between w-full absolute left-0 px-4 right-4 bottom-4">
+              <div class="flex items-center gap-2 justify-start w-1/3">
+                <div class="flex basis-1/3">
                   <img alt="cooking" width="50px" class="h-auto" height="50px" src="images/cooking-icon.png">
                 </div>
-                <div class="flex flex-col gap-1 leading-none">
+                <div class="flex flex-col gap-1 leading-none basis-2/3">
                   <span>Dauer</span>
                   <label class="font-bold">140 Min</label>
                 </div>
               </div>
-              <div class="flex items-center gap-2 justify-start">
-                <div>
+              <div class="flex items-center gap-2 justify-start w-1/2">
+                <div class="flex basis-1/3">
                   <img alt="cooking" width="50px" class="h-auto" height="50px" src="images/serving-icon.png">
                 </div>
-                <div class="flex flex-col gap-1 leading-none">
+                <div class="flex flex-col gap-1 leading-none basis-2/3">
                   <span>Gang</span>
                   <label class="font-bold">VORSPEISE</label>
                 </div>
@@ -1580,10 +1580,12 @@
         </article>
       </div>
       <div class="mt-12 flex justify-center">
-        <a class="border-lightTaupe text-f20 justify-center font-bold flex text-center border-2 py-4 px-6 w-full max-w-[320px] hover:bg-lightTaupe"
-          href="#">VIEW
+        <a href="#"
+          class="hover:bg-lightTaupe leading-none text-white flex items-center justify-center font-bold py-2 h-[50px] px-3 w-full max-w-[320px] text-f18 transition-all duration-300 ease-in-out  border-lightTaupe border">
+          VIEW
           ALL
-          RECIPES</a>
+          RECIPES
+        </a>
       </div>
     </div>
   </section>
