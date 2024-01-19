@@ -23,6 +23,44 @@
     },
   });
 
+// Range Dropdown
+jQuery(document).ready(function () {
+  jQuery(".range-lable").click(function () {
+    jQuery(".range-field").toggle();
+  });
+});
+function getValues(slide1, slide2) {
+  if (slide1 > slide2) {
+    [slide1, slide2] = [slide2, slide1];
+  }
+  return "$" + slide1 + " - $" + slide2;
+}
+function updateDisplay(sliders, displayElement) {
+  let slide1 = parseFloat(sliders[0].value);
+  let slide2 = parseFloat(sliders[1].value);
+  displayElement.innerHTML = getValues(slide1, slide2);
+}
+window.onload = function () {
+  let sliderSections = document.getElementsByClassName("range-slider");
+  for (let x = 0; x < sliderSections.length; x++) {
+    let sliders = sliderSections[x].getElementsByTagName("input");
+    let displayElement =
+      sliderSections[x].getElementsByClassName("rangeValues")[0];
+
+    for (let y = 0; y < sliders.length; y++) {
+      if (sliders[y].type === "range") {
+        sliders[y].oninput = function () {
+          updateDisplay([sliders[0], sliders[1]], displayElement);
+        };
+
+        sliders[y].oninput(); // Initial update
+      }
+    }
+  }
+};
+
+
+
 // Cat
 
 jQuery(document).ready(function () {
@@ -36,7 +74,6 @@ jQuery(document).ready(function () {
 });
 
 // Minus Plus
-
 jQuery(function () {
   jQuery(".minus, .plus").click(function () {
     var $input = jQuery(this).parent().find("input");
@@ -160,6 +197,7 @@ jQuery(".tab").on("click", function (evt) {
   var sel = this.getAttribute("data-toggle-target");
   jQuery(".tab-content").removeClass("active");
   jQuery(sel).addClass("active");
+
 });
 
 // Accordion
@@ -186,10 +224,9 @@ jQuery(".toggle-password").click(function () {
 });
 
 // Read More
-
 jQuery(document).ready(function () {
   function AddReadMore() {
-    var carLmt = 960;
+    var carLmt = 470;
     var readMoreTxt = " ...read more";
     var readLessTxt = " read less";
     jQuery(".add-read-more .term-description").each(function () {
@@ -220,40 +257,6 @@ jQuery(document).ready(function () {
   AddReadMore();
 });
 
-// Slider
-
-$(document).ready(function () {
-  var secondarySlider = new Splide('#secondary-slider', {
-    rewind: true,
-    fixedWidth: 150,
-    fixedHeight: 100,
-    isNavigation: true,
-    gap: 10,
-    focus: 'left',
-    pagination: false,
-    cover: true,
-    arrows: false,
-    breakpoints: {
-      '600': {
-        fixedWidth: 150,
-        fixedHeight: 100,
-      }
-    }
-  }).mount();
-
-  var primarySlider = new Splide('#primary-slider', {
-    rewind: true,
-    isNavigation: true,
-    type: 'fade',
-    pagination: false,
-    arrows: true,
-    cover: true,
-  });
-
-  primarySlider.sync(secondarySlider).mount();
-});
-
-
 // rating
 let selectedRating = 0;
 function handleRating(rating) {
@@ -276,29 +279,66 @@ function updateIcon() {
 
 
 // 
+// SlimSelect
 new SlimSelect({
-  select: "#weight",
+  select: "#origin",
   settings: {
     showSearch: false,
-    placeholderText: "Wähle eine Option",
+    placeholderText: "ORIGIN",
+    allowDeselect: true,
+  },
+});
+
+new SlimSelect({
+  select: "#cut",
+  settings: {
+    showSearch: false,
+    placeholderText: "CUT",
+    allowDeselect: true,
+  },
+});
+
+new SlimSelect({
+  select: "#stock-status",
+  settings: {
+    showSearch: false,
+    placeholderText: "STOCK STATUS",
+    allowDeselect: true,
+  },
+});
+
+var slim = new SlimSelect({
+  select: "#Sortedpopularity",
+  settings: {
+    showSearch: false,
+    placeholderText: "Sorted by popularity",
     allowDeselect: true,
   },
 });
 
 
+//
 
-///
 $(document).ready(function () {
-  $('.total-rating').click(function (evt) {
-    evt.preventDefault();
-    $('html, body').animate({
-      scrollTop: $('#product-dec').offset().top
-    }, 100);
-    jQuery(".tab").removeClass("active");
-    jQuery(".tab.second-tab").addClass("active");
-    var sel = jQuery(".tab.second-tab").attr("data-toggle-target");
-    jQuery(".tab-content").removeClass("active");
-    jQuery(sel).addClass("active");
+  var selected = null;
+  $('#accordion h4').on('click', function () {
+    var index = $(this).data('index');
+    if (selected !== index) {
+      selected = index;
+    } else {
+      selected = null;
+    }
+
+    // Toggle visibility of corresponding content
+    $('#accordion p').each(function () {
+      var contentIndex = $(this).data('index');
+      $(this).toggle(contentIndex === selected);
+    });
+
+    // Toggle arrow direction
+    $('#accordion h4 span.arrow').removeClass('arrow-up');
+    $(this).find('span.arrow').toggleClass('arrow-up', selected === index);
   });
 });
+
 
