@@ -220,38 +220,6 @@ jQuery(document).ready(function () {
   AddReadMore();
 });
 
-// Slider
-
-$(document).ready(function () {
-  var secondarySlider = new Splide('#secondary-slider', {
-    rewind: true,
-    fixedWidth: 150,
-    fixedHeight: 100,
-    isNavigation: true,
-    gap: 10,
-    focus: 'left',
-    pagination: false,
-    cover: true,
-    arrows: false,
-    breakpoints: {
-      '600': {
-        fixedWidth: 150,
-        fixedHeight: 100,
-      }
-    }
-  }).mount();
-
-  var primarySlider = new Splide('#primary-slider', {
-    rewind: true,
-    isNavigation: true,
-    type: 'fade',
-    pagination: false,
-    arrows: true,
-    cover: true,
-  });
-
-  primarySlider.sync(secondarySlider).mount();
-});
 
 
 // rating

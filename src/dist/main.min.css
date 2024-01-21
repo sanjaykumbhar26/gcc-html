@@ -621,6 +621,9 @@ input {
 .col-span-full {
   grid-column: 1 / -1;
 }
+.float-left {
+  float: left;
+}
 .-m-2 {
   margin: -0.5rem;
 }
@@ -927,9 +930,6 @@ input {
 .min-h-\[200px\] {
   min-height: 200px;
 }
-.min-h-\[290px\] {
-  min-height: 290px;
-}
 .min-h-\[300px\] {
   min-height: 300px;
 }
@@ -1026,9 +1026,6 @@ input {
 .w-\[30px\] {
   width: 30px;
 }
-.w-\[35\%\] {
-  width: 35%;
-}
 .w-\[360px\] {
   width: 360px;
 }
@@ -1040,9 +1037,6 @@ input {
 }
 .w-\[60px\] {
   width: 60px;
-}
-.w-\[65\%\] {
-  width: 65%;
 }
 .w-\[80px\] {
   width: 80px;
@@ -1148,6 +1142,9 @@ input {
 }
 .max-w-\[320px\] {
   max-width: 320px;
+}
+.max-w-\[390px\] {
+  max-width: 390px;
 }
 .max-w-\[40\%\] {
   max-width: 40%;
@@ -1395,9 +1392,6 @@ input {
 }
 .border-l-2 {
   border-left-width: 2px;
-}
-.border-r {
-  border-right-width: 1px;
 }
 .border-r-0 {
   border-right-width: 0px;
@@ -1737,6 +1731,9 @@ input {
 }
 .pr-2 {
   padding-right: 0.5rem;
+}
+.pr-4 {
+  padding-right: 1rem;
 }
 .pr-5 {
   padding-right: 1.25rem;
@@ -2697,6 +2694,9 @@ stroke:rgb(151 151 151 / var(--tw-text-opacity));
   .md\:ml-16 {
     margin-left: 4rem;
   }
+  .md\:block {
+    display: block;
+  }
   .md\:w-1\/2 {
     width: 50%;
   }
@@ -2729,6 +2729,9 @@ stroke:rgb(151 151 151 / var(--tw-text-opacity));
   }
   .md\:flex-row {
     flex-direction: row;
+  }
+  .md\:flex-nowrap {
+    flex-wrap: nowrap;
   }
   .md\:justify-center {
     justify-content: center;
@@ -2786,6 +2789,9 @@ stroke:rgb(151 151 151 / var(--tw-text-opacity));
   .lg\:max-h-\[497px\] {
     max-height: 497px;
   }
+  .lg\:min-h-\[290px\] {
+    min-height: 290px;
+  }
   .lg\:w-1\/2 {
     width: 50%;
   }
@@ -2831,6 +2837,9 @@ stroke:rgb(151 151 151 / var(--tw-text-opacity));
   .lg\:w-\[33\%\] {
     width: 33%;
   }
+  .lg\:w-\[35\%\] {
+    width: 35%;
+  }
   .lg\:w-\[40\%\] {
     width: 40%;
   }
@@ -2845,6 +2854,9 @@ stroke:rgb(151 151 151 / var(--tw-text-opacity));
   }
   .lg\:w-\[60\%\] {
     width: 60%;
+  }
+  .lg\:w-\[65\%\] {
+    width: 65%;
   }
   .lg\:w-\[70\%\] {
     width: 70%;
@@ -2886,6 +2898,9 @@ stroke:rgb(151 151 151 / var(--tw-text-opacity));
   .lg\:flex-row {
     flex-direction: row;
   }
+  .lg\:flex-nowrap {
+    flex-wrap: nowrap;
+  }
   .lg\:justify-start {
     justify-content: flex-start;
   }
@@ -2897,6 +2912,9 @@ stroke:rgb(151 151 151 / var(--tw-text-opacity));
   }
   .lg\:gap-y-0 {
     row-gap: 0px;
+  }
+  .lg\:border-r {
+    border-right-width: 1px;
   }
   .lg\:border-r-2 {
     border-right-width: 2px;
