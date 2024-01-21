@@ -717,6 +717,9 @@ input {
 .mb-3 {
   margin-bottom: 0.75rem;
 }
+.mb-32 {
+  margin-bottom: 8rem;
+}
 .mb-4 {
   margin-bottom: 1rem;
 }
@@ -861,6 +864,9 @@ input {
 .h-8 {
   height: 2rem;
 }
+.h-\[100px\] {
+  height: 100px;
+}
 .h-\[120px\] {
   height: 120px;
 }
@@ -878,6 +884,9 @@ input {
 }
 .h-\[30px\] {
   height: 30px;
+}
+.h-\[38px\] {
+  height: 38px;
 }
 .h-\[40px\] {
   height: 40px;
@@ -917,6 +926,9 @@ input {
 }
 .min-h-\[200px\] {
   min-height: 200px;
+}
+.min-h-\[290px\] {
+  min-height: 290px;
 }
 .min-h-\[300px\] {
   min-height: 300px;
@@ -1008,8 +1020,14 @@ input {
 .w-\[26px\] {
   width: 26px;
 }
+.w-\[2px\] {
+  width: 2px;
+}
 .w-\[30px\] {
   width: 30px;
+}
+.w-\[35\%\] {
+  width: 35%;
 }
 .w-\[360px\] {
   width: 360px;
@@ -1022,6 +1040,9 @@ input {
 }
 .w-\[60px\] {
   width: 60px;
+}
+.w-\[65\%\] {
+  width: 65%;
 }
 .w-\[80px\] {
   width: 80px;
@@ -1045,6 +1066,9 @@ input {
 }
 .min-w-0 {
   min-width: 0px;
+}
+.min-w-\[100px\] {
+  min-width: 100px;
 }
 .min-w-\[120px\] {
   min-width: 120px;
@@ -1183,6 +1207,9 @@ input {
 }
 .resize {
   resize: both;
+}
+.list-inside {
+  list-style-position: inside;
 }
 .list-disc {
   list-style-type: disc;
@@ -1369,6 +1396,9 @@ input {
 .border-l-2 {
   border-left-width: 2px;
 }
+.border-r {
+  border-right-width: 1px;
+}
 .border-r-0 {
   border-right-width: 0px;
 }
@@ -1402,6 +1432,10 @@ input {
 .border-\[\#7a7a7a\] {
   --tw-border-opacity: 1;
   border-color: rgb(122 122 122 / var(--tw-border-opacity));
+}
+.border-\[\#818181\] {
+  --tw-border-opacity: 1;
+  border-color: rgb(129 129 129 / var(--tw-border-opacity));
 }
 .border-\[\#909090\] {
   --tw-border-opacity: 1;
@@ -1459,6 +1493,10 @@ input {
 .bg-\[\#393939\] {
   --tw-bg-opacity: 1;
   background-color: rgb(57 57 57 / var(--tw-bg-opacity));
+}
+.bg-\[\#818181\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(129 129 129 / var(--tw-bg-opacity));
 }
 .bg-\[\#909090\] {
   --tw-bg-opacity: 1;
@@ -2775,6 +2813,9 @@ stroke:rgb(151 151 151 / var(--tw-text-opacity));
   .lg\:w-\[23\%\] {
     width: 23%;
   }
+  .lg\:w-\[240px\] {
+    width: 240px;
+  }
   .lg\:w-\[28\%\] {
     width: 28%;
   }
@@ -2887,6 +2928,9 @@ stroke:rgb(151 151 151 / var(--tw-text-opacity));
   }
   .lg\:pl-2 {
     padding-left: 0.5rem;
+  }
+  .lg\:pl-3 {
+    padding-left: 0.75rem;
   }
   .lg\:pl-4 {
     padding-left: 1rem;
