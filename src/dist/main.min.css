@@ -419,6 +419,23 @@ input {
   --tw-text-opacity: 1;
   color: rgb(151 151 151 / var(--tw-text-opacity));
 }
+p {
+  margin-bottom: 1.5rem;
+  font-size: 16px;
+}
+.dec-info p {
+  font-size: 16px;
+  --tw-text-opacity: 1;
+  color: rgb(151 151 151 / var(--tw-text-opacity));
+}
+ol {
+  list-style-type: decimal;
+  padding-left: 1rem;
+}
+li {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
 *, ::before, ::after {
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
@@ -2035,6 +2052,10 @@ input {
     height: 100%;
     background-color: rgba(0, 0, 0, 0.6);
   }
+.list-reset {
+    list-style: none;
+    padding-left: 0;
+  }
 body.open .cart-drawer {
     transform: translate(0, 0);
   }
@@ -2324,6 +2345,9 @@ input[type=range]:focus::-ms-fill-upper {
 .home-slider .featuredInfo img {
     max-width: 18px;
     max-height: inherit;
+  }
+.featuredInfo h2 {
+    text-transform: uppercase;
   }
 .home-slider .featuredIcon img {
     max-width: 18px;

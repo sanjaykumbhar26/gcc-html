@@ -81,6 +81,22 @@
   input {
     @apply w-full p-2 border-4 border-solid border-darkGrey rounded-none bg-transparent text-lightGrey text-lg font-medium;
   }
+
+  p {
+    @apply mb-6 text-f16 
+  }
+
+  .dec-info p {
+     @apply text-lightGrey text-f16
+  }
+
+  ol {
+    @apply list-decimal pl-4
+  }
+  li {
+     @apply py-1;
+  }
+
 }
 
 @layer utilities {
@@ -93,7 +109,10 @@
     height: 100%;
     background-color: rgba(0, 0, 0, 0.6);
   }
-
+  .list-reset {
+    list-style: none;
+    padding-left: 0;
+  }
   body.open .cart-drawer {
     transform: translate(0, 0);
   }
@@ -432,6 +451,10 @@
   .home-slider .featuredInfo img {
     max-width: 18px;
     max-height: inherit;
+  }
+
+  .featuredInfo h2 {
+    text-transform: uppercase;
   }
 
   .home-slider .featuredIcon img {
