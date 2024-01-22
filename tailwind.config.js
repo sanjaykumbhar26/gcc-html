@@ -23,7 +23,7 @@ module.exports = {
         yellow: '#8d804a',
       },
       fontFamily: {
-        poppins: ['Poppinsa', "sans-serif"],
+        poppins: ['Poppins', "sans-serif"],
       },
       fontSize: {
         f14: "14px",
