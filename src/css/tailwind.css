@@ -258,7 +258,7 @@
     gap: 4px;
   }
 
-   .gcc-accordion li.active h4  {
+   .gcc-accordion li h4.active  {
     font-weight: 600;
   }
 

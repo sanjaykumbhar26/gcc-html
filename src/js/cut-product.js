@@ -319,6 +319,7 @@ $(document).ready(function () {
     } else {
       accordionSelected = null;
     }
+
     // Toggle visibility of corresponding content for accordion
     $('#accordion p').each(function () {
       var contentIndex = $(this).data('index');
@@ -328,13 +329,10 @@ $(document).ready(function () {
     // Toggle arrow direction for accordion
     $('#accordion h4 span.arrow').removeClass('arrow-up');
     $(this).find('span.arrow').toggleClass('arrow-up', accordionSelected === accordionIndex);
-  });
 
-  $(".flex-col li").click(function () {
-    $(".flex-col li").not(this).removeClass("active");
-    $(".flex-col li").not(this).find("div").slideUp();
-    $(this).toggleClass("active");
-    $(this).find("div").slideToggle();
+    // Toggle active class for accordion header
+    $('#accordion h4').removeClass('active');
+    $(this).toggleClass('active', accordionSelected === accordionIndex);
   });
 });
 
