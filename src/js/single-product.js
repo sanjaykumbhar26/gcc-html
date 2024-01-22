@@ -162,17 +162,6 @@ jQuery(".tab").on("click", function (evt) {
   jQuery(sel).addClass("active");
 });
 
-// Accordion
-
-jQuery(document).ready(function () {
-  jQuery(".flex-col li").click(function () {
-    jQuery(".flex-col li").not(this).removeClass("active");
-    jQuery(".flex-col li").not(this).find("div").slideUp();
-    jQuery(this).toggleClass("active");
-    jQuery(this).find("div").slideToggle();
-  });
-});
-
 // Toggle Password
 
 jQuery(".toggle-password").click(function () {
