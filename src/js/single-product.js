@@ -293,16 +293,16 @@ $(document).ready(function () {
 
 
 // short dec
-$(document).ready(function () {
-  $(".show-more").click(function () {
-    if ($(".full-dec").is(":visible")) {
-      $(".short").show();
-      $(".full-dec").hide();
-      $(".show-more").text("read more");
+jQuery(document).ready(function () {
+  jQuery(".show-more").click(function () {
+    if (jQuery(".full-dec").is(":visible")) {
+      jQuery(".short").show();
+      jQuery(".full-dec").hide();
+      jQuery(".show-more").text("read more");
     } else {
-      $(".short").hide();
-      $(".full-dec").show();
-      $(".show-more").text("read less");
+      jQuery(".short").hide();
+      jQuery(".full-dec").show();
+      jQuery(".show-more").text("read less");
     }
   });
 });
