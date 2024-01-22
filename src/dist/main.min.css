@@ -3074,6 +3074,10 @@ stroke:rgb(151 151 151 / var(--tw-text-opacity));
     gap: 3rem;
   }
 
+  .lg\:gap-5 {
+    gap: 1.25rem;
+  }
+
   .lg\:gap-y-0 {
     row-gap: 0px;
   }
@@ -3113,6 +3117,11 @@ stroke:rgb(151 151 151 / var(--tw-text-opacity));
 
   .lg\:p-8 {
     padding: 2rem;
+  }
+
+  .lg\:px-4 {
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 
   .lg\:pl-12 {
