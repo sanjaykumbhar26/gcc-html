@@ -202,14 +202,6 @@ jQuery(".tab").on("click", function (evt) {
 
 // Accordion
 
-jQuery(document).ready(function () {
-  jQuery(".flex-col li").click(function () {
-    jQuery(".flex-col li").not(this).removeClass("active");
-    jQuery(".flex-col li").not(this).find("div").slideUp();
-    jQuery(this).toggleClass("active");
-    jQuery(this).find("div").slideToggle();
-  });
-});
 
 // Toggle Password
 
@@ -317,27 +309,32 @@ var slim = new SlimSelect({
 });
 
 
-//
-
+// accordion
 $(document).ready(function () {
-  var selected = null;
+  var accordionSelected = null;
   $('#accordion h4').on('click', function () {
-    var index = $(this).data('index');
-    if (selected !== index) {
-      selected = index;
+    var accordionIndex = $(this).data('index');
+    if (accordionSelected !== accordionIndex) {
+      accordionSelected = accordionIndex;
     } else {
-      selected = null;
+      accordionSelected = null;
     }
-
-    // Toggle visibility of corresponding content
+    // Toggle visibility of corresponding content for accordion
     $('#accordion p').each(function () {
       var contentIndex = $(this).data('index');
-      $(this).toggle(contentIndex === selected);
+      $(this).toggle(contentIndex === accordionSelected);
     });
 
-    // Toggle arrow direction
+    // Toggle arrow direction for accordion
     $('#accordion h4 span.arrow').removeClass('arrow-up');
-    $(this).find('span.arrow').toggleClass('arrow-up', selected === index);
+    $(this).find('span.arrow').toggleClass('arrow-up', accordionSelected === accordionIndex);
+  });
+
+  $(".flex-col li").click(function () {
+    $(".flex-col li").not(this).removeClass("active");
+    $(".flex-col li").not(this).find("div").slideUp();
+    $(this).toggleClass("active");
+    $(this).find("div").slideToggle();
   });
 });
 
