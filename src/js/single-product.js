@@ -291,3 +291,18 @@ $(document).ready(function () {
   });
 });
 
+
+// short dec
+$(document).ready(function () {
+  $(".show-more").click(function () {
+    if ($(".full-dec").is(":visible")) {
+      $(".short").show();
+      $(".full-dec").hide();
+      $(".show-more").text("read more");
+    } else {
+      $(".short").hide();
+      $(".full-dec").show();
+      $(".show-more").text("read less");
+    }
+  });
+});

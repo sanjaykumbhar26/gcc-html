@@ -773,6 +773,19 @@ stroke:rgb(151 151 151 / var(--tw-text-opacity));
     stroke: red;
    }
 
+    .full-dec {
+      display: none;
+    }
+
+    .full-dec p:last-child {
+      margin-bottom: 0;
+    }
+
+    .show-more {
+      cursor: pointer;
+      color: #a79a66;
+    }
+
 }
 
 @layer components {
