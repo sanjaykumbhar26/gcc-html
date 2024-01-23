@@ -2229,6 +2229,13 @@ ul {
 footer  ul , .product-pagination ul , nav ul  {
     list-style: none;
   }
+.readmore {
+    cursor: pointer;
+    color: #a79a66;
+  }
+.article[data-readmore] {
+    overflow: hidden;
+}
 @media (max-width: 1024px) {
     .slider-controls .prev {
       left: 0;
