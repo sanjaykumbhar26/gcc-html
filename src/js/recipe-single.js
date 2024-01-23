@@ -26,7 +26,27 @@ new SlimSelect({
   settings: {
     showSearch: false,
     placeholderText: "Person",
-    allowDeselect: true,
   },
 });
 
+
+//
+
+$(document).ready(function () {
+  $('#ingredientList li span').each(function () {
+    $(this).data('original', parseInt($(this).text().replace(',', '')));
+  });
+  $('#person').on('change', function () {
+    var selectedValue = parseInt($(this).val());
+
+    if (isNaN(selectedValue) || selectedValue < 1) {
+      selectedValue = 1;
+    }
+
+    $('#ingredientList li').each(function () {
+      var spanElement = $(this).find('span');
+      var originalValue = spanElement.data('original');
+      spanElement.text(originalValue * selectedValue);
+    });
+  });
+});
