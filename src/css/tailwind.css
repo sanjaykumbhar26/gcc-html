@@ -293,6 +293,25 @@
   -webkit-transform: rotate(180deg);
   }
 
+  header ul {
+    list-style: none;
+  }
+
+  ul {
+    list-style-position: inside;
+    list-style: inherit ;
+  }
+
+  .list-block ul {
+    list-style: inherit ;
+    list-style-position: inside!important;
+  }
+
+  footer  ul , .product-pagination ul , nav ul  {
+    list-style: none;
+  }
+
+
   @media (max-width: 1024px) {
     .slider-controls .prev {
       left: 0;
