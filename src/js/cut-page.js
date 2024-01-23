@@ -43,39 +43,47 @@ $('.article').readmore({
 });
 
 // SlimSelect
+var selectorigin = $('#origin');
+var placeholderorigin = selectorigin.data('placeholder');
 new SlimSelect({
   select: "#origin",
   settings: {
     showSearch: false,
-    placeholderText: "ORIGIN",
+    placeholderText: placeholderorigin,
     allowDeselect: true,
   },
 });
 
+var selectcut = $('#cut');
+var placeholdercut = selectcut.data('placeholder');
 new SlimSelect({
   select: "#cut",
   settings: {
     showSearch: false,
-    placeholderText: "CUT",
+    placeholderText: placeholdercut,
     allowDeselect: true,
   },
 });
 
+var selectstatus = $('#stock-status');
+var placeholderstatus = selectstatus.data('placeholder');
 new SlimSelect({
   select: "#stock-status",
   settings: {
     showSearch: false,
-    placeholderText: "STOCK STATUS",
+    placeholderText: placeholderstatus,
     allowDeselect: true,
   },
 });
 
+var selectElement = $('#Sortedpopularity');
+var placeholderText = selectElement.data('placeholder');
 var slim = new SlimSelect({
   select: "#Sortedpopularity",
   settings: {
     showSearch: false,
-    placeholderText: "Sorted by popularity",
-    allowDeselect: true,
+    placeholderText: placeholderText,
+    allowDeselect: false,
   },
 });
 
