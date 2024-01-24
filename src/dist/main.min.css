@@ -2232,9 +2232,22 @@ footer  ul , .product-pagination ul , nav ul  {
 .readmore {
     cursor: pointer;
     color: #a79a66;
+    font-size: 16px;
   }
 .article[data-readmore] {
     overflow: hidden;
+}
+body::-webkit-scrollbar-track {
+  background-color: #000;
+  border-radius: 0;
+}
+body::-webkit-scrollbar {
+  width: 15px;
+  background-color: #000;
+}
+body::-webkit-scrollbar-thumb {
+  border-radius: 0;
+  background-color: #a79a66;
 }
 @media (max-width: 1024px) {
     .slider-controls .prev {
@@ -2875,6 +2888,15 @@ stroke:rgb(151 151 151 / var(--tw-text-opacity));
 
   .md\:text-f16 {
     font-size: 16px;
+  }
+
+  .md\:text-f32 {
+    font-size: 32px;
+  }
+
+  .md\:text-sm {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
   }
 
   .has-dropdown:hover .md\:hidden {
