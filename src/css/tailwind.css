@@ -208,9 +208,15 @@
   }
 
   .slider-container {
-    width: 80%;
-    margin: 50px auto;
+    margin: 20px auto;
     overflow: hidden;
+    background: #8d804a59;
+    padding: 20px;
+    border-radius: 10px;
+  }
+
+  .slider-img img {
+    border-radius: 10px;
   }
 
   .slider {
@@ -238,12 +244,11 @@
   }
 
   .slider-container button {
-    background-color: #333333;
     color: #fff;
     border: none;
     cursor: pointer;
-    width: 45px;
-    height: 45px;
+    width: 25px;
+    height: 25px;
     display: flex;
     align-items: center;
     justify-content: center;
