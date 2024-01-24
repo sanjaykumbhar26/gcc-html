@@ -347,6 +347,12 @@
     }
   }
 
+  .date-slider .range-lable {
+    padding-left: 10px;
+    border: 1px solid #a79a66;
+    background-position-x: 97%;
+  }
+
   .range-lable {
     background-image: url(../images/icons/chevron-down.svg);
     background-position: right center;
@@ -359,6 +365,7 @@
     align-items: center;
     justify-content: space-between;
     padding-right: 33px;
+    cursor: pointer;
   }
 
   .range-lable label {

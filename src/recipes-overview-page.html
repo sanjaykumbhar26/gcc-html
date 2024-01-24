@@ -1143,7 +1143,6 @@
     </div>
   </section>
 
-
   <!-- ========== FIND YOUR RECIPE INSPIRATION  ========== -->
   <section class="bg-black py-10 mb-8">
     <div class="container">
@@ -1177,12 +1176,16 @@
           </select>
         </div>
         <div class="w-full mt-2 dark-select">
-          <select id="dauer-zubereitung">
-            <option data-placeholder="true"></option>
-            <option>Cut</option>
-            <option>Cut</option>
-            <option>Cut</option>
-          </select>
+          <div class="range-slider date-slider">
+            <div class="range-lable"><label>Time</label> <span class="rangeValues"></span></div>
+            <div class="range-field hidden absolute w-full  p-4 bg-black z-20">
+              <div class="p-4 flex">
+                <input value="0" min="0" max="300" step="5" type="range">
+                <input value="300" min="0" max="300" step="5" type="range">
+              </div>
+              <span class="rangeValues"></span>
+            </div>
+          </div>
         </div>
       </div>
       <div class="flex gap-4 flex-col items-center mt-8">
