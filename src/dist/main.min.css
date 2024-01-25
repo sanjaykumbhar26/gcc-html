@@ -1846,8 +1846,8 @@ li {
   font-size: 2.25rem;
   line-height: 2.5rem;
 }
-.text-6xl {
-  font-size: 3.75rem;
+.text-5xl {
+  font-size: 3rem;
   line-height: 1;
 }
 .text-\[10px\] {
@@ -2956,6 +2956,10 @@ stroke:rgb(151 151 151 / var(--tw-text-opacity));
     margin-left: 328px;
   }
 
+  .lg\:mt-0 {
+    margin-top: 0px;
+  }
+
   .lg\:block {
     display: block;
   }
@@ -3229,6 +3233,11 @@ stroke:rgb(151 151 151 / var(--tw-text-opacity));
 
   .lg\:text-right {
     text-align: right;
+  }
+
+  .lg\:text-6xl {
+    font-size: 3.75rem;
+    line-height: 1;
   }
 
   .lg\:text-f40 {
