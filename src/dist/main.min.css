@@ -2259,7 +2259,7 @@ footer  ul , .product-pagination ul , nav ul  {
     color: #a79a66;
     font-size: 16px;
   }
-.article[data-readmore] {
+.descriptive[data-readmore] {
     overflow: hidden;
 }
 body::-webkit-scrollbar-track {

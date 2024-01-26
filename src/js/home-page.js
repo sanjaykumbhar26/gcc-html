@@ -10,9 +10,7 @@ jQuery(".tab").on("click", function (evt) {
 
 // Slider
 
-
-
-$(document).ready(function () {
+jQuery(document).ready(function () {
 
   var splide = new Splide('.splide', {
     type: 'loop',
@@ -68,8 +66,8 @@ $(document).ready(function () {
 
 
 //  Alert 
-$(".alert-close").on("click", function () {
-  $("#alert-icon").addClass("hidden");
+jQuery(".alert-close").on("click", function () {
+  jQuery("#alert-icon").addClass("hidden");
 });
 
 

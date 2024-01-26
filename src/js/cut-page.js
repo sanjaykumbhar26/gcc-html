@@ -36,14 +36,14 @@ window.onload = function () {
 
 
 // Read More
-$('.article').readmore({
+jQuery('.descriptive').readmore({
   speed: 100,
   collapsedHeight: 80,
   lessLink: '<span class="readmore">Read less</span>'
 });
 
 // SlimSelect
-var selectorigin = $('#origin');
+var selectorigin = jQuery('#origin');
 var placeholderorigin = selectorigin.data('placeholder');
 new SlimSelect({
   select: "#origin",
@@ -54,7 +54,7 @@ new SlimSelect({
   },
 });
 
-var selectcut = $('#cut');
+var selectcut = jQuery('#cut');
 var placeholdercut = selectcut.data('placeholder');
 new SlimSelect({
   select: "#cut",
@@ -65,7 +65,7 @@ new SlimSelect({
   },
 });
 
-var selectstatus = $('#stock-status');
+var selectstatus = jQuery('#stock-status');
 var placeholderstatus = selectstatus.data('placeholder');
 new SlimSelect({
   select: "#stock-status",
@@ -89,29 +89,26 @@ var slim = new SlimSelect({
 
 
 // accordion
-$(document).ready(function () {
+jQuery(document).ready(function () {
   var accordionSelected = null;
-  $('#accordion h4').on('click', function () {
-    var accordionIndex = $(this).data('index');
+  jQuery('#accordion h4').on('click', function () {
+    var accordionIndex = jQuery(this).data('index');
     if (accordionSelected !== accordionIndex) {
       accordionSelected = accordionIndex;
     } else {
       accordionSelected = null;
     }
 
-    // Toggle visibility of corresponding content for accordion
-    $('#accordion p').each(function () {
-      var contentIndex = $(this).data('index');
+    jQuery('#accordion p').each(function () {
+      var contentIndex = jQuery(this).data('index');
       $(this).toggle(contentIndex === accordionSelected);
     });
 
-    // Toggle arrow direction for accordion
-    $('#accordion h4 span.arrow').removeClass('arrow-up');
-    $(this).find('span.arrow').toggleClass('arrow-up', accordionSelected === accordionIndex);
+    jQuery('#accordion h4 span.arrow').removeClass('arrow-up');
+    jQuery(this).find('span.arrow').toggleClass('arrow-up', accordionSelected === accordionIndex);
 
-    // Toggle active class for accordion header
-    $('#accordion h4').removeClass('active');
-    $(this).toggleClass('active', accordionSelected === accordionIndex);
+    jQuery('#accordion h4').removeClass('active');
+    jQuery(this).toggleClass('active', accordionSelected === accordionIndex);
   });
 });
 

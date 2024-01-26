@@ -37,7 +37,7 @@ jQuery(".tab").on("click", function (evt) {
 });
 
 // Slider
-$(document).ready(function () {
+jQuery(document).ready(function () {
   var secondarySlider = new Splide('#secondary-slider', {
     rewind: true,
     fixedWidth: 150,
@@ -121,7 +121,7 @@ new SlimSelect({
 });
 
 // Read More
-$('.article').readmore({
+jQuery('.descriptive').readmore({
   speed: 100,
   collapsedHeight: 100,
   lessLink: '<span class="readmore">Read less</span>'
