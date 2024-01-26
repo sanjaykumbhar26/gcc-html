@@ -136,8 +136,6 @@ function closeMenu() {
   jQuery("body").removeClass("menuopen");
 }
 
-// nav
-// $('.nav').before('<a class="nav__link sub__close" href="#"><i class="fas fa-chevron-left"></i> Back</a>');
 jQuery(document).on("click", ".sub__close", function (e) {
   e.preventDefault();
   var activeItems = jQuery(".nav__sub.is-active");

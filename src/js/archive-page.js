@@ -121,7 +121,7 @@ jQuery(document).ready(function () {
 });
 
 // Read More
-$('.descriptive').readmore({
+jQuery('.descriptive').readmore({
   speed: 100,
   collapsedHeight: 100,
   lessLink: '<span class="readmore">Read less</span>'
