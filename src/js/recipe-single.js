@@ -5,8 +5,16 @@ function handleRating(rating) {
   selectedRating = rating;
   updateIcon();
   const dropdown = document.getElementById('ratingDropdown');
-  dropdown.value = rating;
-  dropdown.dispatchEvent(new Event('change'));
+  Array.from(dropdown.options).forEach(option => {
+    option.removeAttribute('selected');
+  });
+  const selectedOption = dropdown.options[rating - 1];
+  selectedOption.setAttribute('selected', 'selected');
+}
+function handleDropdownChange() {
+  const dropdown = document.getElementById('ratingDropdown');
+  const selectedValue = dropdown.value;
+  handleRating(parseInt(selectedValue));
 }
 function updateIcon() {
   const stars = document.querySelectorAll('.star');
@@ -18,7 +26,6 @@ function updateIcon() {
     }
   });
 }
-
 
 // SlimSelect
 new SlimSelect({
