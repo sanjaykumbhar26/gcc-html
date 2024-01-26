@@ -370,6 +370,10 @@ body::-webkit-scrollbar-thumb {
     }
   }
 
+  .required {
+    margin-left: 3px;
+  }
+
   .date-slider .range-lable {
     padding-left: 10px;
     border: 1px solid #a79a66;
