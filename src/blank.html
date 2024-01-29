@@ -62,10 +62,22 @@
 <body>
   <!-- ========== HEADER SECTION ========== -->
   <header>
+    <!-- ========== ALERT ========== -->
+    <div id="alert-icon" class="bg-black pl-6 pr-10 py-2.5 text-center w-full">
+      <span class="text-white">We're going out of town! The place between January 1 - 8, may be delayed slightly.</span>
+      <span class="absolute top-[13px] right-4 cursor-pointer alert-close">
+        <svg xmlns="http://www.w3.org/2000/svg" class="alert-close" width="20" height="20" fill="#fff"
+          viewBox="0 0 384 512">
+          <path
+            d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z">
+          </path>
+        </svg>
+      </span>
+    </div>
     <!-- Header Topbar -->
     <div class="bg-yellow py-2.5">
       <div class="container flex xl:justify-between justify-center">
-        <div class="xl:flex justify-between gap-x-8 hidden">
+        <div class="xl:flex lg:min-w-[33.33%] justify-between gap-x-8 hidden">
           <figure class="flex items-center gap-2">
             <span class="w-[30px] h-[30px] icon-svg">
               <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
@@ -90,7 +102,7 @@
             </figcaption>
           </figure>
         </div>
-        <div class="flex items-center gap-x-3">
+        <div class="flex lg:min-w-[33.33%] items-center lg:justify-center gap-x-3">
           <figure class="flex items-center gap-2">
             <span class="w-[30px] h-[30px] icon-svg">
               <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
@@ -99,17 +111,17 @@
                 <g>
                   <path fill="#fff"
                     d="M52.474,179.902c-3.657-0.992-5.839-4.733-4.875-8.391c0.992-3.656,4.733-5.839,8.418-4.875l35.15,9.439
-                      		l45.127-26.08l-45.127-26.05l-35.15,9.439c-3.685,0.963-7.427-1.219-8.418-4.876c-0.964-3.657,1.219-7.398,4.875-8.39l31.238-8.362
-                      		L75.35,80.463c-0.992-3.657,1.19-7.398,4.847-8.391c3.657-0.964,7.427,1.19,8.391,4.875l9.439,35.149l45.099,26.051V86.019
-                      		l-25.71-25.71c-2.693-2.693-2.693-7.03,0-9.723c2.665-2.693,7.03-2.693,9.695,0l22.903,22.875l22.876-22.875
-                      		c2.665-2.693,7.03-2.693,9.694,0c2.693,2.693,2.693,7.03,0,9.723l-25.71,25.71v52.129l45.1-26.051l9.438-35.149
-                      		c0.964-3.685,4.734-5.839,8.391-4.875c3.657,0.992,5.84,4.734,4.848,8.391l-8.362,31.294l31.238,8.362
-                      		c3.656,0.992,5.839,4.733,4.875,8.39c-0.992,3.657-4.733,5.839-8.419,4.876l-35.149-9.439l-45.128,26.05l45.128,26.08l35.149-9.439
-                      		c3.686-0.964,7.427,1.219,8.419,4.875c0.964,3.657-1.219,7.398-4.875,8.391l-31.238,8.362l8.362,31.267
-                      		c0.992,3.685-1.19,7.427-4.848,8.419c-3.656,0.964-7.427-1.22-8.391-4.876l-9.438-35.149l-45.1-26.051v52.129l25.71,25.711
-                      		c2.693,2.692,2.693,7.029,0,9.723c-2.664,2.664-7.029,2.664-9.694,0l-22.876-22.876l-22.903,22.876
-                      		c-2.665,2.664-7.03,2.664-9.695,0c-2.693-2.693-2.693-7.03,0-9.723l25.71-25.711v-52.129l-45.099,26.051l-9.439,35.149
-                      		c-0.964,3.656-4.734,5.84-8.391,4.876c-3.657-0.992-5.839-4.734-4.847-8.419l8.362-31.267L52.474,179.902z" />
+                                    		l45.127-26.08l-45.127-26.05l-35.15,9.439c-3.685,0.963-7.427-1.219-8.418-4.876c-0.964-3.657,1.219-7.398,4.875-8.39l31.238-8.362
+                                    		L75.35,80.463c-0.992-3.657,1.19-7.398,4.847-8.391c3.657-0.964,7.427,1.19,8.391,4.875l9.439,35.149l45.099,26.051V86.019
+                                    		l-25.71-25.71c-2.693-2.693-2.693-7.03,0-9.723c2.665-2.693,7.03-2.693,9.695,0l22.903,22.875l22.876-22.875
+                                    		c2.665-2.693,7.03-2.693,9.694,0c2.693,2.693,2.693,7.03,0,9.723l-25.71,25.71v52.129l45.1-26.051l9.438-35.149
+                                    		c0.964-3.685,4.734-5.839,8.391-4.875c3.657,0.992,5.84,4.734,4.848,8.391l-8.362,31.294l31.238,8.362
+                                    		c3.656,0.992,5.839,4.733,4.875,8.39c-0.992,3.657-4.733,5.839-8.419,4.876l-35.149-9.439l-45.128,26.05l45.128,26.08l35.149-9.439
+                                    		c3.686-0.964,7.427,1.219,8.419,4.875c0.964,3.657-1.219,7.398-4.875,8.391l-31.238,8.362l8.362,31.267
+                                    		c0.992,3.685-1.19,7.427-4.848,8.419c-3.656,0.964-7.427-1.22-8.391-4.876l-9.438-35.149l-45.1-26.051v52.129l25.71,25.711
+                                    		c2.693,2.692,2.693,7.029,0,9.723c-2.664,2.664-7.029,2.664-9.694,0l-22.876-22.876l-22.903,22.876
+                                    		c-2.665,2.664-7.03,2.664-9.695,0c-2.693-2.693-2.693-7.03,0-9.723l25.71-25.711v-52.129l-45.099,26.051l-9.439,35.149
+                                    		c-0.964,3.656-4.734,5.84-8.391,4.876c-3.657-0.992-5.839-4.734-4.847-8.419l8.362-31.267L52.474,179.902z" />
                 </g>
               </svg>
 
@@ -118,6 +130,8 @@
               Garantierte Kühlkette
             </figcaption>
           </figure>
+        </div>
+        <div class="flex lg:min-w-[33.33%] items-center lg:justify-end gap-x-3">
           <a href="#" class="w-[20px] h-[20px] icon-svg">
             <svg xmlns="http://www.w3.org/2000/svg" fill="#fff" height="20" width="20" viewBox="0 0 512 512">
               <path
@@ -278,14 +292,14 @@
       </div>
     </div>
     <!-- Nav Header -->
-    <nav class="hidden lg:flex mx-auto items-center justify-between border-y-[3px] border-[#414141]"
+    <nav class="hidden lg:flex mx-auto items-center justify-between border-y-[1px] border-[#414141]"
       aria-label="Global">
       <div class="container flex">
         <!-- side menu -->
         <ul class="flex gap-x-4 xl:gap-x-5">
           <li class="relative  bg-yellow flex items-center justify-center cat-menu-list">
             <a href="#"
-              class="text-f18 cat-menu min-w-[285px] px-4 w-full font-bold flex items-center justify-start h-full border-x-[3px] border-[#414141]">
+              class="text-f18 cat-menu min-w-[285px] px-4 w-full font-bold flex items-center justify-start h-full border-x-[1px] border-[#414141]">
               <span class="h-[40px] W-[40px] p-2 icon-svg">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
                   <path
@@ -294,7 +308,7 @@
                 </svg>
               </span>
               KATEGORIE
-              <span class="h-[20px] W-[20px] icon-svg absolute right-2">
+              <span class="h-[20px] W-[20px] icon-svg absolute right-4">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#fff" viewBox="0 0 512 512">
                   <path
                     d="M239 401c9.4 9.4 24.6 9.4 33.9 0L465 209c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0l-175 175L81 175c-9.4-9.4-24.6-9.4-33.9 0s-9.4 24.6 0 33.9L239 401z" />
@@ -302,8 +316,8 @@
               </span>
             </a>
             <div class="absolute left-0 top-full mt-[2px] z-10 w-full bg-black default-menu">
-              <ul class="border-x-[3px] border-[#414141]" id="megaMenu">
-                <li class="py-0.5 px-4 border-b-[3px] border-[#414141] hover:bg-smokBlack">
+              <ul class="border-x-[1px] border-[#414141]" id="megaMenu">
+                <li class="py-0.5 px-4 border-b-[1px] border-[#414141] hover:bg-smokBlack">
                   <a class="flex items-center justify-between" href="#">
                     <div class="flex items-center gap-x-2">
                       <span class="h-[40px] W-[40px] p-2 icon-svg">
@@ -423,7 +437,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="py-0.5 px-4 border-b-[3px] border-[#414141] hover:bg-smokBlack">
+                <li class="py-0.5 px-4 border-b-[1px] border-[#414141] hover:bg-smokBlack">
                   <a class="flex items-center justify-between" href="#">
                     <div class="flex items-center gap-x-2">
                       <span class="h-[40px] W-[40px] p-2 icon-svg">
@@ -495,7 +509,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="py-0.5 px-4 border-b-[3px] border-[#414141] hover:bg-smokBlack">
+                <li class="py-0.5 px-4 border-b-[1px] border-[#414141] hover:bg-smokBlack">
                   <a class="flex items-center justify-between" href="#">
                     <div class="flex items-center gap-x-2">
                       <span class="h-[40px] W-[40px] p-2 icon-svg">
@@ -567,7 +581,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="py-0.5 px-4 border-b-[3px] border-[#414141] hover:bg-smokBlack">
+                <li class="py-0.5 px-4 border-b-[1px] border-[#414141] hover:bg-smokBlack">
                   <a class="flex items-center justify-between" href="#">
                     <div class="flex items-center gap-x-2">
                       <span class="h-[40px] W-[40px] p-2 icon-svg">
@@ -687,7 +701,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="py-0.5 px-4 border-b-[3px] border-[#414141] hover:bg-smokBlack">
+                <li class="py-0.5 px-4 border-b-[1px] border-[#414141] hover:bg-smokBlack">
                   <a class="flex items-center justify-between" href="#">
                     <div class="flex items-center gap-x-2">
                       <span class="h-[40px] W-[40px] p-2 icon-svg">
@@ -807,7 +821,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="py-0.5 px-4 border-b-[3px] border-[#414141] hover:bg-smokBlack">
+                <li class="py-0.5 px-4 border-b-[1px] border-[#414141] hover:bg-smokBlack">
                   <a class="flex items-center justify-between" href="#">
                     <div class="flex items-center gap-x-2">
                       <span class="h-[40px] W-[40px] p-2 icon-svg">
@@ -933,7 +947,7 @@
         </ul>
         <!-- main menu  -->
         <div class="flex justify-between w-full">
-          <ul class="flex gap-x-1 xl:gap-x-1">
+          <ul class="flex gap-x-1 xl:gap-x-1 lg:ml-4">
             <li class="relative has-dropdown py-2 hover:bg-smokBlack px-2">
               <a href="#" class="flex items-center text-f18 font-bold gap-x-2" aria-expanded="false">
                 <img alt="icon" width="15px" height="15px" src="images/icons/seafood.png"> SEAFOOD

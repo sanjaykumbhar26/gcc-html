@@ -744,6 +744,9 @@ li {
 .mb-20 {
   margin-bottom: 5rem;
 }
+.mb-28 {
+  margin-bottom: 7rem;
+}
 .mb-3 {
   margin-bottom: 0.75rem;
 }
@@ -1146,12 +1149,6 @@ li {
 .max-w-\[1000px\] {
   max-width: 1000px;
 }
-.max-w-\[100px\] {
-  max-width: 100px;
-}
-.max-w-\[113px\] {
-  max-width: 113px;
-}
 .max-w-\[120px\] {
   max-width: 120px;
 }
@@ -1405,6 +1402,10 @@ li {
 .border-2 {
   border-width: 2px;
 }
+.border-x-\[1px\] {
+  border-left-width: 1px;
+  border-right-width: 1px;
+}
 .border-x-\[3px\] {
   border-left-width: 3px;
   border-right-width: 3px;
@@ -1412,6 +1413,10 @@ li {
 .border-y-2 {
   border-top-width: 2px;
   border-bottom-width: 2px;
+}
+.border-y-\[1px\] {
+  border-top-width: 1px;
+  border-bottom-width: 1px;
 }
 .border-y-\[3px\] {
   border-top-width: 3px;
@@ -1434,6 +1439,9 @@ li {
 }
 .border-b-8 {
   border-bottom-width: 8px;
+}
+.border-b-\[1px\] {
+  border-bottom-width: 1px;
 }
 .border-b-\[3px\] {
   border-bottom-width: 3px;
@@ -2923,15 +2931,6 @@ stroke:rgb(151 151 151 / var(--tw-text-opacity));
     font-size: 16px;
   }
 
-  .md\:text-f32 {
-    font-size: 32px;
-  }
-
-  .md\:text-sm {
-    font-size: 0.875rem;
-    line-height: 1.25rem;
-  }
-
   .has-dropdown:hover .md\:hidden {
     display: block;
   }
@@ -2952,6 +2951,10 @@ stroke:rgb(151 151 151 / var(--tw-text-opacity));
 
   .lg\:ml-20 {
     margin-left: 5rem;
+  }
+
+  .lg\:ml-4 {
+    margin-left: 1rem;
   }
 
   .lg\:ml-\[306px\] {
@@ -3026,28 +3029,12 @@ stroke:rgb(151 151 151 / var(--tw-text-opacity));
     width: 220px;
   }
 
-  .lg\:w-\[23\%\] {
-    width: 23%;
-  }
-
   .lg\:w-\[240px\] {
     width: 240px;
   }
 
-  .lg\:w-\[28\%\] {
-    width: 28%;
-  }
-
   .lg\:w-\[30\%\] {
     width: 30%;
-  }
-
-  .lg\:w-\[300px\] {
-    width: 300px;
-  }
-
-  .lg\:w-\[32\%\] {
-    width: 32%;
   }
 
   .lg\:w-\[33\%\] {
@@ -3098,14 +3085,6 @@ stroke:rgb(151 151 151 / var(--tw-text-opacity));
     width: 80%;
   }
 
-  .lg\:w-\[88\%\] {
-    width: 88%;
-  }
-
-  .lg\:w-\[9\%\] {
-    width: 9%;
-  }
-
   .lg\:w-full {
     width: 100%;
   }
@@ -3113,6 +3092,10 @@ stroke:rgb(151 151 151 / var(--tw-text-opacity));
   .lg\:w-max {
     width: -moz-max-content;
     width: max-content;
+  }
+
+  .lg\:min-w-\[33\.33\%\] {
+    min-width: 33.33%;
   }
 
   .lg\:max-w-\[40\%\] {
@@ -3149,6 +3132,14 @@ stroke:rgb(151 151 151 / var(--tw-text-opacity));
 
   .lg\:justify-start {
     justify-content: flex-start;
+  }
+
+  .lg\:justify-end {
+    justify-content: flex-end;
+  }
+
+  .lg\:justify-center {
+    justify-content: center;
   }
 
   .lg\:justify-between {
