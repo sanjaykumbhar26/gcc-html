@@ -1802,6 +1802,9 @@ li {
 .pl-6 {
   padding-left: 1.5rem;
 }
+.pl-8 {
+  padding-left: 2rem;
+}
 .pr-10 {
   padding-right: 2.5rem;
 }
@@ -3001,6 +3004,10 @@ stroke:rgb(151 151 151 / var(--tw-text-opacity));
     height: 342px;
   }
 
+  .lg\:max-h-\[492px\] {
+    max-height: 492px;
+  }
+
   .lg\:max-h-\[497px\] {
     max-height: 497px;
   }
@@ -3216,10 +3223,6 @@ stroke:rgb(151 151 151 / var(--tw-text-opacity));
     padding-left: 3rem;
   }
 
-  .lg\:pl-2 {
-    padding-left: 0.5rem;
-  }
-
   .lg\:pl-3 {
     padding-left: 0.75rem;
   }
@@ -3232,8 +3235,8 @@ stroke:rgb(151 151 151 / var(--tw-text-opacity));
     padding-right: 3.5rem;
   }
 
-  .lg\:pr-2 {
-    padding-right: 0.5rem;
+  .lg\:pr-4 {
+    padding-right: 1rem;
   }
 
   .lg\:text-left {
