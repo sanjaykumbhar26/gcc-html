@@ -9,59 +9,49 @@ jQuery(".tab").on("click", function (evt) {
 });
 
 // Slider
-
 jQuery(document).ready(function () {
-
-  var splide = new Splide('.splide', {
+  var splide = new Splide('.slider-hero', {
     type: 'loop',
     perPage: 1,
     paginationDirection: 'ltr',
   });
   splide.mount();
 
-
-  var splide = new Splide('#home-slider', {
+  new Splide('.home-slider', {
     type: 'loop',
     perPage: 4,
-    gap: 20,
-    pagination: false,
+    trimSpace: true,
+    gap: "30px",
     breakpoints: {
       1024: {
         perPage: 2,
       },
-      767: {
+      640: {
         perPage: 1,
       },
     }
-  });
-  splide.mount();
+  }).mount();
 
-  var splide = new Splide('#hero-slider', {
-    type: 'loop',
-    perPage: 1,
-    gap: 20,
-    pagination: false,
-  });
-  splide.mount();
-
-  var splide = new Splide('#home-slider-tow', {
+  new Splide('.splide-map', {
     type: 'loop',
     perPage: 3,
-    gap: 20,
-    pagination: false,
+    arrows: false,
+    cloneStatus: false,
+    trimSpace: true,
+    gap: "30px",
     breakpoints: {
       1024: {
         perPage: 2,
       },
-      767: {
+      640: {
         perPage: 1,
       },
     }
-  });
-  splide.mount();
-
+  }).mount();
 
 });
+
+
 
 
 

@@ -624,6 +624,9 @@ li {
 .top-\[13px\] {
   top: 13px;
 }
+.top-\[60\%\] {
+  top: 60%;
+}
 .top-full {
   top: 100%;
 }
@@ -713,6 +716,12 @@ li {
 .my-8 {
   margin-top: 2rem;
   margin-bottom: 2rem;
+}
+.\!mt-12 {
+  margin-top: 3rem !important;
+}
+.\!mt-14 {
+  margin-top: 3.5rem !important;
 }
 .-ml-1 {
   margin-left: -0.25rem;
@@ -1841,6 +1850,9 @@ li {
 .text-right {
   text-align: right;
 }
+.text-start {
+  text-align: start;
+}
 .align-top {
   vertical-align: top;
 }
@@ -2652,7 +2664,7 @@ input[type="radio"]:checked+label {
   
   position: relative;
   }
-.splide__slide.is-visible::after {
+#secondary-slider .splide__slide.is-visible::after {
     width: 100%;
     height: 100%;
     content: '';

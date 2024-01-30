@@ -793,7 +793,7 @@ body::-webkit-scrollbar-thumb {
   position: relative;
   }
 
-   .splide__slide.is-visible::after {
+   #secondary-slider .splide__slide.is-visible::after {
     width: 100%;
     height: 100%;
     content: '';
