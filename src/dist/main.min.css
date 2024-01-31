@@ -561,8 +561,14 @@ li {
 .-bottom-\[12px\] {
   bottom: -12px;
 }
+.-right-2 {
+  right: -0.5rem;
+}
 .-top-1 {
   top: -0.25rem;
+}
+.-top-2 {
+  top: -0.5rem;
 }
 .-top-8 {
   top: -2rem;
