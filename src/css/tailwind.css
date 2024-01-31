@@ -193,6 +193,12 @@
     visibility: visible;
     transform: translateX(0%);
     background-color: #0f0f0f;
+        overflow-y: auto;
+    overflow-x: hidden;
+  }
+
+  .mobile-menu {
+    height: 100vh;
   }
 
   .has-dropdown:hover .hidden {

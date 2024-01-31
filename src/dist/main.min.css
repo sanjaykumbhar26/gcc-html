@@ -840,6 +840,9 @@ li {
 .mt-8 {
   margin-top: 2rem;
 }
+.mt-\[0px\] {
+  margin-top: 0px;
+}
 .mt-\[2px\] {
   margin-top: 2px;
 }
@@ -1455,6 +1458,9 @@ li {
 .border-b-\[3px\] {
   border-bottom-width: 3px;
 }
+.border-l {
+  border-left-width: 1px;
+}
 .border-l-0 {
   border-left-width: 0px;
 }
@@ -1556,6 +1562,10 @@ li {
   --tw-bg-opacity: 1;
   background-color: rgb(57 57 57 / var(--tw-bg-opacity));
 }
+.bg-\[\#414141\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(65 65 65 / var(--tw-bg-opacity));
+}
 .bg-\[\#568c72\] {
   --tw-bg-opacity: 1;
   background-color: rgb(86 140 114 / var(--tw-bg-opacity));
@@ -1604,6 +1614,9 @@ li {
   --tw-bg-opacity: 1;
   background-color: rgb(141 128 74 / var(--tw-bg-opacity));
 }
+.bg-opacity-50 {
+  --tw-bg-opacity: 0.5;
+}
 .bg-featuredBg {
   background-image: url('../images/bg-featured.webp');
 }
@@ -1649,6 +1662,10 @@ li {
 }
 .p-6 {
   padding: 1.5rem;
+}
+.\!px-0 {
+  padding-left: 0px !important;
+  padding-right: 0px !important;
 }
 .px-1 {
   padding-left: 0.25rem;
@@ -2176,6 +2193,11 @@ body.menuopen .light_menu_box {
     visibility: visible;
     transform: translateX(0%);
     background-color: #0f0f0f;
+        overflow-y: auto;
+    overflow-x: hidden;
+  }
+.mobile-menu {
+    height: 100vh;
   }
 .has-dropdown:hover .hidden {
     display: block;
