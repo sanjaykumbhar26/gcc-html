@@ -567,9 +567,6 @@ li {
 .-top-1 {
   top: -0.25rem;
 }
-.-top-2 {
-  top: -0.5rem;
-}
 .-top-8 {
   top: -2rem;
 }
@@ -1089,6 +1086,9 @@ li {
 .w-\[360px\] {
   width: 360px;
 }
+.w-\[38px\] {
+  width: 38px;
+}
 .w-\[40px\] {
   width: 40px;
 }
@@ -1376,6 +1376,10 @@ li {
 .gap-x-5 {
   -moz-column-gap: 1.25rem;
        column-gap: 1.25rem;
+}
+.gap-x-6 {
+  -moz-column-gap: 1.5rem;
+       column-gap: 1.5rem;
 }
 .gap-x-8 {
   -moz-column-gap: 2rem;
@@ -3394,6 +3398,10 @@ stroke:rgb(151 151 151 / var(--tw-text-opacity));
 
   .xl\:max-w-\[40\%\] {
     max-width: 40%;
+  }
+
+  .xl\:max-w-\[60\%\] {
+    max-width: 60%;
   }
 
   .xl\:grid-cols-1 {
