@@ -52,6 +52,12 @@ jQuery(document).ready(function () {
 });
 
 
+PopoverComponent.init({
+  ele: '.popover-map',
+  showOnHover: true
+});
+
+
 
 
 
