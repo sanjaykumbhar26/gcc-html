@@ -2817,10 +2817,10 @@ stroke:rgb(151 151 151 / var(--tw-text-opacity));
 .icon-white svg {
       width: 100%;
     }
-.noti-button {
+.notification-button {
       margin-right: 80px;
      }
-.noti-button a {
+.notification-button a {
       position: absolute;
     right: 20px;
     font-weight: 400;
