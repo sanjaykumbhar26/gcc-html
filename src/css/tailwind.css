@@ -946,6 +946,16 @@ stroke:rgb(151 151 151 / var(--tw-text-opacity));
       width: 100%;
     }
 
+     .noti-button {
+      margin-right: 80px;
+     }
+
+    .noti-button a {
+      position: absolute;
+    right: 20px;
+    font-weight: 400;
+    }
+
 }
 
 @layer components {
