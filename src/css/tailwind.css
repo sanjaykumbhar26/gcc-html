@@ -929,6 +929,23 @@ stroke:rgb(151 151 151 / var(--tw-text-opacity));
       padding: 5px 8px;
     }
 
+    .icon-white svg path {
+      fill: #fff;
+    }
+
+    .icon-link a.button:hover  {
+      text-decoration: underline;
+    }
+
+    .icon-link a.button {
+      font-weight: normal;
+          min-width: max-content;
+    }
+
+    .icon-white svg {
+      width: 100%;
+    }
+
 }
 
 @layer components {
