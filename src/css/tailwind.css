@@ -994,6 +994,11 @@ select {
   text-indent: 1px;
   text-overflow: '';
 }
+
+.btn-clear {
+  
+}
+
 }
 
 @layer components {
