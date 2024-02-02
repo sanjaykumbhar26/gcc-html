@@ -7,11 +7,11 @@ jQuery(function () {
       $input
         .val(
           currentValue +
-          (jQuery(this).hasClass("minus") && currentValue > 0 ? -1 : 1)
+          (jQuery(this).hasClass("minus") && currentValue > 1 ? -1 : 1)
         )
         .change();
     } else {
-      $input.val(0).change();
+      $input.val(1).change();
     }
 
     return false;
@@ -20,7 +20,7 @@ jQuery(function () {
   jQuery(".add-cart input").on("input", function () {
     var sanitizedValue = jQuery(this)
       .val()
-      .replace(/[^0-9]/g, ""); // Remove non-numeric characters
+      .replace(/[^1-9]/g, ""); // Remove non-numeric characters
     jQuery(this).val(sanitizedValue);
   });
 
@@ -113,6 +113,15 @@ jQuery(document).ready(function () {
 // SlimSelect
 new SlimSelect({
   select: "#weight",
+  settings: {
+    showSearch: false,
+    placeholderText: "Wähle eine Option",
+    allowDeselect: true,
+  },
+});
+
+new SlimSelect({
+  select: "#weight2",
   settings: {
     showSearch: false,
     placeholderText: "Wähle eine Option",
