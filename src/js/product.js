@@ -3,28 +3,26 @@ jQuery(function () {
   jQuery(".minus, .plus").click(function () {
     var $input = jQuery(this).parent().find("input");
     var currentValue = parseInt($input.val());
-    if (!isNaN(currentValue) && currentValue >= 0) {
-      $input
-        .val(
-          currentValue +
-          (jQuery(this).hasClass("minus") && currentValue > 1 ? -1 : 1)
-        )
-        .change();
-    } else {
-      $input.val(1).change();
+    if (isNaN(currentValue)) {
+      currentValue = 1;
     }
-
+    if (jQuery(this).hasClass("minus")) {
+      $input.val(Math.max(1, currentValue - 1)).change();
+    } else {
+      $input.val(currentValue + 1).change();
+    }
     return false;
-
   });
+
   jQuery(".add-cart input").on("input", function () {
     var sanitizedValue = jQuery(this)
       .val()
       .replace(/[^1-9]/g, ""); // Remove non-numeric characters
     jQuery(this).val(sanitizedValue);
   });
-
 });
+
+
 
 // Tab
 jQuery(".tab").on("click", function (evt) {
