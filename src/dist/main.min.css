@@ -2235,6 +2235,8 @@ body.menuopen .light_menu_box {
     background-color: #0f0f0f;
     overflow-y: auto;
     overflow-x: hidden;
+   height: 100vh;
+   padding-bottom: 260px;
   }
 .mobile-menu {
     /* height: 100vh; */

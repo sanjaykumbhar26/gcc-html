@@ -69,17 +69,20 @@ function closeMenu() {
     jQuery("body").removeClass("menuopen");
 }
 
-jQuery(document).on("click", ".sub__close", function (e) {
+jQuery(document).on("click", ".sub__close, .nav__link", function (e) {
     e.preventDefault();
-    var activeItems = jQuery(".nav__sub.is-active");
-    if (activeItems.length > 0) {
-        activeItems.last().removeClass("is-active");
+
+    if (jQuery(this).hasClass("sub__close")) {
+        var activeItems = jQuery(".nav__sub.is-active");
+        if (activeItems.length > 0) {
+            activeItems.last().removeClass("is-active");
+        }
+    } else if (jQuery(this).hasClass("nav__link")) {
+        jQuery(this).siblings(".nav__sub").addClass("is-active");
     }
 });
-jQuery(document).on("click", ".nav__link", function (e) {
-    e.preventDefault();
-    jQuery(this).siblings(".nav__sub").addClass("is-active");
-});
+
+
 
 //MegaMenu
 jQuery(document).ready(function () {
