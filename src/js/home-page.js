@@ -27,7 +27,7 @@ jQuery(document).ready(function () {
         perPage: 2,
       },
       640: {
-        perPage: 1,
+        perPage: 2,
       },
     }
   }).mount();
@@ -35,7 +35,7 @@ jQuery(document).ready(function () {
   new Splide('.splide-map', {
     type: 'loop',
     perPage: 3,
-    arrows: false,
+    arrows: true,
     cloneStatus: false,
     trimSpace: true,
     gap: "30px",
@@ -44,7 +44,7 @@ jQuery(document).ready(function () {
         perPage: 2,
       },
       640: {
-        perPage: 1,
+        perPage: 2,
       },
     }
   }).mount();
