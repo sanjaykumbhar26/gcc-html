@@ -3092,6 +3092,10 @@ select {
     flex-direction: row;
   }
 
+  .md\:flex-col {
+    flex-direction: column;
+  }
+
   .md\:flex-nowrap {
     flex-wrap: nowrap;
   }
