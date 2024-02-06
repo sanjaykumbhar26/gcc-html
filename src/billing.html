@@ -35,7 +35,7 @@
     <link rel="stylesheet" href="dist/main.min.css">
   </noscript>
 
-  <link href="css/slimselect.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
 
   <script>
     function loadFonts() {
@@ -68,45 +68,62 @@
   <header>
     <!-- Header Topbar -->
     <div class="bg-yellow py-2.5">
-      <div class="container flex xl:justify-between justify-center">
-        <div class="xl:flex justify-between gap-x-8 hidden">
+      <div class="container flex xl:justify-between lg:justify-between justify-center">
+        <div class="lg:flex justify-between gap-x-8 hidden">
           <figure class="flex items-center gap-2">
-            <span class="w-[20px] h-[20px] icon-svg">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="#fff" height="220" width="220" viewBox="0 0 448 512">
-                <path
-                  d="M152 24c0-13.3-10.7-24-24-24s-24 10.7-24 24V64H64C28.7 64 0 92.7 0 128v16 48V448c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V192 144 128c0-35.3-28.7-64-64-64H344V24c0-13.3-10.7-24-24-24s-24 10.7-24 24V64H152V24zM48 192h80v56H48V192zm0 104h80v64H48V296zm128 0h96v64H176V296zm144 0h80v64H320V296zm80-48H320V192h80v56zm0 160v40c0 8.8-7.2 16-16 16H320V408h80zm-128 0v56H176V408h96zm-144 0v56H64c-8.8 0-16-7.2-16-16V408h80zM272 248H176V192h96v56z" />
+            <span class="w-[30px] h-[30px] icon-svg">
+              <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="300px" height="300px"
+                viewBox="0 0 300 300" enable-background="new 0 0 300 300" xml:space="preserve">
+                <g>
+                  <path fill="#fff" d="M241.418,119.258v0.142v0.142v128.013c0,3.77-3.09,6.859-6.889,6.859H65.442c-3.77,0-6.86-3.09-6.86-6.859
+                          		V119.4V72.657c0-3.798,3.09-6.888,6.86-6.888h33.024V52.446c0-3.77,3.09-6.86,6.888-6.86c3.77,0,6.86,3.09,6.86,6.86v13.323h30.926
+                          		V52.446c0-3.77,3.062-6.86,6.859-6.86c3.799,0,6.86,3.09,6.86,6.86v13.323h30.926V52.446c0-3.77,3.063-6.86,6.861-6.86
+                          		c3.797,0,6.859,3.09,6.859,6.86v13.323h33.023c3.799,0,6.889,3.09,6.889,6.888V119.258z M227.67,126.26H72.331v114.406H227.67
+                          		V126.26z M72.331,112.54H227.67V79.517h-26.164v13.323c0,3.798-3.063,6.86-6.859,6.86c-3.799,0-6.861-3.062-6.861-6.86V79.517
+                          		h-30.926v13.323c0,3.798-3.061,6.86-6.86,6.86c-3.798,0-6.859-3.062-6.859-6.86V79.517h-30.926v13.323c0,3.798-3.09,6.86-6.86,6.86
+                          		c-3.798,0-6.888-3.062-6.888-6.86V79.517H72.331V112.54z M103.597,186.015c-2.693-2.665-2.693-7.03,0-9.695
+                          		c2.693-2.692,7.03-2.692,9.723,0l23.556,23.557l44.333-50.259c2.494-2.806,6.832-3.09,9.666-0.567
+                          		c2.836,2.495,3.09,6.803,0.596,9.638l-48.784,55.275c-0.199,0.255-0.426,0.51-0.681,0.766c-2.665,2.692-7.03,2.692-9.694,0
+                          		L103.597,186.015z" />
+                </g>
               </svg>
             </span>
-            <figcaption class="font-medium">
+            <figcaption class="uppercase font-bold text-f14">
               Lieferung zum gewünschten Termin d
             </figcaption>
           </figure>
-
+        </div>
+        <div class="hidden lg:flex items-center lg:justify-center gap-x-3">
           <figure class="flex items-center gap-2">
-            <span class="w-[20px] h-[20px] icon-svg">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="#fff" height="120" width="120" viewBox="0 0 640 512">
-                <path
-                  d="M48 0C21.5 0 0 21.5 0 48V368c0 26.5 21.5 48 48 48H64c0 53 43 96 96 96s96-43 96-96H384c0 53 43 96 96 96s96-43 96-96h32c17.7 0 32-14.3 32-32s-14.3-32-32-32V288 256 237.3c0-17-6.7-33.3-18.7-45.3L512 114.7c-12-12-28.3-18.7-45.3-18.7H416V48c0-26.5-21.5-48-48-48H48zM416 160h50.7L544 237.3V256H416V160zM112 416a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm368-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z" />
+            <span class="w-[30px] h-[30px] icon-svg">
+              <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 300 300"
+                enable-background="new 0 0 300 300" xml:space="preserve">
+                <g>
+                  <path fill="#fff"
+                    d="M52.474,179.902c-3.657-0.992-5.839-4.733-4.875-8.391c0.992-3.656,4.733-5.839,8.418-4.875l35.15,9.439
+                                          		l45.127-26.08l-45.127-26.05l-35.15,9.439c-3.685,0.963-7.427-1.219-8.418-4.876c-0.964-3.657,1.219-7.398,4.875-8.39l31.238-8.362
+                                          		L75.35,80.463c-0.992-3.657,1.19-7.398,4.847-8.391c3.657-0.964,7.427,1.19,8.391,4.875l9.439,35.149l45.099,26.051V86.019
+                                          		l-25.71-25.71c-2.693-2.693-2.693-7.03,0-9.723c2.665-2.693,7.03-2.693,9.695,0l22.903,22.875l22.876-22.875
+                                          		c2.665-2.693,7.03-2.693,9.694,0c2.693,2.693,2.693,7.03,0,9.723l-25.71,25.71v52.129l45.1-26.051l9.438-35.149
+                                          		c0.964-3.685,4.734-5.839,8.391-4.875c3.657,0.992,5.84,4.734,4.848,8.391l-8.362,31.294l31.238,8.362
+                                          		c3.656,0.992,5.839,4.733,4.875,8.39c-0.992,3.657-4.733,5.839-8.419,4.876l-35.149-9.439l-45.128,26.05l45.128,26.08l35.149-9.439
+                                          		c3.686-0.964,7.427,1.219,8.419,4.875c0.964,3.657-1.219,7.398-4.875,8.391l-31.238,8.362l8.362,31.267
+                                          		c0.992,3.685-1.19,7.427-4.848,8.419c-3.656,0.964-7.427-1.22-8.391-4.876l-9.438-35.149l-45.1-26.051v52.129l25.71,25.711
+                                          		c2.693,2.692,2.693,7.029,0,9.723c-2.664,2.664-7.029,2.664-9.694,0l-22.876-22.876l-22.903,22.876
+                                          		c-2.665,2.664-7.03,2.664-9.695,0c-2.693-2.693-2.693-7.03,0-9.723l25.71-25.711v-52.129l-45.099,26.051l-9.439,35.149
+                                          		c-0.964,3.656-4.734,5.84-8.391,4.876c-3.657-0.992-5.839-4.734-4.847-8.419l8.362-31.267L52.474,179.902z" />
+                </g>
               </svg>
-            </span>
-            <figcaption class="font-medium">
-              Kostenloser Versand ab €150 Bestellwert
-            </figcaption>
-          </figure>
 
-          <figure class="flex items-center gap-2">
-            <span class="w-[20px] h-[20px] icon-svg">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="#fff" height="20" width="20" viewBox="0 0 448 512">
-                <path
-                  d="M224 0c17.7 0 32 14.3 32 32V62.1l15-15c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9l-49 49v70.3l61.4-35.8 17.7-66.1c3.4-12.8 16.6-20.4 29.4-17s20.4 16.6 17 29.4l-5.2 19.3 23.6-13.8c15.3-8.9 34.9-3.7 43.8 11.5s3.8 34.9-11.5 43.8l-25.3 14.8 21.7 5.8c12.8 3.4 20.4 16.6 17 29.4s-16.6 20.4-29.4 17l-67.7-18.1L287.5 256l60.9 35.5 67.7-18.1c12.8-3.4 26 4.2 29.4 17s-4.2 26-17 29.4l-21.7 5.8 25.3 14.8c15.3 8.9 20.4 28.5 11.5 43.8s-28.5 20.4-43.8 11.5l-23.6-13.8 5.2 19.3c3.4 12.8-4.2 26-17 29.4s-26-4.2-29.4-17l-17.7-66.1L256 311.7v70.3l49 49c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0l-15-15V480c0 17.7-14.3 32-32 32s-32-14.3-32-32V449.9l-15 15c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l49-49V311.7l-61.4 35.8-17.7 66.1c-3.4 12.8-16.6 20.4-29.4 17s-20.4-16.6-17-29.4l5.2-19.3L48.1 395.6c-15.3 8.9-34.9 3.7-43.8-11.5s-3.7-34.9 11.5-43.8l25.3-14.8-21.7-5.8c-12.8-3.4-20.4-16.6-17-29.4s16.6-20.4 29.4-17l67.7 18.1L160.5 256 99.6 220.5 31.9 238.6c-12.8 3.4-26-4.2-29.4-17s4.2-26 17-29.4l21.7-5.8L15.9 171.6C.6 162.7-4.5 143.1 4.4 127.9s28.5-20.4 43.8-11.5l23.6 13.8-5.2-19.3c-3.4-12.8 4.2-26 17-29.4s26 4.2 29.4 17l17.7 66.1L192 200.3V129.9L143 81c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l15 15V32c0-17.7 14.3-32 32-32z" />
-              </svg>
             </span>
-            <figcaption class="font-medium">
+            <figcaption class="uppercase font-bold text-f14">
               Garantierte Kühlkette
             </figcaption>
           </figure>
         </div>
-        <div class="flex items-center gap-x-3">
+        <div class="flex items-center lg:justify-end gap-x-3">
           <a href="#" class="w-[20px] h-[20px] icon-svg">
             <svg xmlns="http://www.w3.org/2000/svg" fill="#fff" height="20" width="20" viewBox="0 0 512 512">
               <path
@@ -134,150 +151,141 @@
         </div>
       </div>
     </div>
-
     <!-- Header -->
     <div class="block lg:hidden py-2">
       <div class="container flex items-center justify-center">
-        <div class="mobile--menu-icon js-toggle-menu w-[50px] h-[50px] icon-svg">
-          <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="#fff" viewBox="0 0 448 512">
-            <path
-              d="M0 88C0 74.7 10.7 64 24 64H424c13.3 0 24 10.7 24 24s-10.7 24-24 24H24C10.7 112 0 101.3 0 88zM0 248c0-13.3 10.7-24 24-24H424c13.3 0 24 10.7 24 24s-10.7 24-24 24H24c-13.3 0-24-10.7-24-24zM448 408c0 13.3-10.7 24-24 24H24c-13.3 0-24-10.7-24-24s10.7-24 24-24H424c13.3 0 24 10.7 24 24z" />
-          </svg>
+        <div class="mobile--menu-icon js-toggle-menu items-center flex gap-1  h-[50px] icon-svg cursor-pointer">
+          <span class="w-[25px]">
+            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="#fff" viewBox="0 0 448 512">
+              <path
+                d="M0 88C0 74.7 10.7 64 24 64H424c13.3 0 24 10.7 24 24s-10.7 24-24 24H24C10.7 112 0 101.3 0 88zM0 248c0-13.3 10.7-24 24-24H424c13.3 0 24 10.7 24 24s-10.7 24-24 24H24c-13.3 0-24-10.7-24-24zM448 408c0 13.3-10.7 24-24 24H24c-13.3 0-24-10.7-24-24s10.7-24 24-24H424c13.3 0 24 10.7 24 24z" />
+            </svg>
+          </span>
+          <span class="text-[12px]">MENÜ</span>
         </div>
-        <a href="#" class="w-full flex items-center justify-center">
-          <img alt="logo" width="230" height="72" loading="lazy" src="./images/GCC_logo_mo.png">
+        <a href="#" class="w-full flex flex-1 items-center justify-center">
+          <img alt="logo" width="180" height="72" loading="lazy" src="./images/GCC_logo_mo.png">
         </a>
-        <div class="flex justify-end items-center js-toggle-cart w-[50px] h-[50px] icon-svg">
-          <svg viewBox="0 0 24 24" width="150" height="150" version="1.1" xmlns="http://www.w3.org/2000/svg"
-            xmlns:xlink="http://www.w3.org/1999/xlink">
-            <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-              <g id="Business" transform="translate(-912.000000, 0.000000)" fill-rule="nonzero">
-                <g id="shopping_bag_1_line" transform="translate(912.000000, 0.000000)">
-                  <path
-                    d="M24,0 L24,24 L0,24 L0,0 L24,0 Z M12.5934901,23.257841 L12.5819402,23.2595131 L12.5108777,23.2950439 L12.4918791,23.2987469 L12.4918791,23.2987469 L12.4767152,23.2950439 L12.4056548,23.2595131 C12.3958229,23.2563662 12.3870493,23.2590235 12.3821421,23.2649074 L12.3780323,23.275831 L12.360941,23.7031097 L12.3658947,23.7234994 L12.3769048,23.7357139 L12.4804777,23.8096931 L12.4953491,23.8136134 L12.4953491,23.8136134 L12.5071152,23.8096931 L12.6106902,23.7357139 L12.6232938,23.7196733 L12.6232938,23.7196733 L12.6266527,23.7031097 L12.609561,23.275831 C12.6075724,23.2657013 12.6010112,23.2592993 12.5934901,23.257841 L12.5934901,23.257841 Z M12.8583906,23.1452862 L12.8445485,23.1473072 L12.6598443,23.2396597 L12.6498822,23.2499052 L12.6498822,23.2499052 L12.6471943,23.2611114 L12.6650943,23.6906389 L12.6699349,23.7034178 L12.6699349,23.7034178 L12.678386,23.7104931 L12.8793402,23.8032389 C12.8914285,23.8068999 12.9022333,23.8029875 12.9078286,23.7952264 L12.9118235,23.7811639 L12.8776777,23.1665331 C12.8752882,23.1545897 12.8674102,23.1470016 12.8583906,23.1452862 L12.8583906,23.1452862 Z M12.1430473,23.1473072 C12.1332178,23.1423925 12.1221763,23.1452606 12.1156365,23.1525954 L12.1099173,23.1665331 L12.0757714,23.7811639 C12.0751323,23.7926639 12.0828099,23.8018602 12.0926481,23.8045676 L12.108256,23.8032389 L12.3092106,23.7104931 L12.3186497,23.7024347 L12.3186497,23.7024347 L12.3225043,23.6906389 L12.340401,23.2611114 L12.337245,23.2485176 L12.337245,23.2485176 L12.3277531,23.2396597 L12.1430473,23.1473072 Z"
-                    id="MingCute" fill-rule="nonzero">
-
-                  </path>
-                  <path
-                    d="M12,2 C14.2091,2 16,3.79086 16,6 L18.0351,6 C19.1119,6 19.9954,6.85252 20.0339,7.92862 L20.4624,19.9286 C20.5028,21.0604 19.5963,22 18.4637,22 L5.5364,22 C4.40385,22 3.49726,21.0605 3.53768,19.9286 L3.96625,7.92862 C4.00468,6.85252 4.88819,6 5.96498,6 L8,6 C8,3.79086 9.79086,2 12,2 Z M8,8 L5.96498,8 L5.5364,20 L18.4637,20 L18.0351,8 L16,8 L16,9 C16,9.55228 15.5523,10 15,10 C14.48715,10 14.0644908,9.61395571 14.0067275,9.11662025 L14,9 L14,8 L10,8 L10,9 C10,9.55228 9.55228,10 9,10 C8.48716857,10 8.06449347,9.61395571 8.0067278,9.11662025 L8,9 L8,8 Z M12,4 C10.9456091,4 10.0818322,4.81587733 10.0054856,5.85073759 L10,6 L14,6 C14,4.89543 13.1046,4 12,4 Z"
-                    id="形状" fill="#fff">
-
-                  </path>
+        <a href="#" class="icon-svg | relative cursor-pointer js-toggle-cart min-w-[50px] h-[40px]">
+          <svg id="Ebene_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 150">
+            <g id="">
+              <g id="Business">
+                <g id="shopping_bag_1_line">
+                  <path id=""
+                    d="m75,27.75c10.44,0,18.9,8.46,18.9,18.9h9.62c5.09,0,9.26,4.03,9.44,9.11l2.02,56.7c.19,5.35-4.09,9.79-9.44,9.79h-61.08c-5.35,0-9.63-4.44-9.44-9.79l2.02-56.7c.18-5.08,4.36-9.11,9.44-9.11h9.61c0-10.44,8.46-18.9,18.9-18.9Zm-18.9,28.35h-9.61l-2.02,56.7h61.08l-2.02-56.7h-9.62v4.72c0,2.61-2.12,4.72-4.72,4.72-2.42,0-4.42-1.82-4.69-4.17l-.03-.55v-4.72h-18.9v4.72c0,2.61-2.12,4.72-4.72,4.72-2.42,0-4.42-1.82-4.69-4.17l-.03-.55v-4.72Zm18.9-18.9c-4.98,0-9.06,3.85-9.42,8.74l-.03.71h18.9c0-5.22-4.23-9.45-9.45-9.45Z"
+                    style="fill:#a79a66;"></path>
                 </g>
               </g>
             </g>
           </svg>
-        </div>
+          <span
+            class="absolute text-f14 w-7 h-7 bg-white -top-1 rounded-full text-black justify-center -right-2 flex items-center">99</span>
+        </a>
       </div>
     </div>
-
-
     <!-- Main Header -->
     <div class="hidden lg:block py-4">
       <div class="container flex justify-between">
-        <div class="max-w-[265px] w-full">
+        <div class="max-w-[265px] xl:max-w-[285px] lg:max-w-[285px] w-full">
           <a href="#">
             <img alt="logo" width="180" height="137" loading="lazy" src="./images/GCC_logo_white.webp">
           </a>
         </div>
-        <div class="flex items-center max-w-[30%] xl:max-w-[40%] w-full">
+        <div class="flex items-center lg:pr-8 flex-1">
           <div class="relative w-full">
-            <input type="text" class="border-lightTaupe border-2" placeholder="Produktsuche">
-            <svg xmlns="http://www.w3.org/2000/svg" class="absolute top-2 right-4 cursor-pointer" width="30" height="30"
-              viewBox="0 0 512 512">
+            <input type="text" class="border-lightTaupe border-2 focus:outline-none" placeholder="Produktsuche">
+            <svg xmlns="http://www.w3.org/2000/svg" class="absolute top-3.5 right-4 cursor-pointer" width="20"
+              height="20" viewBox="0 0 512 512">
               <path opacity="1" fill="#606060"
                 d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z" />
             </svg>
           </div>
         </div>
-        <div class="flex items-center gap-x-4 justify-between max-w-[40%] xl:max-w-[34%] w-full">
-          <a href="#">
-            <img alt="gcc" width="100" height="100" loading="lazy" src="./images/VIP_cut_club.webp">
-          </a>
-          <div class="dropdown inline-block relative">
-            <a href="#" class="w-[50px] h-[50px] icon-svg">
-              <svg class="svg-icon" heigt="50px" width="50px"
-                style="vertical-align: middle;fill: currentColor;overflow: hidden;" viewBox="0 0 1024 1024" width="150"
-                height="150" version="1.1" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M707.797333 304.426667c0-114.218667-93.354667-206.805333-208.512-206.805334-115.157333 0-208.512 92.586667-208.512 206.805334 0 114.218667 93.354667 206.805333 208.512 206.805333 115.2 0 208.512-92.586667 208.512-206.805333m292.053334 656c1.365333 4.437333 2.304 9.088 2.304 13.994666 0 26.88-21.930667 48.725333-49.024 48.725334a48.853333 48.853333 0 0 1-48.981334-48.725334v-0.170666h-1.28c-12.757333-203.904-182.741333-365.482667-391.168-365.482667-208.469333 0-378.453333 161.578667-391.253333 365.482667h-1.109333v0.170666c0 26.88-21.930667 48.725333-48.981334 48.725334A48.853333 48.853333 0 0 1 21.333333 974.421333c0-4.608 0.853333-8.96 2.048-13.226666 14.250667-185.045333 131.882667-341.248 296.149334-410.88C243.2 494.976 193.28 405.589333 193.28 304.426667 193.28 136.32 330.453333 0 499.626667 0c169.216 0 306.346667 136.32 306.346666 304.426667a302.933333 302.933333 0 0 1-118.186666 239.914666c172.202667 66.005333 297.088 225.536 312.064 416.085334"
-                  fill="#a79a66" />
-              </svg>
-            </a>
-            <ul class="dropdown-menu -m-2 z-20 min-w-[230px] absolute  text-gray bg-black p-3 ">
-              <li><a class="rounded-t bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
-                  href="#">Dashboard</a>
-              </li>
-              <li><a class="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" href="#">Memberships</a>
-              </li>
-              <li><a class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
-                  href="#">Orders</a></li>
-
-              <li><a class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
-                  href="#">Addresses</a></li>
-
-              <li><a class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" href="#">Payment
-                  methods</a></li>
-
-              <li><a class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" href="#">Account
-                  details</a>
-              </li>
-
-              <li><a class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
-                  href="#">Waitlist</a>
-              </li>
-
-              <li><a class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
-                  href="#">Wishlist</a>
-              </li>
-
-              <li><a class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
-                  href="#">Logout</a>
-              </li>
-
-
-            </ul>
-          </div>
-          <a href="#" class="w-[50px] h-[50px] icon-svg">
-            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 512 512">
-              <path opacity="1" fill="#a79a66"
-                d="M225.8 468.2l-2.5-2.3L48.1 303.2C17.4 274.7 0 234.7 0 192.8v-3.3c0-70.4 50-130.8 119.2-144C158.6 37.9 198.9 47 231 69.6c9 6.4 17.4 13.8 25 22.3c4.2-4.8 8.7-9.2 13.5-13.3c3.7-3.2 7.5-6.2 11.5-9c0 0 0 0 0 0C313.1 47 353.4 37.9 392.8 45.4C462 58.6 512 119.1 512 189.5v3.3c0 41.9-17.4 81.9-48.1 110.4L288.7 465.9l-2.5 2.3c-8.2 7.6-19 11.9-30.2 11.9s-22-4.2-30.2-11.9zM239.1 145c-.4-.3-.7-.7-1-1.1l-17.8-20c0 0-.1-.1-.1-.1c0 0 0 0 0 0c-23.1-25.9-58-37.7-92-31.2C81.6 101.5 48 142.1 48 189.5v3.3c0 28.5 11.9 55.8 32.8 75.2L256 430.7 431.2 268c20.9-19.4 32.8-46.7 32.8-75.2v-3.3c0-47.3-33.6-88-80.1-96.9c-34-6.5-69 5.4-92 31.2c0 0 0 0-.1 .1s0 0-.1 .1l-17.8 20c-.3 .4-.7 .7-1 1.1c-4.5 4.5-10.6 7-16.9 7s-12.4-2.5-16.9-7z" />
+        <div class="flex items-center gap-x-2 justify-end">
+          <a href="#" class="w-[80px] h-[80px]">
+            <svg id="Ebene_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 150">
+              <path
+                d="m23.96,89.68h125.99l-15.39,18.81,15.39,18.81H.05l15.39-18.81L.05,89.68h23.91Zm13.61-66.97h-9.55l9.29,60.22h14.11l9.29-60.22h-8.68l-7.23,49.11-7.23-49.11Zm33.79,60.21h9.45V22.71h-9.45v60.21Zm36.52-60.21h-13.93v60.22h9.47v-22.63h4.46c9.47,0,14.11-5.23,14.11-14.87v-7.83c0-9.63-4.64-14.88-14.11-14.88h0Zm0,8.6c3.01,0,4.64,1.37,4.64,5.68v9.03c0,4.3-1.64,5.67-4.64,5.67h-4.46v-20.38h4.46ZM32.22,111.76v3.68c0,1.85-.82,2.52-2.11,2.52s-2.09-.67-2.09-2.52v-13.95c0-1.83.8-2.53,2.09-2.53s2.11.7,2.11,2.53v2.78h3.84v-2.52c0-4.14-2.08-6.49-6.05-6.49s-6.05,2.35-6.05,6.49v13.43c0,4.14,2.06,6.49,6.05,6.49s6.05-2.35,6.05-6.49v-3.42h-3.84Zm6.12-16.21v19.67c0,4.12,2.08,6.49,6.07,6.49s6.03-2.37,6.03-6.49v-19.67h-3.83v19.92c0,1.85-.82,2.52-2.11,2.52s-2.09-.67-2.09-2.52v-19.92s-4.07,0-4.07,0Zm13.7,3.7h4.24v22.13h4.06v-22.13h4.25v-3.7h-12.54s0,3.7,0,3.7Zm27.97,12.51v3.68c0,1.85-.82,2.52-2.11,2.52s-2.11-.67-2.11-2.52v-13.95c0-1.83.82-2.53,2.11-2.53s2.11.7,2.11,2.53v2.78h3.83v-2.52c0-4.14-2.06-6.49-6.05-6.49s-6.05,2.35-6.05,6.49v13.43c0,4.14,2.08,6.49,6.05,6.49s6.05-2.35,6.05-6.49v-3.42h-3.83Zm6.3,9.62h10.74v-3.68h-6.67v-22.14h-4.07s0,25.82,0,25.82Zm12.33-25.82v19.67c0,4.12,2.06,6.49,6.05,6.49s6.05-2.37,6.05-6.49v-19.67h-3.84v19.92c0,1.85-.8,2.52-2.09,2.52s-2.11-.67-2.11-2.52v-19.92s-4.06,0-4.06,0Zm21,0h-6.13v25.82h6.38c4.07,0,6.17-2.13,6.17-6.12v-2.11c0-2.73-.85-4.68-3.03-5.53,1.82-.85,2.62-2.55,2.62-5.2v-.93c0-3.97-1.8-5.94-6-5.94h0Zm-.26,14.21c1.85,0,2.62.74,2.62,3.14v2.24c0,1.91-.74,2.55-2.11,2.55h-2.32v-7.93h1.82Zm.15-10.52c1.44,0,2.06.8,2.06,2.65v1.44c0,2.08-.92,2.73-2.44,2.73h-1.59v-6.82h1.96Z"
+                style="fill:#a69966; fill-rule:evenodd;" />
             </svg>
           </a>
-          <a href="#" class="relative cursor-pointer js-toggle-cart w-[50px] h-[50px] icon-svg">
-            <svg viewBox="0 0 24 24" width="50" height="50" version="1.1" xmlns="http://www.w3.org/2000/svg"
-              xmlns:xlink="http://www.w3.org/1999/xlink">
-              <g id="页面-1" stroke="none" stroke-width="1" fill-rule="evenodd">
-                <g id="Business" transform="translate(-912.000000, 0.000000)" fill-rule="nonzero">
-                  <g id="shopping_bag_1_line" transform="translate(912.000000, 0.000000)">
-                    <path
-                      d="M12,2 C14.2091,2 16,3.79086 16,6 L18.0351,6 C19.1119,6 19.9954,6.85252 20.0339,7.92862 L20.4624,19.9286 C20.5028,21.0604 19.5963,22 18.4637,22 L5.5364,22 C4.40385,22 3.49726,21.0605 3.53768,19.9286 L3.96625,7.92862 C4.00468,6.85252 4.88819,6 5.96498,6 L8,6 C8,3.79086 9.79086,2 12,2 Z M8,8 L5.96498,8 L5.5364,20 L18.4637,20 L18.0351,8 L16,8 L16,9 C16,9.55228 15.5523,10 15,10 C14.48715,10 14.0644908,9.61395571 14.0067275,9.11662025 L14,9 L14,8 L10,8 L10,9 C10,9.55228 9.55228,10 9,10 C8.48716857,10 8.06449347,9.61395571 8.0067278,9.11662025 L8,9 L8,8 Z M12,4 C10.9456091,4 10.0818322,4.81587733 10.0054856,5.85073759 L10,6 L14,6 C14,4.89543 13.1046,4 12,4 Z"
-                      id="形状" fill="#a79a66">
-                    </path>
+          <div class="relative has-dropdown">
+            <a href="#" class="icon-svg | max-w-[50px] w-[50px] h-[50px] ">
+              <svg id="Ebene_1" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 150 150">
+                <path
+                  d="m93.4,55.56c0-10.72-8.76-19.41-19.57-19.41s-19.57,8.69-19.57,19.41,8.76,19.41,19.57,19.41,19.57-8.69,19.57-19.41m27.41,61.57c.13.42.22.85.22,1.31,0,2.52-2.06,4.57-4.6,4.57-2.53,0-4.59-2.04-4.6-4.57h0v-.02h-.12c-1.2-19.14-17.15-34.3-36.71-34.3s-35.52,15.17-36.72,34.3h-.1v.02c0,2.52-2.06,4.57-4.6,4.57-2.53,0-4.59-2.04-4.6-4.57,0,0,0,0,0,0,0-.43.08-.84.19-1.24,1.34-17.37,12.38-32.03,27.8-38.56-7.16-5.19-11.85-13.58-11.85-23.08,0-15.78,12.87-28.57,28.75-28.57s28.75,12.79,28.75,28.57c0,8.82-4.1,17.14-11.09,22.52,16.16,6.2,27.88,21.17,29.29,39.05"
+                  style="fill:#a79a66;" />
+              </svg>
+            </a>
+            <div
+              class="absolute dropdown-panel hidden right-0 top-full mt-[0px] z-10 w-fit max-w-md overflow-hidden bg-smokBlack min-w-[230px]">
+              <div class="py-5 px-5">
+                <ul class="flex flex-col gap-y-1">
+                  <li>
+                    <a class="text-f14 font-normal text-[#ffffff99] hover:text-white" href="#">link 1</a>
+                  </li>
+                  <li>
+                    <a class="text-f14 font-normal text-[#ffffff99] hover:text-white" href="#">link 2</a>
+                  </li>
+                  <li>
+                    <a class="text-f14 font-normal text-[#ffffff99] hover:text-white" href="#">link 3</a>
+                  </li>
+                  <li>
+                    <a class="text-f14 font-normal text-[#ffffff99] hover:text-white" href="#">link 4</a>
+                  </li>
+
+                </ul>
+              </div>
+            </div>
+          </div>
+          <a href="#" class="icon-svg relative | w-[50px] h-[50px] ">
+            <svg id="Ebene_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 150">
+              <path
+                d="m77.51,121.71c5.6-3,10.98-6.54,16.07-10.38,5.14-3.87,10.04-8.12,14.54-12.74,5.33-5.49,10.04-11.89,13.47-18.75,3.02-6.08,5.17-12.74,5.46-19.55.36-8-1.95-16.19-7.14-22.37-5.19-6.18-12.44-9.6-20.44-10.24-5.63-.44-11.36.76-16.33,3.43-1.58.84-3.07,1.81-4.48,2.91l-3.64,2.86-3.64-2.86c-1.4-1.1-2.9-2.08-4.48-2.91-4.98-2.67-10.7-3.87-16.31-3.43-8,.64-15.25,4.05-20.44,10.24-5.21,6.18-7.52,14.38-7.16,22.37.3,6.81,2.44,13.47,5.47,19.55,3.43,6.86,8.12,13.26,13.47,18.75,4.48,4.62,9.38,8.87,14.52,12.74,5.12,3.86,10.52,7.45,16.19,10.45,1.64.87,3.25.82,4.89-.07h0Zm1.72-73.63c2.13-3.43,4.98-6.34,8.55-8.25,3.32-1.78,7.14-2.58,10.89-2.27,5.31.41,10.17,2.58,13.63,6.72,3.63,4.32,5.1,10.01,4.85,15.59-.23,5.4-2.03,10.73-4.43,15.55-2.99,5.95-7.09,11.52-11.73,16.28-4.14,4.27-8.65,8.16-13.4,11.75-3.06,2.31-6.22,4.5-9.49,6.5l-3.11,1.92-3.09-1.92c-3.27-2.01-6.43-4.19-9.51-6.5-4.74-3.59-9.26-7.48-13.4-11.75-4.64-4.76-8.74-10.33-11.73-16.28-2.4-4.82-4.19-10.15-4.42-15.55-.23-5.58,1.23-11.27,4.85-15.59,3.47-4.14,8.32-6.31,13.65-6.72,3.75-.3,7.55.5,10.88,2.27,3.52,1.87,6.33,4.73,8.46,8.09,2.1,3.25,6.52,3.43,8.55.16h0Z"
+                style="fill:#a69966; fill-rule:evenodd;" />
+            </svg>
+            <span
+              class="absolute text-f14 w-7 h-7 bg-white -top-1 rounded-full text-black justify-center -right-2 flex items-center">99</span>
+          </a>
+          <a href="#" class="icon-svg | relative cursor-pointer js-toggle-cart min-w-[50px] h-[50px]">
+            <svg id="Ebene_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 150">
+              <g id="">
+                <g id="Business">
+                  <g id="shopping_bag_1_line">
+                    <path id=""
+                      d="m75,27.75c10.44,0,18.9,8.46,18.9,18.9h9.62c5.09,0,9.26,4.03,9.44,9.11l2.02,56.7c.19,5.35-4.09,9.79-9.44,9.79h-61.08c-5.35,0-9.63-4.44-9.44-9.79l2.02-56.7c.18-5.08,4.36-9.11,9.44-9.11h9.61c0-10.44,8.46-18.9,18.9-18.9Zm-18.9,28.35h-9.61l-2.02,56.7h61.08l-2.02-56.7h-9.62v4.72c0,2.61-2.12,4.72-4.72,4.72-2.42,0-4.42-1.82-4.69-4.17l-.03-.55v-4.72h-18.9v4.72c0,2.61-2.12,4.72-4.72,4.72-2.42,0-4.42-1.82-4.69-4.17l-.03-.55v-4.72Zm18.9-18.9c-4.98,0-9.06,3.85-9.42,8.74l-.03.71h18.9c0-5.22-4.23-9.45-9.45-9.45Z"
+                      style="fill:#a79a66;" />
                   </g>
                 </g>
               </g>
             </svg>
             <span
-              class="absolute w-7 h-7 bg-white top-0 rounded-full text-black flex items-baseline justify-center right-0">0</span>
+              class="absolute text-f14 w-7 h-7 bg-white -top-1 rounded-full text-black justify-center -right-2 flex items-center">99</span>
           </a>
-          <div class="text-f22 font-semibold min-w-fit">
+          <div class="text-f22 cursor-pointer js-toggle-cart font-semibold min-w-fit ml-[15px]">
             0.00 €
           </div>
         </div>
       </div>
     </div>
-
     <!-- Nav Header -->
-    <nav class="hidden lg:flex mx-auto items-center justify-between border-y-[3px] border-[#414141]"
+    <nav class="hidden lg:flex mx-auto items-center justify-between border-y-[1px] border-[#414141]"
       aria-label="Global">
       <div class="container flex">
         <!-- side menu -->
         <ul class="flex gap-x-4 xl:gap-x-5">
           <li class="relative  bg-yellow flex items-center justify-center cat-menu-list">
             <a href="#"
-              class="text-f18 cat-menu min-w-[285px] w-full font-bold flex items-center justify-center h-full border-x-[3px] border-[#414141] ">KATEGORIE
-              <span class="h-[20px] W-[20px] icon-svg absolute right-2">
+              class="text-f18 px-4 cat-menu min-w-[285px] w-full font-semibold flex items-center justify-start h-full border-x-[1px] border-[#414141] ">
+              <span class="h-[40px] w-[40px] p-2 icon-svg mr-2">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                  <path
+                    d="M268.8 37.4C295.7 12.4 329.7 0 368 0c65 0 117.7 39 150.5 80c33.9 42.4 57.5 99.6 57.5 160c0 83.9-55.1 152.8-113.4 196.2C402.1 481.2 321.7 512 240 512c-36.8 0-86.5-4.4-130-19.3C73.4 480.1 0 444.3 0 360c0-38.6 17.8-68.3 42.5-88.1c19.6-15.8 41.4-26.8 63.3-37.8c27.3-13.8 54.6-27.6 77.7-50.7c13.8-13.8 19.7-27.9 30-52.9c3.2-7.7 6.8-16.5 11.2-26.6c7.7-17.6 20.6-44.7 44.1-66.5zm36.8 122l0 0c2.5-6 4.8-11.8 7.1-17c6.9-15.7 13.3-27.1 21.5-34.7c7.5-7 17.5-11.7 33.9-11.7c25.4 0 53.3 16.2 75.5 44c22 27.5 36.5 64.1 36.5 100c0 40.8-28.3 84.6-74.7 119.2C359.4 393.4 298.6 416 240 416c-31 0-69.1-3.9-98.8-14.1C110.1 391.2 96 376.7 96 360c0-9 2.6-13.2 6.9-16.9c5.8-5 15-9.1 30.2-15.5l1.2-.5c29.3-12.4 71.2-30 117-75.8c28.6-28.6 42.9-63.7 54.3-91.9zm6.8-75.2c-13.3 12.4-21.9 29-29 45.3c-2.9 6.6-5.6 13.2-8.3 19.8c-11.4 27.8-22.8 55.7-46.4 79.3c-41.4 41.4-78.6 57.1-107 69l-1.1 .5-.7 .3 0 0c-13.5 5.7-27.5 11.6-37.7 20.3C70.4 328.8 64 342.1 64 360c0 39.3 33.9 60.8 66.8 72.1C165.1 443.9 207 448 240 448c66.3 0 133.6-25.4 184.4-63.2C474.8 347.4 512 295.2 512 240c0-44.1-17.5-87.5-43.5-120C442.7 87.8 406.6 64 368 64c-23.7 0-41.7 7.3-55.6 20.3zM384 256a32 32 0 1 0 0-64 32 32 0 1 0 0 64z"
+                    fill="#fff" />
+                </svg>
+              </span>
+              KATEGORIE
+              <span class="h-[20px] W-[20px] icon-svg absolute right-4">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#fff" viewBox="0 0 512 512">
                   <path
                     d="M239 401c9.4 9.4 24.6 9.4 33.9 0L465 209c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0l-175 175L81 175c-9.4-9.4-24.6-9.4-33.9 0s-9.4 24.6 0 33.9L239 401z" />
@@ -285,86 +293,91 @@
               </span>
             </a>
             <div class="absolute left-0 top-full mt-[2px] z-10 w-full bg-black default-menu">
-              <ul class="border-x-[3px] border-[#414141]" id="megaMenu">
-                <li class="py-0.5 px-4 border-b-[3px] border-[#414141] hover:bg-smokBlack">
+              <ul class="border-x-[1px] border-[#414141]" id="megaMenu">
+                <li class="py-1 px-4 border-b-[1px] border-[#414141] hover:bg-smokBlack">
                   <a class="flex items-center justify-between" href="#">
                     <div class="flex items-center gap-x-2">
-                      <span class="h-[50px] W-[50px] p-2 icon-svg">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="#fff" viewBox="0 0 576 512">
+                      <span class="h-[40px] w-[40px] p-2 icon-svg">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
                           <path
-                            d="M243.1 2.7c11.8 6.1 16.3 20.6 10.2 32.4L171.7 192H404.3L322.7 35.1c-6.1-11.8-1.5-26.3 10.2-32.4s26.2-1.5 32.4 10.2L458.4 192h36.1H544h8c13.3 0 24 10.7 24 24s-10.7 24-24 24H532L476.1 463.5C469 492 443.4 512 414 512H162c-29.4 0-55-20-62.1-48.5L44 240H24c-13.3 0-24-10.7-24-24s10.7-24 24-24h8H81.5h36.1L210.7 12.9c6.1-11.8 20.6-16.3 32.4-10.2zM482.5 240H93.5l53 211.9c1.8 7.1 8.2 12.1 15.5 12.1H414c7.3 0 13.7-5 15.5-12.1l53-211.9zM200 352c0-13.3 10.7-24 24-24h40V288c0-13.3 10.7-24 24-24s24 10.7 24 24v40h40c13.3 0 24 10.7 24 24s-10.7 24-24 24H312v40c0 13.3-10.7 24-24 24s-24-10.7-24-24V376H224c-13.3 0-24-10.7-24-24z" />
+                            d="M96 224v32V416c0 17.7 14.3 32 32 32h32c17.7 0 32-14.3 32-32V327.8c9.9 6.6 20.6 12 32 16.1V368c0 8.8 7.2 16 16 16s16-7.2 16-16V351.1c5.3 .6 10.6 .9 16 .9s10.7-.3 16-.9V368c0 8.8 7.2 16 16 16s16-7.2 16-16V343.8c11.4-4 22.1-9.4 32-16.1V416c0 17.7 14.3 32 32 32h32c17.7 0 32-14.3 32-32V256l32 32v49.5c0 9.5 2.8 18.7 8.1 26.6L530 427c8.8 13.1 23.5 21 39.3 21c22.5 0 41.9-15.9 46.3-38l20.3-101.6c2.6-13-.3-26.5-8-37.3l-3.9-5.5V184c0-13.3-10.7-24-24-24s-24 10.7-24 24v14.4l-52.9-74.1C496 86.5 452.4 64 405.9 64H272 256 192 144C77.7 64 24 117.7 24 184v54C9.4 249.8 0 267.8 0 288v17.6c0 8 6.4 14.4 14.4 14.4C46.2 320 72 294.2 72 262.4V256 224 184c0-24.3 12.1-45.8 30.5-58.9C98.3 135.9 96 147.7 96 160v64zM560 336a16 16 0 1 1 32 0 16 16 0 1 1 -32 0zM166.6 166.6c-4.2-4.2-6.6-10-6.6-16c0-12.5 10.1-22.6 22.6-22.6H361.4c12.5 0 22.6 10.1 22.6 22.6c0 6-2.4 11.8-6.6 16l-23.4 23.4C332.2 211.8 302.7 224 272 224s-60.2-12.2-81.9-33.9l-23.4-23.4z"
+                            fill="#fff"></path>
                         </svg>
                       </span>
-                      <span class="text-f18 font-bold">Rind</span>
+                      <span class="text-f18 font-semibold">Rind</span>
                     </div>
                     <span class="h-[20px] W-[20px] icon-svg">
                       <svg width="20" height="20" xmlns="http://www.w3.org/2000/svg" fill="#fff" viewBox="0 0 320 512">
                         <path
-                          d="M305 239c9.4 9.4 9.4 24.6 0 33.9L113 465c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l175-175L79 81c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0L305 239z" />
+                          d="M305 239c9.4 9.4 9.4 24.6 0 33.9L113 465c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l175-175L79 81c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0L305 239z">
+                        </path>
                       </svg>
                     </span>
                   </a>
-                  <div class="hs-mega-menu left-full absolute top-0 w-max block min-h-full bg-smokBlack p-6">
-                    <div class="text-f18 font-bold mb-4">
-                      NACH CUT
-                    </div>
+                  <div class="hs-mega-menu left-full absolute top-0 w-max block min-h-full bg-smokBlack p-6"
+                    style="display: none;">
+
                     <div class="flex gap-x-4  text-gray font-semibold ">
-                      <div class="flex gap-x-4 ">
-                        <ul>
-                          <li class="flex">
-                            <a href="#">Brisket</a>
-                          </li>
-                          <li>
-                            <a href="#">Burger Patties</a>
-                          </li>
-                          <li>
-                            <a href="#">Filet</a>
-                          </li>
-                          <li>
-                            <a href="#">Flanksteak</a>
-                          </li>
-                          <li>
-                            <a href="#">Hüftsteak</a>
-                          </li>
-                          <li>
-                            <a href="#">Porterhouse Steak</a>
-                          </li>
-                          <li>
-                            <a href="#">Picanha</a>
-                          </li>
-                        </ul>
-                        <ul>
-                          <li>
-                            <a href="#">Brisket</a>
-                          </li>
-                          <li>
-                            <a href="#">Burger Patties</a>
-                          </li>
-                          <li>
-                            <a href="#">Filet</a>
-                          </li>
-                          <li>
-                            <a href="#">Flanksteak</a>
-                          </li>
-                          <li>
-                            <a href="#">Hüftsteak</a>
-                          </li>
-                          <li>
-                            <a href="#">Porterhouse Steak</a>
-                          </li>
-                          <li>
-                            <a href="#">Picanha</a>
-                          </li>
-                        </ul>
+                      <div>
+                        <div class="text-f18 font-semibold mb-4 text-white">
+                          NACH CUT
+                        </div>
+                        <div class="flex gap-x-4 ">
+                          <ul>
+                            <li class="flex">
+                              <a href="#">Brisket</a>
+                            </li>
+                            <li>
+                              <a href="#">Burger Patties</a>
+                            </li>
+                            <li>
+                              <a href="#">Filet</a>
+                            </li>
+                            <li>
+                              <a href="#">Flanksteak</a>
+                            </li>
+                            <li>
+                              <a href="#">Hüftsteak</a>
+                            </li>
+                            <li>
+                              <a href="#">Porterhouse Steak</a>
+                            </li>
+                            <li>
+                              <a href="#">Picanha</a>
+                            </li>
+                          </ul>
+                          <ul>
+                            <li>
+                              <a href="#">Brisket</a>
+                            </li>
+                            <li>
+                              <a href="#">Burger Patties</a>
+                            </li>
+                            <li>
+                              <a href="#">Filet</a>
+                            </li>
+                            <li>
+                              <a href="#">Flanksteak</a>
+                            </li>
+                            <li>
+                              <a href="#">Hüftsteak</a>
+                            </li>
+                            <li>
+                              <a href="#">Porterhouse Steak</a>
+                            </li>
+                            <li>
+                              <a href="#">Picanha</a>
+                            </li>
+                          </ul>
+                        </div>
                       </div>
-                      <div class="border-l-2 border-lightGrey pl-4">
-                        <div class="text-f18 font-bold mb-4 text-white">
+                      <div class="border-l border-[#414141] pl-4">
+                        <div class="text-f18 font-semibold mb-4 text-white">
                           NACH CUT
                         </div>
                         <div class="grid grid-cols-2 gap-4 ">
                           <a href="#">
-                            <figure
-                              class="w-[180px] h-[120px] overflow-hidden relative flex items-center justify-center">
+                            <figure class="w-[180px] relative flex items-center justify-center">
                               <img loading="lazy" class="w-full" width="302" height="201"
                                 alt="SIRLOIN STEAK, CREEKSTONE FARMS USA" src="./images/featured_product_1.webp">
                               <figcaption class="absolute px-3 text-white font-semibold text-f20">
@@ -373,8 +386,7 @@
                             </figure>
                           </a>
                           <a href="#">
-                            <figure
-                              class="w-[180px] h-[120px] overflow-hidden relative flex items-center justify-center">
+                            <figure class="w-[180px] relative flex items-center justify-center">
                               <img loading="lazy" class="w-full" width="302" height="201"
                                 alt="SIRLOIN STEAK, CREEKSTONE FARMS USA" src="./images/featured_product_1.webp">
                               <figcaption class="absolute px-3 text-white font-semibold text-f20">
@@ -383,8 +395,7 @@
                             </figure>
                           </a>
                           <a href="#">
-                            <figure
-                              class="w-[180px] h-[120px] overflow-hidden relative flex items-center justify-center">
+                            <figure class="w-[180px] relative flex items-center justify-center">
                               <img loading="lazy" class="w-full" width="302" height="201"
                                 alt="SIRLOIN STEAK, CREEKSTONE FARMS USA" src="./images/featured_product_1.webp">
                               <figcaption class="absolute px-3 text-white font-semibold text-f20">
@@ -406,28 +417,31 @@
                     </div>
                   </div>
                 </li>
-                <li class="py-0.5 px-4 border-b-[3px] border-[#414141] hover:bg-smokBlack">
+                <li class="py-1 px-4 border-b-[1px] border-[#414141] hover:bg-smokBlack">
                   <a class="flex items-center justify-between" href="#">
                     <div class="flex items-center gap-x-2">
-                      <span class="h-[50px] W-[50px] p-2 icon-svg">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="#fff" viewBox="0 0 576 512">
+                      <span class="h-[40px] w-[40px] p-2 icon-svg">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
                           <path
-                            d="M243.1 2.7c11.8 6.1 16.3 20.6 10.2 32.4L171.7 192H404.3L322.7 35.1c-6.1-11.8-1.5-26.3 10.2-32.4s26.2-1.5 32.4 10.2L458.4 192h36.1H544h8c13.3 0 24 10.7 24 24s-10.7 24-24 24H532L476.1 463.5C469 492 443.4 512 414 512H162c-29.4 0-55-20-62.1-48.5L44 240H24c-13.3 0-24-10.7-24-24s10.7-24 24-24h8H81.5h36.1L210.7 12.9c6.1-11.8 20.6-16.3 32.4-10.2zM482.5 240H93.5l53 211.9c1.8 7.1 8.2 12.1 15.5 12.1H414c7.3 0 13.7-5 15.5-12.1l53-211.9zM200 352c0-13.3 10.7-24 24-24h40V288c0-13.3 10.7-24 24-24s24 10.7 24 24v40h40c13.3 0 24 10.7 24 24s-10.7 24-24 24H312v40c0 13.3-10.7 24-24 24s-24-10.7-24-24V376H224c-13.3 0-24-10.7-24-24z" />
+                            d="M268.8 37.4C295.7 12.4 329.7 0 368 0c65 0 117.7 39 150.5 80c33.9 42.4 57.5 99.6 57.5 160c0 83.9-55.1 152.8-113.4 196.2C402.1 481.2 321.7 512 240 512c-36.8 0-86.5-4.4-130-19.3C73.4 480.1 0 444.3 0 360c0-38.6 17.8-68.3 42.5-88.1c19.6-15.8 41.4-26.8 63.3-37.8c27.3-13.8 54.6-27.6 77.7-50.7c13.8-13.8 19.7-27.9 30-52.9c3.2-7.7 6.8-16.5 11.2-26.6c7.7-17.6 20.6-44.7 44.1-66.5zm36.8 122l0 0c2.5-6 4.8-11.8 7.1-17c6.9-15.7 13.3-27.1 21.5-34.7c7.5-7 17.5-11.7 33.9-11.7c25.4 0 53.3 16.2 75.5 44c22 27.5 36.5 64.1 36.5 100c0 40.8-28.3 84.6-74.7 119.2C359.4 393.4 298.6 416 240 416c-31 0-69.1-3.9-98.8-14.1C110.1 391.2 96 376.7 96 360c0-9 2.6-13.2 6.9-16.9c5.8-5 15-9.1 30.2-15.5l1.2-.5c29.3-12.4 71.2-30 117-75.8c28.6-28.6 42.9-63.7 54.3-91.9zm6.8-75.2c-13.3 12.4-21.9 29-29 45.3c-2.9 6.6-5.6 13.2-8.3 19.8c-11.4 27.8-22.8 55.7-46.4 79.3c-41.4 41.4-78.6 57.1-107 69l-1.1 .5-.7 .3 0 0c-13.5 5.7-27.5 11.6-37.7 20.3C70.4 328.8 64 342.1 64 360c0 39.3 33.9 60.8 66.8 72.1C165.1 443.9 207 448 240 448c66.3 0 133.6-25.4 184.4-63.2C474.8 347.4 512 295.2 512 240c0-44.1-17.5-87.5-43.5-120C442.7 87.8 406.6 64 368 64c-23.7 0-41.7 7.3-55.6 20.3zM384 256a32 32 0 1 0 0-64 32 32 0 1 0 0 64z"
+                            fill="#fff"></path>
                         </svg>
                       </span>
-                      <span class="text-f18 font-bold">Schwein</span>
+                      <span class="text-f18 font-semibold">Kalb</span>
                     </div>
                     <span>
                       <svg width="20" height="20" xmlns="http://www.w3.org/2000/svg" fill="#fff" viewBox="0 0 320 512">
                         <path
-                          d="M305 239c9.4 9.4 9.4 24.6 0 33.9L113 465c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l175-175L79 81c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0L305 239z" />
+                          d="M305 239c9.4 9.4 9.4 24.6 0 33.9L113 465c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l175-175L79 81c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0L305 239z">
+                        </path>
                       </svg>
                     </span>
                   </a>
-                  <div class="hs-mega-menu left-full absolute top-0 w-max block min-h-full bg-smokBlack p-6">
+                  <div class="hs-mega-menu left-full absolute top-0 w-max block min-h-full bg-smokBlack p-6"
+                    style="display: none;">
                     <div class="flex gap-x-4">
                       <div>
-                        <div class="text-f18 font-bold mb-4">
+                        <div class="text-f18 font-semibold mb-4">
                           NACH CUT
                         </div>
                         <div class="flex gap-x-4 text-gray font-semibold ">
@@ -456,14 +470,13 @@
                           </ul>
                         </div>
                       </div>
-                      <div class="border-l-2 border-lightGrey pl-4">
-                        <div class="text-f18 font-bold mb-4">
+                      <div class="border-l border-[#414141] pl-4">
+                        <div class="text-f18 font-semibold mb-4">
                           NACH CUT
                         </div>
                         <div class="grid grid-cols-1 gap-4 ">
                           <a href="#">
-                            <figure
-                              class="w-[180px] h-[120px] overflow-hidden relative flex items-center justify-center">
+                            <figure class="w-[180px] relative flex items-center justify-center">
                               <img loading="lazy" class="w-full" width="302" height="201"
                                 alt="SIRLOIN STEAK, CREEKSTONE FARMS USA" src="./images/featured_product_1.webp">
                               <figcaption class="absolute px-3 font-semibold text-f20">
@@ -476,28 +489,31 @@
                     </div>
                   </div>
                 </li>
-                <li class="py-0.5 px-4 border-b-[3px] border-[#414141] hover:bg-smokBlack">
+                <li class="py-1 px-4 border-b-[1px] border-[#414141] hover:bg-smokBlack">
                   <a class="flex items-center justify-between" href="#">
                     <div class="flex items-center gap-x-2">
-                      <span class="h-[50px] W-[50px] p-2 icon-svg">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="#fff" viewBox="0 0 576 512">
+                      <span class="h-[40px] w-[40px] p-2 icon-svg">
+                        <svg fill="#fff" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
                           <path
-                            d="M243.1 2.7c11.8 6.1 16.3 20.6 10.2 32.4L171.7 192H404.3L322.7 35.1c-6.1-11.8-1.5-26.3 10.2-32.4s26.2-1.5 32.4 10.2L458.4 192h36.1H544h8c13.3 0 24 10.7 24 24s-10.7 24-24 24H532L476.1 463.5C469 492 443.4 512 414 512H162c-29.4 0-55-20-62.1-48.5L44 240H24c-13.3 0-24-10.7-24-24s10.7-24 24-24h8H81.5h36.1L210.7 12.9c6.1-11.8 20.6-16.3 32.4-10.2zM482.5 240H93.5l53 211.9c1.8 7.1 8.2 12.1 15.5 12.1H414c7.3 0 13.7-5 15.5-12.1l53-211.9zM200 352c0-13.3 10.7-24 24-24h40V288c0-13.3 10.7-24 24-24s24 10.7 24 24v40h40c13.3 0 24 10.7 24 24s-10.7 24-24 24H312v40c0 13.3-10.7 24-24 24s-24-10.7-24-24V376H224c-13.3 0-24-10.7-24-24z" />
+                            d="M513.5 32c8 0 14.5 6.5 14.5 14.5V78c0 19.7-9 37.8-23.6 49.7c6.4 4.9 12.7 10.1 18.6 15.7c17.6-15.9 28.5-38.6 29-63.3h40c8.8 0 16 7.2 16 16v16c0 32.8-24.6 59.8-56.3 63.5l6.8 9C570 200 585 212.5 602.2 221.1L608 224h8c13.3 0 24 10.7 24 24v96c0 13.3-10.7 24-24 24H572.5c-22.2 21.2-49.7 36.2-79.8 43.3l-13 45.5C475.8 470.5 463.3 480 449 480H416c-17.7 0-32-14.3-32-32V416H320 272v32c0 17.7-14.3 32-32 32H207c-14.3 0-26.8-9.5-30.8-23.2L155 382.4C110.3 358 80 310.5 80 256V240H47.4C21.2 240 0 218.8 0 192.6c0-21.8 14.8-40.7 35.9-46l8.2-2c8.6-2.1 17.3 3.1 19.4 11.6s-3.1 17.3-11.6 19.4l-8.2 2c-6.9 1.7-11.7 7.9-11.7 15c0 8.5 6.9 15.4 15.4 15.4H83.2C98 135 162.6 80 240 80H362.4c14.5 0 28.8 1.3 42.7 3.9c8.1-19.5 25.4-34.4 47-39.1l58.4-12.5c1-.2 2-.3 3-.3zM468 256a20 20 0 1 0 0-40 20 20 0 1 0 0 40z">
+                          </path>
                         </svg>
                       </span>
-                      <span class="text-f18 font-bold">Geflügel</span>
+                      <span class="text-f18 font-semibold">Schwein</span>
                     </div>
                     <span class="h-[20px] W-[20px] icon-svg">
                       <svg width="20" height="20" xmlns="http://www.w3.org/2000/svg" fill="#fff" viewBox="0 0 320 512">
                         <path
-                          d="M305 239c9.4 9.4 9.4 24.6 0 33.9L113 465c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l175-175L79 81c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0L305 239z" />
+                          d="M305 239c9.4 9.4 9.4 24.6 0 33.9L113 465c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l175-175L79 81c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0L305 239z">
+                        </path>
                       </svg>
                     </span>
                   </a>
-                  <div class="hs-mega-menu left-full absolute top-0 w-max block min-h-full bg-smokBlack p-6">
+                  <div class="hs-mega-menu left-full absolute top-0 w-max block min-h-full bg-smokBlack p-6"
+                    style="display: none;">
                     <div class="flex gap-x-4">
                       <div>
-                        <div class="text-f18 font-bold mb-4">
+                        <div class="text-f18 font-semibold mb-4">
                           NACH CUT
                         </div>
                         <div class="flex gap-x-4 text-gray font-semibold ">
@@ -526,14 +542,13 @@
                           </ul>
                         </div>
                       </div>
-                      <div class="border-l-2 border-lightGrey pl-4">
-                        <div class="text-f18 font-bold mb-4">
+                      <div class="border-l border-[#414141] pl-4">
+                        <div class="text-f18 font-semibold mb-4">
                           NACH CUT
                         </div>
-                        <div class="grid grid-cols-1 gap-4">
+                        <div class="grid grid-cols-1 gap-4 ">
                           <a href="#">
-                            <figure
-                              class="w-[180px] h-[120px] overflow-hidden relative flex items-center justify-center">
+                            <figure class="w-[180px] relative flex items-center justify-center">
                               <img loading="lazy" class="w-full" width="302" height="201"
                                 alt="SIRLOIN STEAK, CREEKSTONE FARMS USA" src="./images/featured_product_1.webp">
                               <figcaption class="absolute px-3 font-semibold text-f20">
@@ -546,118 +561,120 @@
                     </div>
                   </div>
                 </li>
-                <li class="py-0.5 px-4 border-b-[3px] border-[#414141] hover:bg-smokBlack">
+                <li class="py-1 px-4 border-b-[1px] border-[#414141] hover:bg-smokBlack">
                   <a class="flex items-center justify-between" href="#">
                     <div class="flex items-center gap-x-2">
-                      <span class="h-[50px] W-[50px] p-2 icon-svg">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="#fff" viewBox="0 0 576 512">
+                      <span class="h-[40px] w-[40px] p-2 icon-svg">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
                           <path
-                            d="M243.1 2.7c11.8 6.1 16.3 20.6 10.2 32.4L171.7 192H404.3L322.7 35.1c-6.1-11.8-1.5-26.3 10.2-32.4s26.2-1.5 32.4 10.2L458.4 192h36.1H544h8c13.3 0 24 10.7 24 24s-10.7 24-24 24H532L476.1 463.5C469 492 443.4 512 414 512H162c-29.4 0-55-20-62.1-48.5L44 240H24c-13.3 0-24-10.7-24-24s10.7-24 24-24h8H81.5h36.1L210.7 12.9c6.1-11.8 20.6-16.3 32.4-10.2zM482.5 240H93.5l53 211.9c1.8 7.1 8.2 12.1 15.5 12.1H414c7.3 0 13.7-5 15.5-12.1l53-211.9zM200 352c0-13.3 10.7-24 24-24h40V288c0-13.3 10.7-24 24-24s24 10.7 24 24v40h40c13.3 0 24 10.7 24 24s-10.7 24-24 24H312v40c0 13.3-10.7 24-24 24s-24-10.7-24-24V376H224c-13.3 0-24-10.7-24-24z" />
+                            d="M384 135.8V208c0 44.2 35.8 80 80 80h32c44.2 0 80-35.8 80-80V135.8l14.5 6.2c12.2 5.2 26.3-.4 31.5-12.6s-.4-26.3-12.6-31.5L561.6 77.4C544.7 50.2 514.5 32 480 32s-64.7 18.2-81.6 45.4L350.5 97.9c-12.2 5.2-17.8 19.3-12.6 31.5s19.3 17.8 31.5 12.6l14.5-6.2zm80-7.8a16 16 0 1 1 0 32 16 16 0 1 1 0-32zm48 16a16 16 0 1 1 32 0 16 16 0 1 1 -32 0zM352 175.4c-18.7-2.7-35.5-14.8-43.5-33.4c-6.9-16.1-5.7-33.5 1.8-47.9C299 76 278.9 64 256 64c-19.2 0-36.5 8.5-48.2 21.9C196.9 77.2 183 72 168 72c-30.1 0-55.3 20.8-62.2 48.8c-3.2-.5-6.5-.8-9.8-.8c-35.3 0-64 28.7-64 64c0 5.3 .7 10.5 1.9 15.5C13.7 210.3 0 231.5 0 256s13.7 45.7 33.9 56.5c-1.2 5-1.9 10.2-1.9 15.5c0 35.3 28.7 64 64 64c.5 0 1 0 1.5 0l17.6 93.9c2.8 15.1 16.1 26.1 31.5 26.1H176c17.7 0 32-14.3 32-32V426.3c11.7 13.3 28.9 21.7 48 21.7s36.3-8.4 48-21.7V480c0 17.7 14.3 32 32 32h29.4c15.4 0 28.6-11 31.4-26.1L414.5 392c.5 0 1 0 1.5 0c35.3 0 64-28.7 64-64c0-2.7-.2-5.4-.5-8H464c-61.9 0-112-50.1-112-112V175.4z"
+                            fill="#fff"></path>
                         </svg>
                       </span>
-                      <span class="text-f18 font-bold">Wurstwaren</span>
+                      <span class="text-f18 font-semibold">Lamm</span>
                     </div>
                     <span class="h-[20px] W-[20px] icon-svg">
                       <svg width="20" height="20" xmlns="http://www.w3.org/2000/svg" fill="#fff" viewBox="0 0 320 512">
                         <path
-                          d="M305 239c9.4 9.4 9.4 24.6 0 33.9L113 465c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l175-175L79 81c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0L305 239z" />
+                          d="M305 239c9.4 9.4 9.4 24.6 0 33.9L113 465c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l175-175L79 81c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0L305 239z">
+                        </path>
                       </svg>
                     </span>
                   </a>
-                  <div class="hs-mega-menu left-full absolute top-0 w-max block min-h-full bg-smokBlack p-6">
-                    <div class="text-f18 font-bold mb-4">
-                      NACH CUT
-                    </div>
-                    <div class="flex gap-x-4">
-                      <div class="flex gap-x-4 text-gray font-semibold ">
-                        <ul>
-                          <li class="flex">
-                            <a href="#">Brisket</a>
-                          </li>
-                          <li>
-                            <a href="#">Burger Patties</a>
-                          </li>
-                          <li>
-                            <a href="#">Filet</a>
-                          </li>
-                          <li>
-                            <a href="#">Flanksteak</a>
-                          </li>
-                          <li>
-                            <a href="#">Hüftsteak</a>
-                          </li>
-                          <li class="flex">
-                            <a href="#">Porterhouse Steak</a>
-                          </li>
-                          <li>
-                            <a href="#">Picanha</a>
-                          </li>
-                        </ul>
-                        <ul>
-                          <li>
-                            <a href="#">Brisket</a>
-                          </li>
-                          <li>
-                            <a href="#">Burger Patties</a>
-                          </li>
-                          <li>
-                            <a href="#">Filet</a>
-                          </li>
-                          <li>
-                            <a href="#">Flanksteak</a>
-                          </li>
-                          <li>
-                            <a href="#">Hüftsteak</a>
-                          </li>
-                          <li>
-                            <a href="#">Porterhouse Steak</a>
-                          </li>
-                          <li>
-                            <a href="#">Picanha</a>
-                          </li>
-                        </ul>
+                  <div class="hs-mega-menu left-full absolute top-0 w-max block min-h-full bg-smokBlack p-6"
+                    style="display: none;">
+
+                    <div class="flex gap-x-4  text-gray font-semibold ">
+                      <div>
+                        <div class="text-f18 font-semibold mb-4 text-white">
+                          NACH CUT
+                        </div>
+                        <div class="flex gap-x-4 ">
+                          <ul>
+                            <li class="flex">
+                              <a href="#">Brisket</a>
+                            </li>
+                            <li>
+                              <a href="#">Burger Patties</a>
+                            </li>
+                            <li>
+                              <a href="#">Filet</a>
+                            </li>
+                            <li>
+                              <a href="#">Flanksteak</a>
+                            </li>
+                            <li>
+                              <a href="#">Hüftsteak</a>
+                            </li>
+                            <li>
+                              <a href="#">Porterhouse Steak</a>
+                            </li>
+                            <li>
+                              <a href="#">Picanha</a>
+                            </li>
+                          </ul>
+                          <ul>
+                            <li>
+                              <a href="#">Brisket</a>
+                            </li>
+                            <li>
+                              <a href="#">Burger Patties</a>
+                            </li>
+                            <li>
+                              <a href="#">Filet</a>
+                            </li>
+                            <li>
+                              <a href="#">Flanksteak</a>
+                            </li>
+                            <li>
+                              <a href="#">Hüftsteak</a>
+                            </li>
+                            <li>
+                              <a href="#">Porterhouse Steak</a>
+                            </li>
+                            <li>
+                              <a href="#">Picanha</a>
+                            </li>
+                          </ul>
+                        </div>
                       </div>
-                      <div class="border-l-2 border-lightGrey pl-4">
-                        <div class="text-f18 font-bold mb-4">
+                      <div class="border-l border-[#414141] pl-4">
+                        <div class="text-f18 font-semibold mb-4 text-white">
                           NACH CUT
                         </div>
                         <div class="grid grid-cols-2 gap-4 ">
                           <a href="#">
-                            <figure
-                              class="w-[180px] h-[120px] overflow-hidden relative flex items-center justify-center">
+                            <figure class="w-[180px] relative flex items-center justify-center">
                               <img loading="lazy" class="w-full" width="302" height="201"
                                 alt="SIRLOIN STEAK, CREEKSTONE FARMS USA" src="./images/featured_product_1.webp">
-                              <figcaption class="absolute px-3 font-semibold text-f20">
+                              <figcaption class="absolute px-3 text-white font-semibold text-f20">
                                 Name here
                               </figcaption>
                             </figure>
                           </a>
                           <a href="#">
-                            <figure
-                              class="w-[180px] h-[120px] overflow-hidden relative flex items-center justify-center">
+                            <figure class="w-[180px] relative flex items-center justify-center">
                               <img loading="lazy" class="w-full" width="302" height="201"
                                 alt="SIRLOIN STEAK, CREEKSTONE FARMS USA" src="./images/featured_product_1.webp">
-                              <figcaption class="absolute px-3 font-semibold text-f20">
+                              <figcaption class="absolute px-3 text-white font-semibold text-f20">
                                 Name here
                               </figcaption>
                             </figure>
                           </a>
                           <a href="#">
-                            <figure
-                              class="w-[180px] h-[120px] overflow-hidden relative flex items-center justify-center">
+                            <figure class="w-[180px] relative flex items-center justify-center">
                               <img loading="lazy" class="w-full" width="302" height="201"
                                 alt="SIRLOIN STEAK, CREEKSTONE FARMS USA" src="./images/featured_product_1.webp">
-                              <figcaption class="absolute px-3 font-semibold text-f20">
+                              <figcaption class="absolute px-3 text-white font-semibold text-f20">
                                 Name here
                               </figcaption>
                             </figure>
                           </a>
                           <a href="#">
-                            <figure
-                              class="w-[180px] h-[120px] overflow-hidden relative flex items-center justify-center">
+                            <figure class="w-[180px] relative flex items-center justify-center">
                               <img loading="lazy" class="w-full" width="302" height="201"
                                 alt="SIRLOIN STEAK, CREEKSTONE FARMS USA" src="./images/featured_product_1.webp">
-                              <figcaption class="absolute px-3 font-semibold text-f20">
+                              <figcaption class="absolute px-3 text-white font-semibold text-f20">
                                 Name here
                               </figcaption>
                             </figure>
@@ -667,118 +684,120 @@
                     </div>
                   </div>
                 </li>
-                <li class="py-0.5 px-4 border-b-[3px] border-[#414141] hover:bg-smokBlack">
+                <li class="py-1 px-4 border-b-[1px] border-[#414141] hover:bg-smokBlack">
                   <a class="flex items-center justify-between" href="#">
                     <div class="flex items-center gap-x-2">
-                      <span class="h-[50px] W-[50px] p-2 icon-svg">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="#fff" viewBox="0 0 576 512">
+                      <span class="h-[40px] w-[40px] p-2 icon-svg">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
                           <path
-                            d="M243.1 2.7c11.8 6.1 16.3 20.6 10.2 32.4L171.7 192H404.3L322.7 35.1c-6.1-11.8-1.5-26.3 10.2-32.4s26.2-1.5 32.4 10.2L458.4 192h36.1H544h8c13.3 0 24 10.7 24 24s-10.7 24-24 24H532L476.1 463.5C469 492 443.4 512 414 512H162c-29.4 0-55-20-62.1-48.5L44 240H24c-13.3 0-24-10.7-24-24s10.7-24 24-24h8H81.5h36.1L210.7 12.9c6.1-11.8 20.6-16.3 32.4-10.2zM482.5 240H93.5l53 211.9c1.8 7.1 8.2 12.1 15.5 12.1H414c7.3 0 13.7-5 15.5-12.1l53-211.9zM200 352c0-13.3 10.7-24 24-24h40V288c0-13.3 10.7-24 24-24s24 10.7 24 24v40h40c13.3 0 24 10.7 24 24s-10.7 24-24 24H312v40c0 13.3-10.7 24-24 24s-24-10.7-24-24V376H224c-13.3 0-24-10.7-24-24z" />
+                            d="M472 56c0 22.1-1.2 49.3-19.3 62l-31.6 22.3C375.9 112.2 327.9 96 288 96C176 96 0 224 0 384C0 512 160 512 288 512s288 0 288-128c0-63-27.3-121.1-67.3-168.3c-.4 .2-.7 .4-1 .6l-28.3 20c-8.3 5.9-15.1 15-21.2 28.3c-6.1 13.4-10.5 28.6-15.4 46l-.3 1c-7.9 27.5-24 53-47.9 72.3c-61.8 50-152.5 40.5-202.5-21.4c-13.9-17.2-23.2-36.6-28.1-56.7c-2.3-9.4 5.3-17.9 15-17.9c8 0 14.6 5.8 16.9 13.5c4 14.5 10.9 28.5 21 41c21.3 26.3 52.1 40.5 83.5 41.5c25.9 .8 52.2-7.3 74-24.9c18.6-15 31.1-34.8 37.2-56.2l.6-2c9.6-33.7 20.1-70.5 48.7-90.6L486.7 192s0 0 0 0l2.5-1.8c18.3-12.9 43.3-10.4 67.4-8c9.4 .9 18.6 1.8 27.3 1.8c30.9 0 56-25.1 56-56s-25.1-56-56-56c-1.1 0-2-1.1-1.7-2.2c1.1-4.4 1.7-9 1.7-13.8c0-30.9-25.1-56-56-56s-56 25.1-56 56z"
+                            fill="#fff"></path>
                         </svg>
                       </span>
-                      <span class="text-f18 font-bold">Kalb</span>
+                      <span class="text-f18 font-semibold">Geflügel</span>
                     </div>
                     <span class="h-[20px] W-[20px] icon-svg">
                       <svg width="20" height="20" xmlns="http://www.w3.org/2000/svg" fill="#fff" viewBox="0 0 320 512">
                         <path
-                          d="M305 239c9.4 9.4 9.4 24.6 0 33.9L113 465c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l175-175L79 81c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0L305 239z" />
+                          d="M305 239c9.4 9.4 9.4 24.6 0 33.9L113 465c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l175-175L79 81c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0L305 239z">
+                        </path>
                       </svg>
                     </span>
                   </a>
-                  <div class="hs-mega-menu left-full absolute top-0 w-max block min-h-full bg-smokBlack p-6">
-                    <div class="text-f18 font-bold mb-4">
-                      NACH CUT
-                    </div>
-                    <div class="flex gap-x-4">
-                      <div class="flex gap-x-4 text-gray font-semibold ">
-                        <ul>
-                          <li class="flex">
-                            <a href="#">Brisket</a>
-                          </li>
-                          <li>
-                            <a href="#">Burger Patties</a>
-                          </li>
-                          <li>
-                            <a href="#">Filet</a>
-                          </li>
-                          <li>
-                            <a href="#">Flanksteak</a>
-                          </li>
-                          <li>
-                            <a href="#">Hüftsteak</a>
-                          </li>
-                          <li class="flex">
-                            <a href="#">Porterhouse Steak</a>
-                          </li>
-                          <li>
-                            <a href="#">Picanha</a>
-                          </li>
-                        </ul>
-                        <ul>
-                          <li>
-                            <a href="#">Brisket</a>
-                          </li>
-                          <li>
-                            <a href="#">Burger Patties</a>
-                          </li>
-                          <li>
-                            <a href="#">Filet</a>
-                          </li>
-                          <li>
-                            <a href="#">Flanksteak</a>
-                          </li>
-                          <li>
-                            <a href="#">Hüftsteak</a>
-                          </li>
-                          <li>
-                            <a href="#">Porterhouse Steak</a>
-                          </li>
-                          <li>
-                            <a href="#">Picanha</a>
-                          </li>
-                        </ul>
-                      </div>
-                      <div class="border-l-2 border-lightGrey pl-4">
-                        <div class="text-f18 font-bold mb-4">
+                  <div class="hs-mega-menu left-full absolute top-0 w-max block min-h-full bg-smokBlack p-6"
+                    style="display: none;">
+
+                    <div class="flex gap-x-4  text-gray font-semibold ">
+                      <div>
+                        <div class="text-f18 font-semibold mb-4 text-white">
                           NACH CUT
                         </div>
-                        <div class="grid grid-cols-2 gap-4">
+                        <div class="flex gap-x-4 ">
+                          <ul>
+                            <li class="flex">
+                              <a href="#">Brisket</a>
+                            </li>
+                            <li>
+                              <a href="#">Burger Patties</a>
+                            </li>
+                            <li>
+                              <a href="#">Filet</a>
+                            </li>
+                            <li>
+                              <a href="#">Flanksteak</a>
+                            </li>
+                            <li>
+                              <a href="#">Hüftsteak</a>
+                            </li>
+                            <li>
+                              <a href="#">Porterhouse Steak</a>
+                            </li>
+                            <li>
+                              <a href="#">Picanha</a>
+                            </li>
+                          </ul>
+                          <ul>
+                            <li>
+                              <a href="#">Brisket</a>
+                            </li>
+                            <li>
+                              <a href="#">Burger Patties</a>
+                            </li>
+                            <li>
+                              <a href="#">Filet</a>
+                            </li>
+                            <li>
+                              <a href="#">Flanksteak</a>
+                            </li>
+                            <li>
+                              <a href="#">Hüftsteak</a>
+                            </li>
+                            <li>
+                              <a href="#">Porterhouse Steak</a>
+                            </li>
+                            <li>
+                              <a href="#">Picanha</a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="border-l border-[#414141] pl-4">
+                        <div class="text-f18 font-semibold mb-4 text-white">
+                          NACH CUT
+                        </div>
+                        <div class="grid grid-cols-2 gap-4 ">
                           <a href="#">
-                            <figure
-                              class="w-[180px] h-[120px] overflow-hidden relative flex items-center justify-center">
+                            <figure class="w-[180px] relative flex items-center justify-center">
                               <img loading="lazy" class="w-full" width="302" height="201"
                                 alt="SIRLOIN STEAK, CREEKSTONE FARMS USA" src="./images/featured_product_1.webp">
-                              <figcaption class="absolute px-3 font-semibold text-f20">
+                              <figcaption class="absolute px-3 text-white font-semibold text-f20">
                                 Name here
                               </figcaption>
                             </figure>
                           </a>
                           <a href="#">
-                            <figure
-                              class="w-[180px] h-[120px] overflow-hidden relative flex items-center justify-center">
+                            <figure class="w-[180px] relative flex items-center justify-center">
                               <img loading="lazy" class="w-full" width="302" height="201"
                                 alt="SIRLOIN STEAK, CREEKSTONE FARMS USA" src="./images/featured_product_1.webp">
-                              <figcaption class="absolute px-3 font-semibold text-f20">
+                              <figcaption class="absolute px-3 text-white font-semibold text-f20">
                                 Name here
                               </figcaption>
                             </figure>
                           </a>
                           <a href="#">
-                            <figure
-                              class="w-[180px] h-[120px] overflow-hidden relative flex items-center justify-center">
+                            <figure class="w-[180px] relative flex items-center justify-center">
                               <img loading="lazy" class="w-full" width="302" height="201"
                                 alt="SIRLOIN STEAK, CREEKSTONE FARMS USA" src="./images/featured_product_1.webp">
-                              <figcaption class="absolute px-3 font-semibold text-f20">
+                              <figcaption class="absolute px-3 text-white font-semibold text-f20">
                                 Name here
                               </figcaption>
                             </figure>
                           </a>
                           <a href="#">
-                            <figure
-                              class="w-[180px] h-[120px] overflow-hidden relative flex items-center justify-center">
+                            <figure class="w-[180px] relative flex items-center justify-center">
                               <img loading="lazy" class="w-full" width="302" height="201"
                                 alt="SIRLOIN STEAK, CREEKSTONE FARMS USA" src="./images/featured_product_1.webp">
-                              <figcaption class="absolute px-3 font-semibold text-f20">
+                              <figcaption class="absolute px-3 text-white font-semibold text-f20">
                                 Name here
                               </figcaption>
                             </figure>
@@ -788,240 +807,120 @@
                     </div>
                   </div>
                 </li>
-                <li class="py-0.5 px-4 border-b-[3px] border-[#414141] hover:bg-smokBlack">
+                <li class="py-1 px-4 border-b-[1px] border-[#414141] hover:bg-smokBlack">
                   <a class="flex items-center justify-between" href="#">
                     <div class="flex items-center gap-x-2">
-                      <span class="h-[50px] W-[50px] p-2 icon-svg">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="#fff" viewBox="0 0 576 512">
+                      <span class="h-[40px] w-[40px] p-2 icon-svg">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                           <path
-                            d="M243.1 2.7c11.8 6.1 16.3 20.6 10.2 32.4L171.7 192H404.3L322.7 35.1c-6.1-11.8-1.5-26.3 10.2-32.4s26.2-1.5 32.4 10.2L458.4 192h36.1H544h8c13.3 0 24 10.7 24 24s-10.7 24-24 24H532L476.1 463.5C469 492 443.4 512 414 512H162c-29.4 0-55-20-62.1-48.5L44 240H24c-13.3 0-24-10.7-24-24s10.7-24 24-24h8H81.5h36.1L210.7 12.9c6.1-11.8 20.6-16.3 32.4-10.2zM482.5 240H93.5l53 211.9c1.8 7.1 8.2 12.1 15.5 12.1H414c7.3 0 13.7-5 15.5-12.1l53-211.9zM200 352c0-13.3 10.7-24 24-24h40V288c0-13.3 10.7-24 24-24s24 10.7 24 24v40h40c13.3 0 24 10.7 24 24s-10.7 24-24 24H312v40c0 13.3-10.7 24-24 24s-24-10.7-24-24V376H224c-13.3 0-24-10.7-24-24z" />
+                            d="M243.6 19.6C283.7-20.4 371.9 2.8 440.5 71.5s91.9 156.8 51.8 196.9l-40.5 40.5C403.9 357 338.7 384 270.8 384H212.6c-7.1 0-13.9 2.8-18.9 7.8c-10.3 10.3-9.7 26.9-5 40.7c2.1 6.1 3.2 12.7 3.2 19.5c0 33.1-26.9 60-60 60s-60-26.9-60-60c0-6.3-5.7-12-12-12c-33.1 0-60-26.9-60-60s26.9-60 60-60c6.8 0 13.4 1.1 19.5 3.2c13.8 4.7 30.4 5.3 40.7-5c5-5 7.8-11.8 7.8-18.9V241.3c0-67.9 27-133 75-181l40.7-40.7zm64 184.8c49.6 49.6 113.3 66.4 142.2 37.4s12.2-92.6-37.4-142.2S299.1 33.2 270.2 62.2s-12.2 92.6 37.4 142.2zm36.3-36.3c-15.3-15.3-20.4-34.9-11.5-43.8s28.5-3.7 43.8 11.5s20.4 34.9 11.5 43.8s-28.5 3.7-43.8-11.5z"
+                            fill="#fff"></path>
                         </svg>
                       </span>
-                      <span class="text-f18 font-bold">Lamm</span>
+                      <span class="text-f18 font-semibold">Würste</span>
                     </div>
                     <span>
                       <svg width="20" height="20" xmlns="http://www.w3.org/2000/svg" fill="#fff" viewBox="0 0 320 512">
                         <path
-                          d="M305 239c9.4 9.4 9.4 24.6 0 33.9L113 465c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l175-175L79 81c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0L305 239z" />
+                          d="M305 239c9.4 9.4 9.4 24.6 0 33.9L113 465c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l175-175L79 81c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0L305 239z">
+                        </path>
                       </svg>
                     </span>
                   </a>
-                  <div class="hs-mega-menu left-full absolute top-0 w-max block min-h-full bg-smokBlack p-6">
-                    <div class="text-f18 font-bold mb-4">
-                      NACH CUT
-                    </div>
-                    <div class="flex gap-x-4">
-                      <div class="flex gap-x-4 text-gray font-semibold ">
-                        <ul>
-                          <li class="flex">
-                            <a href="#">Brisket</a>
-                          </li>
-                          <li>
-                            <a href="#">Burger Patties</a>
-                          </li>
-                          <li>
-                            <a href="#">Filet</a>
-                          </li>
-                          <li>
-                            <a href="#">Flanksteak</a>
-                          </li>
-                          <li>
-                            <a href="#">Hüftsteak</a>
-                          </li>
-                          <li class="flex">
-                            <a href="#">Porterhouse Steak</a>
-                          </li>
-                          <li>
-                            <a href="#">Picanha</a>
-                          </li>
-                        </ul>
-                        <ul>
-                          <li>
-                            <a href="#">Brisket</a>
-                          </li>
-                          <li>
-                            <a href="#">Burger Patties</a>
-                          </li>
-                          <li>
-                            <a href="#">Filet</a>
-                          </li>
-                          <li>
-                            <a href="#">Flanksteak</a>
-                          </li>
-                          <li>
-                            <a href="#">Hüftsteak</a>
-                          </li>
-                          <li>
-                            <a href="#">Porterhouse Steak</a>
-                          </li>
-                          <li>
-                            <a href="#">Picanha</a>
-                          </li>
-                        </ul>
+                  <div class="hs-mega-menu left-full absolute top-0 w-max block min-h-full bg-smokBlack p-6"
+                    style="display: none;">
+
+                    <div class="flex gap-x-4  text-gray font-semibold ">
+                      <div>
+                        <div class="text-f18 font-semibold mb-4 text-white">
+                          NACH CUT
+                        </div>
+                        <div class="flex gap-x-4 ">
+                          <ul>
+                            <li class="flex">
+                              <a href="#">Brisket</a>
+                            </li>
+                            <li>
+                              <a href="#">Burger Patties</a>
+                            </li>
+                            <li>
+                              <a href="#">Filet</a>
+                            </li>
+                            <li>
+                              <a href="#">Flanksteak</a>
+                            </li>
+                            <li>
+                              <a href="#">Hüftsteak</a>
+                            </li>
+                            <li>
+                              <a href="#">Porterhouse Steak</a>
+                            </li>
+                            <li>
+                              <a href="#">Picanha</a>
+                            </li>
+                          </ul>
+                          <ul>
+                            <li>
+                              <a href="#">Brisket</a>
+                            </li>
+                            <li>
+                              <a href="#">Burger Patties</a>
+                            </li>
+                            <li>
+                              <a href="#">Filet</a>
+                            </li>
+                            <li>
+                              <a href="#">Flanksteak</a>
+                            </li>
+                            <li>
+                              <a href="#">Hüftsteak</a>
+                            </li>
+                            <li>
+                              <a href="#">Porterhouse Steak</a>
+                            </li>
+                            <li>
+                              <a href="#">Picanha</a>
+                            </li>
+                          </ul>
+                        </div>
                       </div>
-                      <div class="border-l-2 border-lightGrey pl-4">
-                        <div class="text-f18 font-bold mb-4">
+                      <div class="border-l border-[#414141] pl-4">
+                        <div class="text-f18 font-semibold mb-4 text-white">
                           NACH CUT
                         </div>
                         <div class="grid grid-cols-2 gap-4 ">
                           <a href="#">
-                            <figure
-                              class="w-[180px] h-[120px] overflow-hidden relative flex items-center justify-center">
+                            <figure class="w-[180px] relative flex items-center justify-center">
                               <img loading="lazy" class="w-full" width="302" height="201"
                                 alt="SIRLOIN STEAK, CREEKSTONE FARMS USA" src="./images/featured_product_1.webp">
-                              <figcaption class="absolute px-3 font-semibold text-f20">
+                              <figcaption class="absolute px-3 text-white font-semibold text-f20">
                                 Name here
                               </figcaption>
                             </figure>
                           </a>
                           <a href="#">
-                            <figure
-                              class="w-[180px] h-[120px] overflow-hidden relative flex items-center justify-center">
+                            <figure class="w-[180px] relative flex items-center justify-center">
                               <img loading="lazy" class="w-full" width="302" height="201"
                                 alt="SIRLOIN STEAK, CREEKSTONE FARMS USA" src="./images/featured_product_1.webp">
-                              <figcaption class="absolute px-3 font-semibold text-f20">
+                              <figcaption class="absolute px-3 text-white font-semibold text-f20">
                                 Name here
                               </figcaption>
                             </figure>
                           </a>
                           <a href="#">
-                            <figure
-                              class="w-[180px] h-[120px] overflow-hidden relative flex items-center justify-center">
+                            <figure class="w-[180px] relative flex items-center justify-center">
                               <img loading="lazy" class="w-full" width="302" height="201"
                                 alt="SIRLOIN STEAK, CREEKSTONE FARMS USA" src="./images/featured_product_1.webp">
-                              <figcaption class="absolute px-3 font-semibold text-f20">
+                              <figcaption class="absolute px-3 text-white font-semibold text-f20">
                                 Name here
                               </figcaption>
                             </figure>
                           </a>
                           <a href="#">
-                            <figure
-                              class="w-[180px] h-[120px] overflow-hidden relative flex items-center justify-center">
+                            <figure class="w-[180px] relative flex items-center justify-center">
                               <img loading="lazy" class="w-full" width="302" height="201"
                                 alt="SIRLOIN STEAK, CREEKSTONE FARMS USA" src="./images/featured_product_1.webp">
-                              <figcaption class="absolute px-3 font-semibold text-f20">
-                                Name here
-                              </figcaption>
-                            </figure>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </li>
-                <li class="py-0.5 px-4 border-b-[3px] border-[#414141] hover:bg-smokBlack">
-                  <a class="flex items-center justify-between" href="#">
-                    <div class="flex items-center gap-x-2">
-                      <span class="h-[50px] W-[50px] p-2 icon-svg">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="#fff" viewBox="0 0 576 512">
-                          <path
-                            d="M243.1 2.7c11.8 6.1 16.3 20.6 10.2 32.4L171.7 192H404.3L322.7 35.1c-6.1-11.8-1.5-26.3 10.2-32.4s26.2-1.5 32.4 10.2L458.4 192h36.1H544h8c13.3 0 24 10.7 24 24s-10.7 24-24 24H532L476.1 463.5C469 492 443.4 512 414 512H162c-29.4 0-55-20-62.1-48.5L44 240H24c-13.3 0-24-10.7-24-24s10.7-24 24-24h8H81.5h36.1L210.7 12.9c6.1-11.8 20.6-16.3 32.4-10.2zM482.5 240H93.5l53 211.9c1.8 7.1 8.2 12.1 15.5 12.1H414c7.3 0 13.7-5 15.5-12.1l53-211.9zM200 352c0-13.3 10.7-24 24-24h40V288c0-13.3 10.7-24 24-24s24 10.7 24 24v40h40c13.3 0 24 10.7 24 24s-10.7 24-24 24H312v40c0 13.3-10.7 24-24 24s-24-10.7-24-24V376H224c-13.3 0-24-10.7-24-24z" />
-                        </svg>
-                      </span>
-                      <span class="text-f20 font-bold">Wild</span>
-                    </div>
-                    <span>
-                      <svg width="20" height="20" xmlns="http://www.w3.org/2000/svg" fill="#fff" viewBox="0 0 320 512">
-                        <path
-                          d="M305 239c9.4 9.4 9.4 24.6 0 33.9L113 465c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l175-175L79 81c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0L305 239z" />
-                      </svg>
-                    </span>
-                  </a>
-                  <div class="hs-mega-menu left-full absolute top-0 w-max block min-h-full bg-smokBlack p-6">
-                    <div class="text-f20 font-bold mb-4">
-                      NACH CUT
-                    </div>
-                    <div class="flex gap-x-4">
-                      <div class="flex gap-x-4 text-gray font-semibold ">
-                        <ul>
-                          <li class="flex">
-                            <a href="#">Brisket</a>
-                          </li>
-                          <li>
-                            <a href="#">Burger Patties</a>
-                          </li>
-                          <li>
-                            <a href="#">Filet</a>
-                          </li>
-                          <li>
-                            <a href="#">Flanksteak</a>
-                          </li>
-                          <li>
-                            <a href="#">Hüftsteak</a>
-                          </li>
-                          <li class="flex">
-                            <a href="#">Porterhouse Steak</a>
-                          </li>
-                          <li>
-                            <a href="#">Picanha</a>
-                          </li>
-                        </ul>
-                        <ul>
-                          <li>
-                            <a href="#">Brisket</a>
-                          </li>
-                          <li>
-                            <a href="#">Burger Patties</a>
-                          </li>
-                          <li>
-                            <a href="#">Filet</a>
-                          </li>
-                          <li>
-                            <a href="#">Flanksteak</a>
-                          </li>
-                          <li>
-                            <a href="#">Hüftsteak</a>
-                          </li>
-                          <li>
-                            <a href="#">Porterhouse Steak</a>
-                          </li>
-                          <li>
-                            <a href="#">Picanha</a>
-                          </li>
-                        </ul>
-                      </div>
-                      <div class="border-l-2 border-lightGrey pl-4">
-                        <div class="text-f18 font-bold mb-4">
-                          NACH CUT
-                        </div>
-                        <div class="grid grid-cols-2 gap-4 ">
-                          <a href="#">
-                            <figure
-                              class="w-[180px] h-[120px] overflow-hidden relative flex items-center justify-center">
-                              <img loading="lazy" class="w-full" width="302" height="201"
-                                alt="SIRLOIN STEAK, CREEKSTONE FARMS USA"
-                                src="https://placehold.co/730x730/a79a66/fff.png">
-                              <figcaption class="absolute px-3 font-semibold text-f20">
-                                Name here
-                              </figcaption>
-                            </figure>
-                          </a>
-                          <a href="#">
-                            <figure
-                              class="w-[180px] h-[120px] overflow-hidden  relative flex items-center justify-center">
-                              <img loading="lazy" class="w-full" width="302" height="201"
-                                alt="SIRLOIN STEAK, CREEKSTONE FARMS USA" src="./images/featured_product_1.webp">
-                              <figcaption class="absolute px-3 font-semibold text-f20">
-                                Name here
-                              </figcaption>
-                            </figure>
-                          </a>
-                          <a href="#">
-                            <figure
-                              class="w-[180px] h-[120px] overflow-hidden relative flex items-center justify-center">
-                              <img loading="lazy" class="w-full" width="302" height="201"
-                                alt="SIRLOIN STEAK, CREEKSTONE FARMS USA" src="./images/featured_product_1.webp">
-                              <figcaption class="absolute px-3 font-semibold text-f20">
-                                Name here
-                              </figcaption>
-                            </figure>
-                          </a>
-                          <a href="#">
-                            <figure
-                              class="w-[180px] h-[120px] overflow-hidden relative flex items-center justify-center">
-                              <img loading="lazy" class="w-full" width="302" height="201"
-                                alt="SIRLOIN STEAK, CREEKSTONE FARMS USA" src="./images/featured_product_1.webp">
-                              <figcaption class="absolute px-3 font-semibold text-f20">
+                              <figcaption class="absolute px-3 text-white font-semibold text-f20">
                                 Name here
                               </figcaption>
                             </figure>
@@ -1035,172 +934,450 @@
             </div>
           </li>
         </ul>
-
         <!-- main menu  -->
-        <ul class="flex gap-x-4 xl:gap-x-5">
-          <li class="relative has-dropdown py-2 hover:bg-smokBlack px-4">
-            <a href="#" class="flex items-center text-f18 font-bold gap-x-1.5" aria-expanded="false">
-              Fleisch
-              <span class="h-[20px] W-[20px] icon-svg">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#fff" viewBox="0 0 512 512">
-                  <path
-                    d="M239 401c9.4 9.4 24.6 9.4 33.9 0L465 209c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0l-175 175L81 175c-9.4-9.4-24.6-9.4-33.9 0s-9.4 24.6 0 33.9L239 401z" />
-                </svg>
-              </span>
-            </a>
-            <div
-              class="absolute dropdown-panel hidden left-0 top-full mt-[2px] z-10 w-fit max-w-md overflow-hidden bg-smokBlack min-w-[230px]">
-              <div class="p-6 ">
-                <ul class="flex flex-col gap-y-4">
-                  <li>
-                    <a class="text-f16 font-medium" href="#">Alles</a>
-                  </li>
-                  <li>
-                    <a class="text-f16 font-medium" href="#">Grillpakete</a>
-                  </li>
-                  <li>
-                    <a class="text-f16 font-medium" href="#">Rind</a>
-                  </li>
-                  <li>
-                    <a class="text-f16 font-medium" href="#">Schwein</a>
-                  </li>
-                  <li>
-                    <a class="text-f16 font-medium" href="#">Schwein</a>
-                  </li>
-                  <li>
-                    <a class="text-f16 font-medium" href="#">Geflügel</a>
-                  </li>
-                  <li>
-                    <a class="text-f16 font-medium" href="#">Wurswaren</a>
-                  </li>
-                  <li>
-                    <a class="text-f16 font-medium" href="#">Kalb</a>
-                  </li>
-                  <li>
-                    <a class="text-f16 font-medium" href="#">Lamm</a>
-                  </li>
-                  <li>
-                    <a class="text-f16 font-medium" href="#">Wild</a>
-                  </li>
-                </ul>
+        <div class="flex justify-between w-full">
+          <ul class="flex gap-x-1 xl:gap-x-1 lg:ml-4">
+            <li class="relative has-dropdown py-2 hover:bg-smokBlack px-2">
+              <a href="#" class="flex items-center text-f18 font-semibold gap-x-2" aria-expanded="false">
+                <img alt="icon" width="15px" height="15px" src="images/icons/seafood.png"> SEAFOOD
+                <span class="h-[20px] W-[20px] icon-svg">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#fff" viewBox="0 0 512 512">
+                    <path
+                      d="M239 401c9.4 9.4 24.6 9.4 33.9 0L465 209c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0l-175 175L81 175c-9.4-9.4-24.6-9.4-33.9 0s-9.4 24.6 0 33.9L239 401z" />
+                  </svg>
+                </span>
+              </a>
+              <div
+                class="absolute dropdown-panel hidden left-0 top-full mt-[0px] z-10 w-fit max-w-md overflow-hidden bg-smokBlack min-w-[230px]">
+                <div class="p-6 ">
+                  <ul class="flex flex-col gap-y-2">
+                    <li>
+                      <a class="text-f16 font-medium text-[#ffffff99] hover:text-white" href="#">Alles</a>
+                    </li>
+                    <li>
+                      <a class="text-f16 font-medium text-[#ffffff99] hover:text-white" href="#">Grillpakete</a>
+                    </li>
+                    <li>
+                      <a class="text-f16 font-medium text-[#ffffff99] hover:text-white" href="#">Rind</a>
+                    </li>
+                    <li>
+                      <a class="text-f16 font-medium text-[#ffffff99] hover:text-white" href="#">Schwein</a>
+                    </li>
+                    <li>
+                      <a class="text-f16 font-medium text-[#ffffff99] hover:text-white" href="#">Schwein</a>
+                    </li>
+                    <li>
+                      <a class="text-f16 font-medium text-[#ffffff99] hover:text-white" href="#">Geflügel</a>
+                    </li>
+                    <li>
+                      <a class="text-f16 font-medium text-[#ffffff99] hover:text-white" href="#">Wurswaren</a>
+                    </li>
+                    <li>
+                      <a class="text-f16 font-medium text-[#ffffff99] hover:text-white" href="#">Kalb</a>
+                    </li>
+                    <li>
+                      <a class="text-f16 font-medium text-[#ffffff99] hover:text-white" href="#">Lamm</a>
+                    </li>
+                    <li>
+                      <a class="text-f16 font-medium text-[#ffffff99] hover:text-white" href="#">Wild</a>
+                    </li>
+                  </ul>
+                </div>
               </div>
-            </div>
-          </li>
-          <li class="relative py-2 hover:bg-smokBlack px-4">
-            <a href="#" class="flex items-center text-f18 font-bold gap-x-1.5" aria-expanded="false">
-              Seafood
-              <span class="h-[20px] W-[20px] icon-svg">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#fff" viewBox="0 0 512 512">
-                  <path
-                    d="M239 401c9.4 9.4 24.6 9.4 33.9 0L465 209c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0l-175 175L81 175c-9.4-9.4-24.6-9.4-33.9 0s-9.4 24.6 0 33.9L239 401z" />
-                </svg>
-              </span>
-            </a>
-          </li>
-          <li class="relative py-2 hover:bg-smokBlack px-4">
-            <a href="#" class="flex items-center text-f18 font-bold gap-x-1.5" aria-expanded="false">
-              Würzen
-              <span class="h-[20px] W-[20px] icon-svg">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#fff" viewBox="0 0 512 512">
-                  <path
-                    d="M239 401c9.4 9.4 24.6 9.4 33.9 0L465 209c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0l-175 175L81 175c-9.4-9.4-24.6-9.4-33.9 0s-9.4 24.6 0 33.9L239 401z" />
-                </svg>
-              </span>
-            </a>
-          </li>
-          <li class="relative py-2 hover:bg-smokBlack px-4">
-            <a href="#" class="flex items-center text-f18 font-bold gap-x-1.5" aria-expanded="false">
-              Sonstig
-              <span class="h-[20px] W-[20px] icon-svg">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#fff" viewBox="0 0 512 512">
-                  <path
-                    d="M239 401c9.4 9.4 24.6 9.4 33.9 0L465 209c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0l-175 175L81 175c-9.4-9.4-24.6-9.4-33.9 0s-9.4 24.6 0 33.9L239 401z" />
-                </svg>
-              </span>
-            </a>
-          </li>
-          <li class="relative py-2 hover:bg-smokBlack px-4">
-            <a href="#" class="flex items-center text-f18 font-bold gap-x-1.5" aria-expanded="false">
-              Angebote
-              <span class="h-[20px] W-[20px] icon-svg">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#fff" viewBox="0 0 512 512">
-                  <path
-                    d="M239 401c9.4 9.4 24.6 9.4 33.9 0L465 209c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0l-175 175L81 175c-9.4-9.4-24.6-9.4-33.9 0s-9.4 24.6 0 33.9L239 401z" />
-                </svg>
-              </span>
-            </a>
-          </li>
-          <li class="relative py-2 hover:bg-smokBlack px-4">
-            <a href="#" class="flex items-center text-f18 font-bold gap-x-1.5" aria-expanded="false">
-              Rezepte
-              <span class="h-[20px] W-[20px] icon-svg">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#fff" viewBox="0 0 512 512">
-                  <path
-                    d="M239 401c9.4 9.4 24.6 9.4 33.9 0L465 209c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0l-175 175L81 175c-9.4-9.4-24.6-9.4-33.9 0s-9.4 24.6 0 33.9L239 401z" />
-                </svg>
-              </span>
-            </a>
-          </li>
-        </ul>
+            </li>
+            <li class="relative py-2 hover:bg-smokBlack px-2">
+              <a href="#" class="flex items-center text-f18 font-semibold gap-x-2" aria-expanded="false">
+                <img alt="icon" width="15px" height="15px" src="images/icons/gift.png"> GUTSCHEINE
+              </a>
+            </li>
+          </ul>
+          <ul class="flex gap-x-1 xl:gap-x-1">
+            <li class="relative py-2 hover:bg-smokBlack px-2">
+              <a href="#" class="flex items-center text-f18 font-semibold gap-x-2" aria-expanded="false">
+                % ANGEBOT %
+              </a>
+            </li>
+            <li class="relative py-2 hover:bg-smokBlack px-2">
+              <a href="#" class="flex items-center text-f18 font-semibold gap-x-2" aria-expanded="false">
+                <img alt="icon" width="15px" height="15px" src="images/icons/info.png"> SERVICE
+                <span class="h-[20px] W-[20px] icon-svg">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#fff" viewBox="0 0 512 512">
+                    <path
+                      d="M239 401c9.4 9.4 24.6 9.4 33.9 0L465 209c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0l-175 175L81 175c-9.4-9.4-24.6-9.4-33.9 0s-9.4 24.6 0 33.9L239 401z" />
+                  </svg>
+                </span>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </nav>
   </header>
 
+  <!-- ========== breadcrumbs  ========== -->
+  <div class="pt-4 pb-4">
+    <div class="container max-w-[1380px] mx-auto">
+      <ol class="list-reset rounded flex flex-wrap bg-grey-light text-grey">
+        <li class="pr-2"><a href="#" class="no-underline text-f16 font-bold text-lightGrey">Home</a></li>
+        <li class="text-lightGrey">/</li>
+        <li class="px-2 font-bold text-f16  text-white">My Account</li>
+      </ol>
+    </div>
+  </div>
+
   <!-- ========== My Acccount ========== -->
   <section class="my-12">
     <div class="container">
-      <h1 class="text-f26 font-bold mb-8">My Account </h1>
       <div class="flex flex-col md:flex-row gap-10">
         <!-- aside -->
-        <aside class="md:w-1/4 w-full">
-          <h2 class="font-bold text-f16 uppercase border-b-2 border-solid border-greyBlack pb-2 mb-2"> Main account
+        <aside class="md:w-[25%] lg:w-[20%] w-full mb-6">
+          <h2 class="font-bold text-f18 uppercase border-b border-solid border-[#909090] p-4 mb-4">
+            MY ACCOUNT
           </h2>
           <nav>
             <ul class="sidebar-list">
-              <li class=" hover:bg-greyBlack w-full ">
-                <a class=" px-3 text-f14 flex min-h-[40px] items-center font-bold" href="my-account.html">Dashboard</a>
-              </li>
-              <li class=" hover:bg-greyBlack ">
-                <a class=" px-3 text-f14 flex min-h-[40px] w-full items-center font-bold"
-                  href="memberships.html">Memberships</a>
-              </li>
-              <li class="hover:bg-greyBlack">
-                <a class=" px-3 text-f14 flex min-h-[40px] w-full items-center font-bold" href="orders.html">Orders</a>
-              </li>
-              <li class=" hover:bg-greyBlack bg-greyBlack">
-                <a class=" px-3 text-f14 flex min-h-[40px] w-full items-center font-bold"
-                  href="addresses.html">Addresses</a>
+              <li class=" hover:bg-greyBlack bg-greyBlack  w-full ">
+                <a class="px-3 py-1 text-f16 flex gap-2 min-h-[40px] items-center font-bold"
+                  href="new-my-account-dashboard.html">
+                  <span class="min-w-[40px]">
+                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="40px" height="40px"
+                      viewBox="0 0 300 300" enable-background="new 0 0 300 300" xml:space="preserve">
+                      <g>
+                        <path fill="#A69966" d="M96.198,231.949c-2.353,0-4.252-1.898-4.252-4.252c0-2.353,1.899-4.252,4.252-4.252h25.795l6.633-27.524
+                          		H79.105c-3.685,0-7.058-1.502-9.496-3.939c-2.438-2.438-3.968-5.812-3.968-9.524v-15.902V81.516c0-3.686,1.531-7.059,3.968-9.496
+                          		c2.438-2.438,5.811-3.969,9.496-3.969h141.76c3.715,0,7.088,1.53,9.525,3.969c2.438,2.438,3.969,5.811,3.969,9.496v85.039v15.902
+                          		c0,3.713-1.531,7.086-3.969,9.524c-2.438,2.438-5.811,3.939-9.525,3.939h-49.492l6.633,27.524h25.795
+                          		c2.326,0,4.252,1.899,4.252,4.252c0,2.354-1.926,4.252-4.252,4.252H96.198z M137.329,195.921l-6.633,27.524h38.608l-6.635-27.524
+                          		H137.329z M220.865,76.555H79.105c-1.36,0-2.608,0.566-3.486,1.474c-0.907,0.879-1.474,2.126-1.474,3.487v80.787h151.71V81.516
+                          		c0-1.361-0.566-2.608-1.475-3.487C223.475,77.121,222.227,76.555,220.865,76.555L220.865,76.555z M74.145,170.807v11.65
+                          		c0,1.36,0.567,2.607,1.474,3.515c0.878,0.907,2.126,1.445,3.486,1.445h141.76c1.361,0,2.609-0.538,3.516-1.445
+                          		c0.908-0.907,1.475-2.154,1.475-3.515v-11.65H74.145z" />
+                      </g>
+                    </svg>
+                  </span>
+                  Dashboard
+                </a>
               </li>
               <li class=" hover:bg-greyBlack">
-                <a class=" px-3 text-f14 flex min-h-[40px] w-full items-center font-bold"
-                  href="payment-methods.html">Payment
-                  methods</a>
+                <a class="px-3 py-1 text-f16  gap-2 flex min-h-[40px] w-full items-center font-bold"
+                  href="memberships.html">
+                  <span class="min-w-[40px]">
+                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 300 300"
+                      enable-background="new 0 0 300 300" xml:space="preserve">
+                      <g>
+                        <path fill="#A69966" d="M137.938,200.755l0.028,0.028c0.113,0.058,0.227,0.143,0.34,0.199c0.51,0.312,1.049,0.623,1.587,0.878
+                                                		c2.211,1.049,4.678,1.616,7.285,1.616h5.641c2.608,0,5.103-0.567,7.285-1.616c0.539-0.255,1.077-0.566,1.588-0.878
+                                                		c0.113-0.057,0.227-0.142,0.34-0.199l0.028-0.028c1.502-0.963,2.863-2.154,3.969-3.543c2.777-3.401,6.179-5.924,9.949-7.483
+                                                		c3.799-1.559,7.966-2.183,12.331-1.729c2.494,0.228,5.073-0.057,7.483-0.936c2.296-0.793,4.45-2.154,6.293-3.996l0,0l3.996-3.969
+                                                		c1.843-1.843,3.146-3.997,3.969-6.293c0.879-2.409,1.162-4.989,0.936-7.483c-0.425-4.365,0.17-8.532,1.729-12.331l0,0
+                                                		c1.559-3.799,4.082-7.172,7.483-9.95c1.956-1.587,3.543-3.628,4.648-5.924c1.049-2.211,1.616-4.677,1.616-7.285v-5.641
+                                                		c0-2.608-0.567-5.074-1.616-7.285c-1.105-2.296-2.692-4.337-4.648-5.924c-3.373-2.778-5.896-6.151-7.455-9.95h-0.028
+                                                		c-1.56-3.77-2.154-7.965-1.729-12.331c0.227-2.495-0.057-5.045-0.936-7.483c-0.822-2.296-2.126-4.45-3.969-6.293l-3.996-3.968
+                                                		c-1.843-1.843-3.997-3.175-6.293-3.997c-2.41-0.85-4.989-1.162-7.483-0.936c-4.365,0.454-8.532-0.17-12.331-1.729
+                                                		c-3.771-1.559-7.172-4.082-9.949-7.483c-1.588-1.956-3.601-3.543-5.925-4.649c-2.183-1.021-4.677-1.616-7.285-1.616h-5.641
+                                                		c-2.607,0-5.074,0.595-7.285,1.616c-2.296,1.105-4.337,2.693-5.924,4.649c-2.778,3.373-6.151,5.896-9.95,7.483
+                                                		c-3.798,1.559-7.965,2.183-12.331,1.729c-2.495-0.227-5.046,0.085-7.484,0.936c-2.296,0.822-4.45,2.126-6.292,3.969l-3.969,3.997
+                                                		l0,0c-1.842,1.843-3.175,4.025-3.997,6.293c-0.851,2.41-1.163,4.989-0.936,7.483c0.454,4.365-0.17,8.561-1.729,12.331
+                                                		c-1.559,3.771-4.082,7.172-7.484,9.95c-1.956,1.587-3.543,3.628-4.648,5.924c-1.021,2.183-1.616,4.677-1.616,7.285v5.641
+                                                		c0,2.608,0.595,5.103,1.616,7.285c1.105,2.296,2.693,4.337,4.648,5.924c3.402,2.778,5.925,6.18,7.484,9.95l0,0
+                                                		c1.559,3.799,2.183,7.966,1.729,12.331c-0.227,2.494,0.085,5.074,0.936,7.483c0.822,2.296,2.154,4.45,3.997,6.293l0,0l3.969,3.997
+                                                		v-0.028c1.842,1.842,4.025,3.203,6.292,3.996c2.41,0.879,4.989,1.163,7.484,0.936c4.365-0.425,8.532,0.171,12.331,1.729l0,0
+                                                		c3.798,1.56,7.171,4.082,9.95,7.483C135.104,198.601,136.436,199.792,137.938,200.755L137.938,200.755z M150.014,104.887
+                                                		c6.066,0,11.594,2.466,15.619,6.491l0,0l0,0c4.025,4.025,6.491,9.553,6.491,15.647c0,6.094-2.466,11.622-6.491,15.619l0,0
+                                                		l-0.227,0.227c2.154,0.652,4.252,1.417,6.293,2.296c5.414,2.381,10.375,5.612,14.684,9.525c5.867-7.683,9.354-17.264,9.354-27.667
+                                                		c0-12.643-5.131-24.066-13.408-32.344c-8.277-8.277-19.701-13.379-32.315-13.379c-12.642,0-24.065,5.103-32.343,13.379
+                                                		c-8.277,8.277-13.379,19.701-13.379,32.344c0,10.403,3.458,19.984,9.326,27.667c4.309-3.913,9.27-7.144,14.684-9.525
+                                                		c2.041-0.879,4.139-1.644,6.293-2.296l-0.227-0.227l0,0c-4.025-3.997-6.491-9.524-6.491-15.619c0-6.095,2.495-11.65,6.491-15.647
+                                                		l0,0C138.364,107.353,143.891,104.887,150.014,104.887L150.014,104.887z M159.624,117.359c-2.438-2.466-5.84-3.968-9.61-3.968
+                                                		c-3.77,0-7.172,1.531-9.637,3.997h-0.029c-2.466,2.438-3.968,5.839-3.968,9.638c0,3.742,1.502,7.171,3.968,9.638h0.029
+                                                		c2.465,2.466,5.867,3.968,9.637,3.968c3.771,0,7.172-1.502,9.61-3.968l0,0c2.466-2.466,3.996-5.896,3.996-9.638
+                                                		c0-3.799-1.502-7.2-3.968-9.638L159.624,117.359z M150.014,72.799c14.968,0,28.517,6.066,38.325,15.874
+                                                		c9.808,9.808,15.874,23.357,15.874,38.353c0,14.967-6.066,28.517-15.874,38.325c-9.809,9.808-23.357,15.874-38.325,15.874
+                                                		c-14.995,0-28.544-6.066-38.352-15.874c-9.808-9.808-15.874-23.358-15.874-38.325c0-14.996,6.066-28.545,15.874-38.353
+                                                		C121.469,78.865,135.019,72.799,150.014,72.799L150.014,72.799z M119.343,160.929c8.107,7.342,18.851,11.82,30.67,11.82
+                                                		c11.793,0,22.536-4.479,30.671-11.82c-3.656-3.288-7.823-6.01-12.358-7.994c-5.584-2.438-11.792-3.799-18.313-3.799
+                                                		c-6.547,0-12.727,1.361-18.312,3.799C127.139,154.919,122.972,157.641,119.343,160.929L119.343,160.929z M137.542,210.081
+                                                		l-26.22,45.751c-1.162,2.041-3.77,2.722-5.811,1.56c-0.822-0.482-1.446-1.19-1.786-2.041l0,0l-9.553-22.677l-24.18,3.203
+                                                		c-2.325,0.283-4.451-1.333-4.734-3.657c-0.142-0.964,0.057-1.871,0.51-2.636v-0.028l24.265-42.35l-2.098-2.098l0,0
+                                                		c-2.75-2.75-4.762-6.01-5.981-9.468c-1.275-3.572-1.729-7.398-1.36-11.141c0.283-2.948-0.113-5.754-1.134-8.249l0,0
+                                                		c-1.049-2.522-2.75-4.79-5.046-6.662c-2.891-2.381-5.272-5.414-6.917-8.844c-1.587-3.317-2.466-7.03-2.466-10.914v-5.641
+                                                		c0-3.883,0.879-7.597,2.466-10.913c1.644-3.43,4.025-6.463,6.917-8.844c2.296-1.871,3.997-4.139,5.046-6.662
+                                                		c1.021-2.494,1.417-5.301,1.134-8.22c-0.369-3.77,0.085-7.597,1.36-11.14c1.219-3.487,3.232-6.747,5.981-9.496v0.028l3.968-3.997
+                                                		h0.028c2.75-2.778,6.01-4.762,9.468-5.981c3.572-1.275,7.37-1.729,11.14-1.361c2.948,0.284,5.726-0.113,8.249-1.162
+                                                		c2.495-1.021,4.762-2.721,6.633-5.017c2.381-2.892,5.415-5.301,8.844-6.917c3.345-1.587,7.03-2.466,10.914-2.466h5.641
+                                                		c3.884,0,7.597,0.879,10.913,2.466c3.431,1.644,6.464,4.025,8.845,6.917c1.871,2.296,4.139,3.997,6.661,5.045
+                                                		c2.494,1.021,5.301,1.417,8.249,1.134c3.741-0.368,7.568,0.085,11.111,1.361c3.459,1.219,6.719,3.231,9.468,5.981l3.997,3.969
+                                                		v0.028c2.778,2.75,4.763,6.009,6.01,9.468c1.247,3.571,1.7,7.37,1.332,11.14c-0.283,2.919,0.113,5.726,1.162,8.22V97.8
+                                                		c1.021,2.495,2.722,4.762,5.018,6.633c2.92,2.381,5.301,5.414,6.916,8.844c1.588,3.316,2.467,7.03,2.467,10.913v5.641
+                                                		c0,3.883-0.879,7.597-2.467,10.914c-1.615,3.43-3.996,6.463-6.916,8.844c-2.296,1.872-3.997,4.139-5.018,6.662h-0.028
+                                                		c-1.021,2.495-1.417,5.301-1.134,8.221c0.368,3.771-0.085,7.597-1.332,11.141c-1.247,3.458-3.231,6.718-6.01,9.468v0.028
+                                                		l-2.098,2.098l24.265,42.35v0.028c0.453,0.765,0.652,1.672,0.511,2.636c-0.284,2.324-2.41,3.94-4.734,3.657l-24.18-3.203
+                                                		l-9.553,22.677l0,0c-0.34,0.851-0.964,1.559-1.785,2.041c-2.041,1.162-4.649,0.481-5.812-1.56l-26.221-45.751
+                                                		c-2.977,1.219-6.236,1.899-9.638,1.899h-5.641C143.777,211.98,140.518,211.3,137.542,210.081L137.542,210.081z M96.609,192.79
+                                                		l-19.219,33.563l18.567-2.467c1.956-0.425,3.997,0.596,4.791,2.523l7.483,17.744l22.082-38.551
+                                                		c-1.021-0.936-2.013-1.928-2.892-3.005c-1.871-2.296-4.138-3.997-6.633-5.018v-0.028c-2.523-1.021-5.301-1.417-8.249-1.134
+                                                		c-3.77,0.369-7.597-0.085-11.14-1.332C99.728,194.491,98.14,193.726,96.609,192.79L96.609,192.79z M203.391,192.79
+                                                		c-1.531,0.936-3.118,1.701-4.763,2.268c-3.571,1.275-7.398,1.729-11.14,1.36c-2.948-0.283-5.755,0.113-8.249,1.162
+                                                		c-2.522,1.021-4.79,2.722-6.661,5.018c-0.879,1.077-1.843,2.069-2.892,3.005l22.082,38.551l7.483-17.772
+                                                		c0.794-1.899,2.835-2.92,4.791-2.495l18.566,2.467L203.391,192.79z">
+                        </path>
+                      </g>
+                    </svg>
+                  </span> Memberships
+                </a>
+              </li>
+              <li class="hover:bg-greyBlack">
+                <a class="px-3 py-1 text-f16  gap-2 flex min-h-[40px] w-full items-center font-bold" href="orders.html">
+                  <span class="min-w-[40px]">
+                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 300 300"
+                      enable-background="new 0 0 300 300" xml:space="preserve">
+                      <g>
+                        <path fill="#A69966" d="M101.485,135.798c-1.19-2.041-0.482-4.621,1.531-5.811c2.041-1.162,4.621-0.482,5.783,1.559l3.033,5.244
+                                              		l10.063-10.063c1.672-1.672,4.365-1.672,6.009,0c1.672,1.644,1.672,4.337,0,6.009l-13.946,13.975l-0.028-0.028
+                                              		c-0.255,0.255-0.539,0.482-0.879,0.68c-2.013,1.162-4.592,0.482-5.783-1.531L101.485,135.798z M221.9,104.362v133.625
+                                              		c0,2.324-1.898,4.224-4.252,4.224H82.351c-2.353,0-4.252-1.899-4.252-4.224V62.041c0-2.353,1.899-4.252,4.252-4.252h92.977h0.113
+                                              		l0,0h0.113l0,0h0.084l0.029,0.028h0.084h0.029h0.057h0.027l0.086,0.028h0.029h0.057h0.057l0.057,0.028h0.057l0.057,0.028h0.027
+                                              		h0.057l0.057,0.028h0.057l0.029,0.028h0.057l0.057,0.028h0.027l0.057,0.028h0.057l0.057,0.028l0.029,0.028h0.057l0.057,0.028
+                                              		L177,58.129l0.029,0.028h0.057l0.027,0.029l0.057,0.028l0.057,0.028l0.057,0.028l0.17,0.085l0.057,0.028l0.029,0.028l0.084,0.057
+                                              		l0.057,0.028l0.029,0.028l0.057,0.028l0.027,0.028c0.17,0.114,0.313,0.227,0.482,0.369v0.028l0.057,0.057l42.322,42.321
+                                              		l0.027,0.028l0.029,0.028l0,0l0.057,0.057l0.027,0.028l0,0l0.057,0.085l0,0l0.029,0.028l0.057,0.028l0.057,0.085l0.027,0.057
+                                              		l0.029,0.028l0,0l0.027,0.028l0.029,0.057l0.027,0.028l0.029,0.057l0,0l0.027,0.028l0.029,0.057l0.057,0.085l0.057,0.085
+                                              		l0.057,0.085l0.027,0.085l0.059,0.113l0.057,0.085v0.057l0.027,0.028l0,0l0.029,0.057v0.057l0.057,0.085l0.027,0.113l0.029,0.085
+                                              		l0.027,0.114l0.029,0.085l0.027,0.113l0.029,0.085l0.027,0.113v0.114l0.029,0.113v0.085v0.113l0.027,0.113v0.114V104.362z
+                                              		 M171.076,66.293H86.603v167.442h126.793V108.614h-38.068c-2.324,0-4.252-1.928-4.252-4.252V66.293z M179.58,72.302v27.808h27.807
+                                              		L179.58,72.302z M143.58,175.03c-2.324,0-4.252-1.899-4.252-4.252c0-2.325,1.928-4.252,4.252-4.252h51.278
+                                              		c2.354,0,4.252,1.927,4.252,4.252c0,2.353-1.898,4.252-4.252,4.252H143.58z M101.485,169.843c-1.162-2.013-0.482-4.621,1.559-5.783
+                                              		c2.013-1.162,4.592-0.453,5.754,1.56l3.033,5.244l10.063-10.063c1.672-1.672,4.365-1.672,6.009,0c1.672,1.645,1.672,4.337,0,6.01
+                                              		l-13.946,13.975l-0.028-0.028c-0.255,0.255-0.539,0.482-0.879,0.681c-2.041,1.162-4.62,0.453-5.783-1.56L101.485,169.843z
+                                              		 M143.58,209.103c-2.324,0-4.252-1.899-4.252-4.252s1.928-4.252,4.252-4.252h51.278c2.354,0,4.252,1.899,4.252,4.252
+                                              		s-1.898,4.252-4.252,4.252H143.58z M101.485,203.915c-1.162-2.041-0.482-4.62,1.559-5.783c2.013-1.162,4.592-0.453,5.754,1.56
+                                              		l3.033,5.244l10.063-10.063c1.672-1.672,4.365-1.672,6.009,0c1.672,1.645,1.672,4.337,0,6.01l-13.946,13.975l-0.028-0.028
+                                              		c-0.255,0.255-0.539,0.482-0.879,0.681c-2.041,1.162-4.62,0.453-5.783-1.56L101.485,203.915z M143.58,140.958
+                                              		c-2.324,0-4.252-1.899-4.252-4.252c0-2.325,1.928-4.252,4.252-4.252h51.278c2.354,0,4.252,1.927,4.252,4.252
+                                              		c0,2.353-1.898,4.252-4.252,4.252H143.58z"></path>
+                      </g>
+                    </svg>
+                  </span>
+                  Orders
+                </a>
+              </li>
+              <li class=" hover:bg-greyBlack">
+                <a class="px-3 py-1 text-f16 gap-2  flex min-h-[40px] w-full items-center font-bold"
+                  href="addresses.html">
+                  <span class="min-w-[40px]">
+                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 300 300"
+                      enable-background="new 0 0 300 300" xml:space="preserve">
+                      <g>
+                        <path fill="#A69966" d="M195.893,195.694c-2.296-0.453-3.77-2.664-3.316-4.961c0.454-2.296,2.693-3.77,4.989-3.316
+                                              		c13.096,2.665,24.01,6.378,31.606,10.829c8.306,4.847,13.039,10.771,13.039,17.404c0,9.921-10.97,18.425-28.715,24.151
+                                              		c-16.327,5.272-38.778,8.532-63.496,8.532c-24.718,0-47.168-3.26-63.496-8.532c-17.745-5.727-28.715-14.23-28.715-24.151
+                                              		c0-6.633,4.734-12.558,13.039-17.404c7.597-4.451,18.51-8.164,31.606-10.829c2.296-0.453,4.536,1.021,4.989,3.316
+                                              		c0.453,2.297-1.021,4.508-3.317,4.961c-12.132,2.466-22.138,5.868-28.97,9.894c-5.641,3.288-8.844,6.746-8.844,10.063
+                                              		c0,5.811,8.702,11.537,22.819,16.072c15.505,5.018,37.021,8.136,60.888,8.136c23.868,0,45.411-3.118,60.917-8.136
+                                              		c14.088-4.535,22.79-10.262,22.79-16.072c0-3.316-3.203-6.774-8.815-10.063C218.031,201.563,207.997,198.16,195.893,195.694
+                                              		L195.893,195.694z M211.115,112.781c0,19.672-6.576,37.984-15.959,53.574c-12.274,20.41-29.424,36.284-42.86,44.59l0,0
+                                              		l-0.057,0.028l-0.028,0.028l-0.085,0.028l-0.028,0.028l-0.057,0.028h-0.028l-0.057,0.057h-0.028l-0.085,0.028v0.028l-0.085,0.028
+                                              		l0,0l-0.113,0.057l-0.086,0.028l0,0l-0.085,0.028h-0.028l-0.085,0.028v0.028h-0.085l-0.028,0.028h-0.085l-0.17,0.057l-0.028,0.028
+                                              		h-0.085h-0.028l-0.085,0.028l-0.198,0.028h-0.028h-0.058l-0.028,0.028h-0.085h-0.028h-0.057h-0.113h-0.028h-0.085h-0.028h-0.057
+                                              		h-0.028h-0.085h-0.028h-0.085h-0.085h-0.029h-0.057l-0.057-0.028h-0.057h-0.027l-0.199-0.028l-0.085-0.028h-0.028h-0.057
+                                              		l-0.028-0.028l-0.198-0.057h-0.085l-0.028-0.028h-0.086v-0.028l-0.084-0.028l0,0l-0.113-0.028l0,0l-0.086-0.028l-0.084-0.057
+                                              		h-0.029l-0.084-0.028v-0.028l-0.086-0.028l0,0l-0.085-0.057h-0.028l-0.057-0.028l-0.028-0.028l-0.057-0.028l-0.028-0.028
+                                              		l-0.057-0.028h-0.028c-13.437-8.306-30.586-24.18-42.86-44.59c-9.383-15.59-15.959-33.902-15.959-53.574
+                                              		c0-16.866,6.86-32.145,17.915-43.2c11.055-11.055,26.334-17.915,43.2-17.915s32.173,6.86,43.229,17.915
+                                              		C204.283,80.636,211.115,95.915,211.115,112.781L211.115,112.781z M150,85.71c7.483,0,14.229,3.033,19.134,7.937l0,0h0.028
+                                              		c4.876,4.875,7.909,11.65,7.909,19.134s-3.033,14.258-7.909,19.162c-4.904,4.875-11.679,7.909-19.162,7.909
+                                              		s-14.258-3.033-19.134-7.909c-4.904-4.904-7.937-11.679-7.937-19.162s3.033-14.258,7.937-19.134c0.085-0.085,0.17-0.17,0.255-0.255
+                                              		C135.997,88.63,142.658,85.71,150,85.71L150,85.71z M163.152,99.628c-3.373-3.345-8.021-5.414-13.152-5.414
+                                              		c-5.018,0-9.581,1.984-12.926,5.215l-0.199,0.227c-3.373,3.345-5.442,7.994-5.442,13.125c0,5.13,2.069,9.779,5.442,13.153
+                                              		c3.345,3.345,7.994,5.442,13.125,5.442s9.779-2.098,13.152-5.442c3.346-3.374,5.443-8.022,5.443-13.153
+                                              		c0-5.131-2.098-9.78-5.443-13.125V99.628z M97.389,112.781c0,18,6.066,34.838,14.74,49.237
+                                              		c10.857,18.057,25.71,32.287,37.871,40.337c12.16-8.05,27.015-22.28,37.871-40.337c8.674-14.399,14.74-31.237,14.74-49.237
+                                              		c0-14.514-5.896-27.667-15.393-37.191c-9.524-9.524-22.677-15.42-37.219-15.42c-14.513,0-27.666,5.896-37.19,15.42
+                                              		S97.389,98.268,97.389,112.781L97.389,112.781z"></path>
+                      </g>
+                    </svg>
+                  </span>
+                  Addresses
+                </a>
+              </li>
+              <li class=" hover:bg-greyBlack">
+                <a class="px-3 py-1 text-f16 gap-2 flex min-h-[40px] w-full items-center font-bold"
+                  href="payment-methods.html">
+                  <span class="min-w-[40px]">
+                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 300 300"
+                      enable-background="new 0 0 300 300" xml:space="preserve">
+                      <g>
+                        <path fill="#A69966"
+                          d="M96.468,68.858h139.295c4.479,0,8.561,1.842,11.509,4.791c2.948,2.948,4.79,7.001,4.79,11.508v97.455
+                                            		c0,4.479-1.842,8.561-4.79,11.509s-7.03,4.791-11.509,4.791h-15.959v15.959c0,4.479-1.814,8.532-4.763,11.48
+                                            		c-2.947,2.947-7.029,4.79-11.508,4.79H64.238c-4.479,0-8.561-1.843-11.509-4.79l0,0c-2.948-2.948-4.791-7.03-4.791-11.48v-97.484
+                                            		c0-4.479,1.843-8.532,4.791-11.48v-0.028c2.948-2.948,7.002-4.791,11.509-4.791h15.931V85.157c0-4.507,1.843-8.561,4.79-11.508
+                                            		C87.907,70.701,91.989,68.858,96.468,68.858L96.468,68.858z M109.054,169.573c-2.324,0-4.252-1.899-4.252-4.252
+                                            		s1.928-4.252,4.252-4.252h42.917c2.324,0,4.224,1.899,4.224,4.252s-1.899,4.252-4.224,4.252H109.054z M109.054,148.54
+                                            		c-2.324,0-4.252-1.899-4.252-4.252c0-2.324,1.928-4.224,4.252-4.224h85.805c2.354,0,4.252,1.899,4.252,4.224
+                                            		c0,2.353-1.898,4.252-4.252,4.252H109.054z M88.673,101.088h154.885V85.157c0-2.154-0.878-4.082-2.296-5.499
+                                            		c-1.417-1.417-3.345-2.296-5.499-2.296H96.468c-2.154,0-4.082,0.878-5.499,2.296s-2.296,3.345-2.296,5.499V101.088z
+                                            		 M243.558,123.028H88.673v59.584c0,2.154,0.879,4.082,2.296,5.499c1.417,1.418,3.345,2.297,5.499,2.297h139.295
+                                            		c2.154,0,4.082-0.879,5.499-2.297c1.418-1.417,2.296-3.345,2.296-5.499V123.028z M211.328,198.912H96.468
+                                            		c-4.479,0-8.561-1.843-11.509-4.791c-2.947-2.948-4.79-7.029-4.79-11.509v-73.02H64.238c-2.154,0-4.082,0.878-5.499,2.296h-0.028
+                                            		c-1.39,1.417-2.269,3.345-2.269,5.499v97.484c0,2.126,0.879,4.082,2.269,5.471l0.028,0.028c1.389,1.389,3.345,2.268,5.499,2.268
+                                            		h139.295c2.126,0,4.081-0.879,5.499-2.296c1.417-1.417,2.296-3.345,2.296-5.471V198.912z">
+                        </path>
+                      </g>
+                    </svg>
+                  </span>
+                  Payment
+                  methods
+                </a>
               </li>
               <li class=" hover:bg-greyBlack ">
-                <a class=" px-3 text-f14 flex min-h-[40px] w-full items-center font-bold"
-                  href="account-details.html">Account
+                <a class="px-3 py-1 text-f16 gap-2 flex min-h-[40px] w-full items-center font-bold"
+                  href="account-details.html">
+                  <span class="min-w-[40px]">
+                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 300 300"
+                      enable-background="new 0 0 300 300" xml:space="preserve">
+                      <g>
+                        <path fill="#A69966" d="M149.999,54.728c26.306,0,50.117,10.658,67.352,27.894c17.263,17.263,27.922,41.073,27.922,67.379
+                                              		s-10.659,50.117-27.922,67.352c-17.234,17.234-41.046,27.921-67.352,27.921c-26.305,0-50.116-10.687-67.379-27.921
+                                              		C65.386,200.117,54.728,176.306,54.728,150S65.386,99.884,82.62,82.621C99.883,65.386,123.694,54.728,149.999,54.728
+                                              		L149.999,54.728z M86.334,208.933c4.79-14.201,12.699-26.476,22.677-35.518c6.463-5.84,13.805-10.347,21.714-13.153
+                                              		c-2.92-1.7-5.613-3.77-7.966-6.123c-6.974-6.973-11.282-16.611-11.282-27.27c0-10.63,4.309-20.239,11.282-27.212v-0.028
+                                              		c6.974-6.974,16.611-11.282,27.24-11.282c10.631,0,20.269,4.309,27.241,11.282v0.028c6.974,6.973,11.282,16.582,11.282,27.212
+                                              		c0,10.658-4.309,20.297-11.282,27.27c-2.381,2.354-5.046,4.423-7.965,6.123c7.908,2.807,15.25,7.313,21.713,13.153
+                                              		c9.979,9.042,17.887,21.316,22.678,35.518c14.343-15.477,23.102-36.17,23.102-58.933c0-23.952-9.723-45.666-25.427-61.37
+                                              		c-15.703-15.675-37.389-25.398-61.342-25.398c-23.952,0-45.665,9.724-61.369,25.398C72.954,104.334,63.231,126.048,63.231,150
+                                              		C63.231,172.763,71.99,193.456,86.334,208.933L86.334,208.933z M206.834,215.565c-4.139-14.541-11.735-26.985-21.543-35.857
+                                              		c-9.894-8.986-22.11-14.287-35.292-14.287c-13.181,0-25.397,5.301-35.319,14.287c-9.779,8.872-17.376,21.316-21.515,35.857
+                                              		c15.222,13.21,35.093,21.203,56.834,21.203C171.741,236.769,191.612,228.775,206.834,215.565L206.834,215.565z M149.999,165.421
+                                              		L149.999,165.421L149.999,165.421z M171.231,105.638c-5.415-5.442-12.927-8.787-21.232-8.787c-8.305,0-15.816,3.345-21.259,8.787
+                                              		c-5.414,5.443-8.788,12.955-8.788,21.231c0,8.306,3.374,15.817,8.816,21.261c5.414,5.414,12.926,8.787,21.23,8.787
+                                              		c8.277,0,15.789-3.373,21.232-8.787c5.442-5.443,8.787-12.955,8.787-21.261C180.019,118.593,176.674,111.081,171.231,105.638
+                                              		L171.231,105.638z"></path>
+                      </g>
+                    </svg>
+                  </span>
+                  Account
                   details</a>
               </li>
               <li class=" hover:bg-greyBlack">
-                <a class=" px-3 text-f14 flex min-h-[40px] w-full items-center font-bold"
-                  href="waitlist.html">Waitlist</a>
+                <a class="px-3 py-1 text-f16 gap-2 flex min-h-[40px] w-full items-center font-bold"
+                  href="waitlist.html">
+                  <span class="min-w-[40px]">
+                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 300 300"
+                      enable-background="new 0 0 300 300" xml:space="preserve">
+                      <g>
+                        <path fill="#A69966"
+                          d="M177.666,77.519c0-2.353,1.899-4.252,4.252-4.252c2.324,0,4.224,1.899,4.224,4.252v35.915
+                                            		c0,2.324-1.899,4.224-4.224,4.224h-24.095c-2.324,0-4.224-1.899-4.224-4.224c0-2.353,1.899-4.252,4.224-4.252h19.843V77.519z
+                                            		 M198.699,178.716c0-2.353,1.899-4.252,4.252-4.252s4.252,1.899,4.252,4.252v60.18c0,2.353-1.899,4.252-4.252,4.252H67.653
+                                            		c-2.353,0-4.252-1.899-4.252-4.252V62.977c0-2.353,1.899-4.252,4.252-4.252h0.255l70.526-1.871c2.325-0.057,4.28,1.786,4.337,4.139
+                                            		c0.057,2.324-1.814,4.28-4.139,4.337l-66.728,1.757v167.557h126.794V178.716z M92.173,175.967c-2.325,0-4.252-1.899-4.252-4.253
+                                            		c0-2.353,1.927-4.252,4.252-4.252h50.258c2.353,0,4.252,1.899,4.252,4.252c0,2.354-1.899,4.253-4.252,4.253H92.173z
+                                            		 M92.173,210.039c-2.325,0-4.252-1.928-4.252-4.252c0-2.354,1.927-4.252,4.252-4.252h86.258c2.324,0,4.252,1.898,4.252,4.252
+                                            		c0,2.324-1.928,4.252-4.252,4.252H92.173z M92.173,141.894c-2.325,0-4.252-1.899-4.252-4.252c0-2.353,1.927-4.252,4.252-4.252
+                                            		h24.803c2.353,0,4.252,1.899,4.252,4.252c0,2.353-1.899,4.252-4.252,4.252H92.173z M181.918,58.725
+                                            		c15.08,0,28.771,6.123,38.665,16.016c9.893,9.893,16.016,23.584,16.016,38.693c0,15.08-6.123,28.771-16.016,38.665
+                                            		c-9.894,9.893-23.585,16.016-38.665,16.016c-15.108,0-28.8-6.123-38.693-16.016c-9.893-9.894-16.015-23.585-16.015-38.665
+                                            		c0-15.109,6.123-28.8,16.015-38.693C153.118,64.848,166.81,58.725,181.918,58.725L181.918,58.725z M214.573,80.75
+                                            		c-8.362-8.362-19.899-13.549-32.655-13.549c-12.784,0-24.321,5.187-32.684,13.549c-8.361,8.362-13.549,19.899-13.549,32.684
+                                            		c0,12.756,5.188,24.293,13.549,32.655c8.362,8.362,19.899,13.55,32.684,13.55c12.756,0,24.293-5.188,32.655-13.55
+                                            		s13.55-19.899,13.55-32.655C228.123,100.649,222.936,89.112,214.573,80.75L214.573,80.75z">
+                        </path>
+                      </g>
+                    </svg>
+                  </span>
+                  Waitlist
+                </a>
               </li>
               <li class=" hover:bg-greyBlack ">
-                <a class=" px-3 text-f14 flex min-h-[40px] w-full items-center font-bold"
-                  href="wishlist.html">Wishlist</a>
+                <a class="px-3 py-1 text-f16 gap-2 flex min-h-[40px] w-full items-center font-bold"
+                  href="wishlist.html">
+                  <span class="min-w-[40px]">
+                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 300 300"
+                      enable-background="new 0 0 300 300" xml:space="preserve">
+                      <g>
+                        <path fill="#A69966"
+                          d="M153.614,100.919l-0.028,0.028l-0.057,0.057l-0.113,0.17l0,0v0.028l-0.057,0.057l-0.028,0.028l-0.057,0.057
+                                                                  		v0.028l-0.057,0.057l0,0l-0.058,0.085h-0.028l-0.057,0.085l0,0l-0.085,0.057l0,0l-0.057,0.085h-0.028l-0.057,0.057v0.028
+                                                                  		l-0.085,0.057l0,0l-0.085,0.057l0,0l-0.057,0.057l-0.028,0.028l-0.057,0.057h-0.028l0,0l-0.17,0.114l-0.057,0.057l-0.057,0.028
+                                                                  		l-0.028,0.028l-0.057,0.028l-0.029,0.028h-0.057l-0.113,0.057l-0.028,0.028l-0.057,0.028l-0.028,0.028l-0.057,0.028h-0.028
+                                                                  		l-0.085,0.028h-0.028l-0.057,0.057h-0.028l-0.085,0.028l0,0l-0.085,0.028h-0.028l-0.085,0.028l0,0l-0.085,0.028h-0.028
+                                                                  		l-0.086,0.028l0,0l-0.085,0.028h-0.028l-0.085,0.028l0,0l-0.198,0.028l0,0l-0.113,0.028l0,0h-0.085l0,0l-0.113,0.028l0,0h-0.085
+                                                                  		h-0.028h-0.085l0,0h-0.113l0,0h-0.086l0,0h-0.113l0,0h-0.084h-0.029h-0.085l0,0l-0.113-0.028l0,0h-0.085l0,0l-0.113-0.028l0,0
+                                                                  		l-0.199-0.028l0,0l-0.113-0.028l0,0l-0.084-0.028l0,0l-0.086-0.028h-0.027l-0.086-0.028l0,0l-0.085-0.028h-0.028l-0.085-0.028l0,0
+                                                                  		l-0.085-0.028h-0.028l-0.057-0.057h-0.028l-0.085-0.028h-0.028l-0.057-0.028l-0.028-0.028l-0.058-0.028l-0.057-0.028l-0.084-0.057
+                                                                  		h-0.057l-0.029-0.028l-0.057-0.028l-0.057-0.028l-0.027-0.028l-0.057-0.057l-0.171-0.114l0,0h-0.028l-0.057-0.057l-0.028-0.028
+                                                                  		l-0.057-0.057h-0.028l-0.057-0.057l0,0l-0.085-0.057v-0.028l-0.085-0.057l0,0l-0.057-0.085l0,0l-0.086-0.057l0,0l-0.057-0.085
+                                                                  		h-0.027l-0.057-0.085l0,0l-0.057-0.057v-0.028l-0.057-0.057l-0.029-0.028l-0.057-0.057v-0.028l0,0l-0.113-0.17l-0.057-0.057
+                                                                  		l-0.028-0.028l-0.028-0.057l0,0c-4.563-7.313-10.29-12.558-16.526-15.902c-6.747-3.6-14.173-5.017-21.345-4.45
+                                                                  		c-11.367,0.878-20.523,5.811-26.731,13.238c-6.576,7.795-9.978,18.425-9.468,30.104c0.425,9.723,3.515,19.587,8.164,28.856
+                                                                  		c5.527,11.026,13.209,21.231,21.146,29.396c7.483,7.682,15.675,14.74,23.839,20.892c8.589,6.491,17.093,11.934,24.548,16.044
+                                                                  		c7.483-4.11,15.987-9.553,24.576-16.044c8.163-6.151,16.355-13.21,23.839-20.892c7.938-8.164,15.619-18.369,21.146-29.396
+                                                                  		c4.649-9.269,7.739-19.134,8.164-28.856c0.51-11.65-2.892-22.309-9.468-30.104c-6.208-7.427-15.336-12.359-26.73-13.238
+                                                                  		c-7.172-0.567-14.599,0.85-21.345,4.45c-6.236,3.345-11.963,8.589-16.526,15.902l0,0L153.614,100.919z M149.986,91.281
+                                                                  		c4.733-6.038,10.261-10.602,16.214-13.776c8.249-4.422,17.263-6.151,25.993-5.471c13.776,1.105,24.917,7.143,32.57,16.271
+                                                                  		c7.909,9.411,12.019,22.082,11.424,35.915c-0.482,10.999-3.94,21.997-9.071,32.259c-5.952,11.905-14.173,22.818-22.648,31.549
+                                                                  		c-7.823,8.022-16.356,15.364-24.803,21.742c-9.724,7.342-19.361,13.437-27.582,17.802l-0.085,0.057l0,0l-0.085,0.028l-0.113,0.057
+                                                                  		l0,0l-0.085,0.028l-0.028,0.028l-0.057,0.028h-0.028l-0.057,0.028l-0.057,0.028h-0.057l-0.085,0.057h-0.057l-0.057,0.028h-0.028
+                                                                  		l-0.057,0.028c-0.199,0.057-0.397,0.085-0.596,0.113h-0.085h-0.028l-0.057,0.028h-0.028h-0.085h-0.028h-0.085h-0.028h-0.057h-0.028
+                                                                  		h-0.086h-0.027h-0.057h-0.057h-0.057h-0.029h-0.085h-0.028l-0.057-0.028h-0.028h-0.085c-0.198-0.028-0.396-0.057-0.596-0.113
+                                                                  		l-0.057-0.028h-0.027l-0.057-0.028h-0.058l-0.085-0.057h-0.057l-0.057-0.028l-0.057-0.028h-0.028l-0.057-0.028l-0.028-0.028
+                                                                  		l-0.085-0.028h-0.028l-0.086-0.057l-0.084-0.028l0,0l-0.086-0.057c-8.22-4.365-17.858-10.46-27.581-17.802
+                                                                  		c-8.447-6.378-16.979-13.72-24.803-21.742c-8.476-8.73-16.696-19.644-22.649-31.549c-5.13-10.262-8.589-21.26-9.071-32.259
+                                                                  		c-0.595-13.833,3.515-26.504,11.424-35.915c7.653-9.127,18.793-15.165,32.57-16.271c8.731-0.681,17.745,1.049,25.994,5.471
+                                                                  		C139.753,80.68,145.28,85.244,149.986,91.281L149.986,91.281z"></path>
+                      </g>
+                    </svg>
+                  </span>
+                  Wishlist
+                </a>
               </li>
               <li>
-                <a class="px-3 text-f14  flex min-h-[40px] hover:bg-greyBlack  w-full items-center font-bold"
-                  href="#">Logout</a>
+                <a class="px-3 py-1 text-f16 gap-2 flex min-h-[40px] hover:bg-greyBlack  w-full items-center font-bold"
+                  href="#">
+                  <span class="min-w-[40px]">
+                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 300 300"
+                      enable-background="new 0 0 300 300" xml:space="preserve">
+                      <g>
+                        <path fill="#A69966" d="M90.798,65.839l40.621,16.158c1.701,0.651,2.721,2.296,2.721,4.024h0.028v123.619h40.366V163.55
+                                            		c0-2.381,1.956-4.337,4.365-4.337c2.381,0,4.337,1.956,4.337,4.337v50.456c0,2.382-1.956,4.338-4.337,4.338h-44.731v20.183
+                                            		c0,2.381-1.956,4.337-4.365,4.337c-0.708,0-1.361-0.17-1.956-0.482l-60.973-24.208c-1.786-0.538-3.118-2.211-3.118-4.167V61.502
+                                            		c0-2.409,1.956-4.365,4.365-4.365h0.057h110.722c2.381,0,4.337,1.956,4.337,4.365v53.575c0,2.409-1.956,4.365-4.337,4.365
+                                            		c-2.409,0-4.365-1.956-4.365-4.365V65.839H90.798z M198.656,112.242c-1.7-1.701-1.7-4.45,0-6.151c1.701-1.7,4.451-1.7,6.151,0
+                                            		l30.161,30.161l0,0l0.085,0.057v0.028c0.142,0.142,0.283,0.312,0.396,0.453l0.028,0.057l0.028,0.028l0.028,0.057l0.028,0.057
+                                            		l0.057,0.086l0.028,0.028l0.028,0.057l0.085,0.17l0.029,0.057l0.028,0.057l0.028,0.057v0.028l0.028,0.057l0.028,0.057l0.028,0.028
+                                            		v0.057l0.028,0.057l0.028,0.057v0.028l0.028,0.057l0.028,0.057v0.057l0.028,0.058v0.028l0.028,0.057v0.057l0.028,0.057v0.057v0.028
+                                            		l0.028,0.057v0.057l0.028,0.057v0.057v0.057v0.028l0.028,0.085v0.028v0.085v0.028l0.028,0.057v0.028v0.085v0.028v0.086v0.028v0.085
+                                            		v0.113l0,0v0.113l0,0v0.085v0.028l-0.028,0.085v0.028v0.085v0.028l-0.028,0.057v0.057v0.057v0.028l-0.028,0.085v0.028l-0.028,0.058
+                                            		v0.057v0.057l-0.028,0.057v0.028l-0.028,0.057v0.057l-0.028,0.057v0.057l-0.028,0.028l-0.028,0.057v0.057l-0.028,0.057
+                                            		l-0.028,0.028v0.057l-0.028,0.057l-0.028,0.028l-0.028,0.057v0.057l-0.028,0.057l-0.028,0.028l-0.029,0.058l-0.085,0.198
+                                            		l-0.028,0.028l-0.028,0.057l-0.057,0.085l-0.028,0.057l-0.028,0.028l-0.028,0.057l-0.028,0.028c-0.142,0.17-0.255,0.34-0.396,0.482
+                                            		l0,0l-0.085,0.085l-30.161,30.132c-1.7,1.701-4.45,1.701-6.151,0c-1.7-1.672-1.7-4.45,0-6.151l22.734-22.705h-69.023
+                                            		c-2.41,0-4.365-1.956-4.365-4.365c0-2.382,1.955-4.337,4.365-4.337h69.023L198.656,112.242z M125.466,88.941L72.458,67.88v143.179
+                                            		l53.008,21.062v-18.114V88.941z"></path>
+                      </g>
+                    </svg>
+                  </span>
+                  Logout
+                </a>
               </li>
             </ul>
           </nav>
         </aside>
 
-        <div class="md:w-[1px] w-full bg-greyBlack"></div>
+        <div class="md:w-[1px] w-full bg-[#909090]"></div>
 
         <!-- Account details -->
-        <div class="md:w-3/4 w-full">
+        <div class="md:w-[75%] lg:w-[80%] w-full">
           <div class="flex items-center p-4 mb-4 text-sm text-white bg-lightTaupe " role="alert">
             <svg class="flex-shrink-0 inline w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="#fff"
               viewBox="0 0 20 20">
@@ -1238,10 +1415,10 @@
           </div>
 
           <div class="mx-auto grid grid-cols-1 gap-5 mb-5">
-            <div>
+            <div class="select-tow">
               <label class="field-label" for="fname">Country / Region</label>
               <div class="w-full">
-                <select class="select-option !border-2 min-h-[47px] w-full !max-w-full">
+                <select class="select-option select-country | !border-2 min-h-[47px] w-full !max-w-full">
                   <option>Wähle eine Option</option>
                   <option>Option 1</option>
                   <option>Option 2</option>
@@ -1277,10 +1454,10 @@
           </div>
 
           <div class="mx-auto grid grid-cols-1 gap-5 mb-5">
-            <div class="slect-filed">
+            <div class="select-tow">
               <label class="field-label" for="fname">State / District(optional)</label>
               <div class="w-full">
-                <select class="select-option !border-2 min-h-[47px] w-full !max-w-full">
+                <select class="select-option select-state | !border-2 min-h-[47px] w-full !max-w-full" name="state">
                   <option>Wähle eine Option</option>
                   <option>Option 1</option>
                   <option>Option 2</option>
@@ -1675,8 +1852,10 @@
   <!-- Links of JS -->
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <script src="./js/slimselect.min.js"></script>
-  <script src="./js/custom.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+
+  <script src="./js/address.js"></script>
+  <script src="./js/common.js"></script>
 </body>
 
 </html>
