@@ -134,7 +134,7 @@ jQuery('.descriptive').readmore({
   lessLink: '<span class="readmore">Read less</span>'
 });
 
-
+// heart icon
 jQuery('.heart-icon').on('click', function () {
   jQuery(this).toggleClass('active');
 });
