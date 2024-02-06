@@ -989,6 +989,11 @@
     transition: border-color .5s ease;
     padding-left: 10px;
   }
+
+.select-option:focus-visible {
+  outline: none;
+}
+
 select option {
     background-color: #0f0f0f;
 }

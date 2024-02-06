@@ -1018,6 +1018,9 @@ li {
 .min-h-\[44px\] {
   min-height: 44px;
 }
+.min-h-\[47px\] {
+  min-height: 47px;
+}
 .min-h-\[50px\] {
   min-height: 50px;
 }
@@ -1179,6 +1182,9 @@ li {
 }
 .min-w-full {
   min-width: 100%;
+}
+.\!max-w-full {
+  max-width: 100% !important;
 }
 .max-w-7xl {
   max-width: 80rem;
@@ -1466,6 +1472,9 @@ li {
 .rounded-t {
   border-top-left-radius: 0.25rem;
   border-top-right-radius: 0.25rem;
+}
+.\!border-2 {
+  border-width: 2px !important;
 }
 .border {
   border-width: 1px;
@@ -2904,6 +2913,9 @@ input[type="radio"]:checked+label {
     transition: border-color .5s ease;
     padding-left: 10px;
   }
+.select-option:focus-visible {
+  outline: none;
+}
 select option {
     background-color: #0f0f0f;
 }
