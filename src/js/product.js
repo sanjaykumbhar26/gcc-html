@@ -133,3 +133,8 @@ jQuery('.descriptive').readmore({
   collapsedHeight: 100,
   lessLink: '<span class="readmore">Read less</span>'
 });
+
+
+jQuery('.heart-icon').on('click', function () {
+  jQuery(this).toggleClass('active');
+});

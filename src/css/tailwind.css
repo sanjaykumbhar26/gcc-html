@@ -859,6 +859,17 @@
     stroke: red;
   }
 
+  .heart-icon:hover svg path {
+    fill: red;
+    stroke: red;
+  }
+
+  .heart-icon.active svg path {
+     fill: red;
+    stroke: red;
+  }
+
+
   .full-dec {
     display: none;
   }

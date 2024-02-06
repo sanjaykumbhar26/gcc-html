@@ -2809,6 +2809,14 @@ input[type="radio"]:checked+label {
     fill: red;
     stroke: red;
   }
+.heart-icon:hover svg path {
+    fill: red;
+    stroke: red;
+  }
+.heart-icon.active svg path {
+     fill: red;
+    stroke: red;
+  }
 .popover-map {
     background-color: #fff;
     width: 90px;
