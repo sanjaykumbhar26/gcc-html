@@ -244,19 +244,18 @@
     visibility: visible;
     transform: translateX(0%);
     background-color: #0f0f0f;
-    overflow-y: auto;
     overflow-x: hidden;
-   height: 100vh;
-   padding-bottom: 260px;
+   height: calc(100vh - 120px);
+   padding-bottom: 120px;
   }
 
   .mobile-menu {
-    /* height: 100vh; */
+   height: calc(100vh - 120px);
+   overflow-y: auto;
   }
 
   .menu-section {
-    height: calc(100vh - 260px);
-    overflow: auto;
+    height: calc(100vh - 90px);
   }
 
   .has-dropdown:hover .hidden {
