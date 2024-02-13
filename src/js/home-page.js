@@ -25,9 +25,11 @@ jQuery(document).ready(function () {
     breakpoints: {
       1024: {
         perPage: 2,
+        gap: "15px",
       },
       640: {
         perPage: 2,
+        gap: "15px",
       },
     }
   }).mount();
@@ -42,9 +44,11 @@ jQuery(document).ready(function () {
     breakpoints: {
       1024: {
         perPage: 2,
+        gap: "15px",
       },
       640: {
         perPage: 2,
+        gap: "15px",
       },
     }
   }).mount();
