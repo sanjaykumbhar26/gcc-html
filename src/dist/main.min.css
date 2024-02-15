@@ -693,6 +693,10 @@ li {
   margin-left: 0.125rem;
   margin-right: 0.125rem;
 }
+.mx-2 {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
 .mx-4 {
   margin-left: 1rem;
   margin-right: 1rem;
@@ -964,9 +968,6 @@ li {
 .h-\[38px\] {
   height: 38px;
 }
-.h-\[397px\] {
-  height: 397px;
-}
 .h-\[40px\] {
   height: 40px;
 }
@@ -1080,6 +1081,12 @@ li {
 }
 .w-\[120px\] {
   width: 120px;
+}
+.w-\[145px\] {
+  width: 145px;
+}
+.w-\[160px\] {
+  width: 160px;
 }
 .w-\[180px\] {
   width: 180px;
@@ -3139,6 +3146,10 @@ select {
     display: none;
   }
 
+  .md\:h-\[310px\] {
+    height: 310px;
+  }
+
   .md\:h-\[60px\] {
     height: 60px;
   }
@@ -3177,6 +3188,10 @@ select {
 
   .md\:w-\[75\%\] {
     width: 75%;
+  }
+
+  .md\:min-w-\[240px\] {
+    min-width: 240px;
   }
 
   .md\:min-w-\[40px\] {
@@ -3305,8 +3320,8 @@ select {
     margin-left: 1rem;
   }
 
-  .lg\:ml-\[306px\] {
-    margin-left: 306px;
+  .lg\:ml-\[258px\] {
+    margin-left: 258px;
   }
 
   .lg\:ml-\[328px\] {
@@ -3337,16 +3352,16 @@ select {
     height: 272px;
   }
 
+  .lg\:h-\[310px\] {
+    height: 310px;
+  }
+
   .lg\:h-\[342px\] {
     height: 342px;
   }
 
-  .lg\:h-\[397px\] {
-    height: 397px;
-  }
-
-  .lg\:h-\[612px\] {
-    height: 612px;
+  .lg\:h-\[481px\] {
+    height: 481px;
   }
 
   .lg\:h-\[628px\] {
@@ -3478,8 +3493,16 @@ select {
     width: max-content;
   }
 
+  .lg\:min-w-\[240px\] {
+    min-width: 240px;
+  }
+
   .lg\:min-w-\[33\.33\%\] {
     min-width: 33.33%;
+  }
+
+  .lg\:max-w-\[240px\] {
+    max-width: 240px;
   }
 
   .lg\:max-w-\[285px\] {
@@ -3685,12 +3708,28 @@ select {
 }
 @media (min-width: 1286px) {
 
+  .xl\:ml-\[306px\] {
+    margin-left: 306px;
+  }
+
   .xl\:block {
     display: block;
   }
 
   .xl\:flex {
     display: flex;
+  }
+
+  .xl\:h-\[397px\] {
+    height: 397px;
+  }
+
+  .xl\:h-\[612px\] {
+    height: 612px;
+  }
+
+  .xl\:w-\[160px\] {
+    width: 160px;
   }
 
   .xl\:w-\[20\%\] {
@@ -3715,6 +3754,10 @@ select {
 
   .xl\:w-\[88\%\] {
     width: 88%;
+  }
+
+  .xl\:min-w-\[285px\] {
+    min-width: 285px;
   }
 
   .xl\:max-w-\[285px\] {
