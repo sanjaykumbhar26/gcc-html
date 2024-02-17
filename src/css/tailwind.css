@@ -103,6 +103,20 @@
 }
 
 @layer utilities {
+   .close-icon {
+    width: 10px;
+    height: 10px;
+   }
+  .close-icon path{
+        fill: none;
+    stroke: var(--ss-font-color);
+    stroke-width: 20;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+.bg-smokBlack .tab.active {
+  color: #a79a66;
+}
 
 .select-tow .select2-container--default .select2-selection--single {
     background-color: #191919 !important;
@@ -152,6 +166,16 @@
 }
 
   .bg-featuredCatBg::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+
+  .bg-featuredCategoriesBg::after {
     content: '';
     position: absolute;
     left: 0;
@@ -407,7 +431,23 @@
     border-radius: 0;
     background-color: #a79a66;
   }
+ @media (max-width: 624px) { 
+.splide__arrow--prev {
+         left: -30px;
+    z-index: 111 !important;
+    }
+}
+  @media (max-width: 1124px) {
+.splide__arrow svg {
+    width: 30px !important;
+    }
 
+    .splide__arrow--prev {
+         left: 0 ;
+    z-index: 111 !important;
+    }
+
+   }
   @media (max-width: 1024px) {
     .slider-controls .prev {
       left: 0;
@@ -417,6 +457,7 @@
       padding-left: 0;
     }
 
+    
     /* .splide .splide__slide {
       height: 400px;
     } */

@@ -1149,7 +1149,7 @@
       <div class="flex items-center justify-center mb-5">
         <h2 class="font-bold text-center text-f26 pt-2 pb-2 leading-none uppercase">FIND YOUR RECIPE INSPIRATION</h2>
       </div>
-      <div class="relative max-w-[420px] mb-4 m-auto">
+      <!-- <div class="relative max-w-[420px] mb-4 m-auto">
         <input type="text" class="border-lightTaupe border focus:outline-0" placeholder="Search">
         <svg xmlns="http://www.w3.org/2000/svg" class="absolute top-3 right-4 cursor-pointer" width="20" height="20"
           viewBox="0 0 512 512">
@@ -1157,44 +1157,89 @@
             d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z">
           </path>
         </svg>
+      </div> -->
+      <div class="flex gap-4 flex-col items-start mt-8 mb-6">
+        <div class="flex flex-wrap items-start gap-2">
+          <span class="pr-2 font-body uppercase text-f18 font-bold text-primary mb-1">Tags</span>
+          <a href="#"
+            class="flex gap-x-2 items-center  text-sm bg-lightTaupe hover: hover:bg-lightTaupe rounded-full cursor-pointer px-3  min-h-[28px]">
+            <span class="border-r-2 flex items-center border-black min-h-[28px] h-full pr-2">
+              <svg class="close-icon" viewBox="0 0 100 100">
+                <path d="M10,10 L90,90 M10,90 L90,10"></path>
+              </svg>
+            </span>
+            Gourmet</a>
+          <a href="#"
+            class="flex gap-x-2 items-center  text-sm bg-darkBlack  hover:bg-lightTaupe rounded-full cursor-pointer px-3  min-h-[28px]">
+            <span class="border-r-2 flex items-center border-black min-h-[28px] h-full pr-2">
+              <svg class="close-icon" viewBox="0 0 100 100">
+                <path d="M10,10 L90,90 M10,90 L90,10"></path>
+              </svg>
+            </span>
+            Meat</a>
+          <a href="#"
+            class="flex gap-x-2 items-center  min-h-[28px] text-sm bg-darkBlack  hover:bg-lightTaupe rounded-full cursor-pointer px-3">
+            Food</a>
+        </div>
       </div>
-      <div class="mx-auto mt-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-8 text-f14">
-        <div class="w-full mt-2 dark-select">
-          <select id="cut">
-            <option data-placeholder="true"></option>
-            <option>Cut</option>
-            <option>Cut</option>
-            <option>Cut</option>
-          </select>
-        </div>
-        <div class="w-full mt-2 dark-select">
-          <select id="gang">
-            <option data-placeholder="true"></option>
-            <option>Gang</option>
-            <option>Gang</option>
-            <option>Gang</option>
-          </select>
-        </div>
-        <div class="w-full mt-2 dark-select">
-          <div class="range-slider date-slider">
-            <div class="range-lable"><label>Time</label> <span class="rangeValues"></span></div>
-            <div class="range-field hidden absolute w-full  p-4 bg-black z-20">
-              <div class="p-4 flex">
-                <input value="0" min="0" max="300" step="5" type="range">
-                <input value="300" min="0" max="300" step="5" type="range">
+      <div class="w-full flex gap-8 text-f14 justify-between flex-col xl:flex-row">
+        <div class="w-full flex  flex-col lg:flex-row lg:justify-between lg:w-[100%] xl:w-[88%] gap-8">
+          <div class="relative w-full">
+            <input type="text" class="border-lightTaupe border focus:outline-0" placeholder="Search">
+            <svg xmlns="http://www.w3.org/2000/svg" class="absolute top-3 right-4 cursor-pointer" width="20" height="20"
+              viewBox="0 0 512 512">
+              <path opacity="1" fill="#606060"
+                d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z">
+              </path>
+            </svg>
+          </div>
+          <div class="w-full dark-select">
+            <select id="cut">
+              <option data-placeholder="true"></option>
+              <option>Cut</option>
+              <option>Cut</option>
+              <option>Cut</option>
+            </select>
+          </div>
+          <div class="w-full dark-select">
+            <select id="gang">
+              <option data-placeholder="true"></option>
+              <option>Gang</option>
+              <option>Gang</option>
+              <option>Gang</option>
+            </select>
+          </div>
+          <div class="w-full dark-select">
+            <div class="range-slider date-slider">
+              <div class="range-lable"><label>Time</label> <span class="rangeValues"></span></div>
+              <div class="range-field hidden absolute w-full  p-4 bg-black z-20">
+                <div class="p-4 flex">
+                  <input value="0" min="0" max="300" step="5" type="range">
+                  <input value="300" min="0" max="300" step="5" type="range">
+                </div>
+                <span class="rangeValues"></span>
               </div>
-              <span class="rangeValues"></span>
             </div>
           </div>
         </div>
+        <div class="lg:w-[12%]">
+          <button
+            class="bg-lightTaupe w-full text-white font-bold min-h-[44px] py-2 px-5 text-f14 col-span-full min-w-0">FILTER</button>
+        </div>
       </div>
-      <div class="flex gap-4 flex-col items-center mt-8">
-        <span class="pr-2 font-body uppercase text-f18 font-bold text-primary mb-1">Tags</span>
-        <div class="flex flex-wrap items-start gap-2">
-          <a href="#"
-            class="py-1 text-sm bg-darkBlack hover:bg-lightTaupe rounded-full cursor-pointer px-3.5">Gourmet</a>
-          <a href="#" class="py-1 text-sm bg-darkBlack hover:bg-lightTaupe rounded-full cursor-pointer px-3.5">Meat</a>
-          <a href="#" class="py-1 text-sm bg-darkBlack bg-lightTaupe rounded-full cursor-pointer px-3.5">Food</a>
+      <div class="flex flex-wrap items-end justify-end mt-10 relative">
+        <div class="w-full lg:w-[50%]">
+          <span class="font-bold">Results 1-9 of 13 are shown</span>
+        </div>
+        <div class="w-full lg:w-[50%] flex justify-end">
+          <div class="w-full lg:w-[450px] mt-2 sortedpopularity">
+            <select id="Sortedpopularity" data-placeholder="Select an option">
+              <option data-placeholder="true"></option>
+              <option>Option 1</option>
+              <option>Option 2</option>
+              <option>Option 3</option>
+            </select>
+          </div>
         </div>
       </div>
     </div>

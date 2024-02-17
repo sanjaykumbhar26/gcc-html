@@ -35,6 +35,17 @@ new SlimSelect({
   },
 });
 
+var selectElement = $('#Sortedpopularity');
+var placeholderText = selectElement.data('placeholder');
+var slim = new SlimSelect({
+  select: "#Sortedpopularity",
+  settings: {
+    showSearch: false,
+    placeholderText: placeholderText,
+    allowDeselect: false,
+  },
+});
+
 
 // Range Slider
 jQuery(document).ready(function () {
