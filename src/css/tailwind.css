@@ -210,6 +210,7 @@
 
   body.menuopen .menu-drawer {
     transform: translate(0, 0);
+    z-index: 1111;
   }
 
   body.open .lightbox {
@@ -250,6 +251,11 @@
 
   .nav__item+.nav__item {
     margin-top: 15px;
+  }
+
+  .nav__item a {
+    width: 100%;
+    display: flex;
   }
 
   .nav__link {
