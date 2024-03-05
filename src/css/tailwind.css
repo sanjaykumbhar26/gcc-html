@@ -146,7 +146,7 @@
 
   .close-icon path {
     fill: none;
-    stroke: var(--ss-font-color);
+    stroke: #fff;
     stroke-width: 20;
     stroke-linecap: round;
     stroke-linejoin: round;
