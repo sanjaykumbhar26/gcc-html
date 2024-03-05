@@ -573,6 +573,9 @@ li {
 .-bottom-\[12px\] {
   bottom: -12px;
 }
+.-left-2 {
+  left: -0.5rem;
+}
 .-right-2 {
   right: -0.5rem;
 }
@@ -1484,6 +1487,9 @@ li {
 .rounded {
   border-radius: 0.25rem;
 }
+.rounded-\[4px\] {
+  border-radius: 4px;
+}
 .rounded-full {
   border-radius: 9999px;
 }
@@ -1695,6 +1701,10 @@ li {
 .bg-lightTaupe {
   --tw-bg-opacity: 1;
   background-color: rgb(167 154 102 / var(--tw-bg-opacity));
+}
+.bg-orange-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(249 115 22 / var(--tw-bg-opacity));
 }
 .bg-smokBlack {
   --tw-bg-opacity: 1;
