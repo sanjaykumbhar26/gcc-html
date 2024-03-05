@@ -111,6 +111,11 @@
     margin-bottom: 30px;
   }
 
+  button.disabled[type="submit"], button:disabled , button:disabled:hover {
+   background-color: rgb(26 26 26 / var(--tw-bg-opacity));
+   border-color: rgb(26 26 26 / var(--tw-border-opacity))
+  }
+
   .notfound-header:before {
     content: "404";
     position: absolute;
