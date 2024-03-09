@@ -887,6 +887,9 @@ li {
 .mt-\[2px\] {
   margin-top: 2px;
 }
+.mt-\[5px\] {
+  margin-top: 5px;
+}
 .block {
   display: block;
 }
@@ -1446,6 +1449,10 @@ li {
 .gap-x-8 {
   -moz-column-gap: 2rem;
        column-gap: 2rem;
+}
+.gap-x-\[15px\] {
+  -moz-column-gap: 15px;
+       column-gap: 15px;
 }
 .gap-y-1 {
   row-gap: 0.25rem;
