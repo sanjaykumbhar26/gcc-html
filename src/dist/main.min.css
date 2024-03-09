@@ -3193,6 +3193,14 @@ select {
     color: #a79a66;
   }
   }
+@media (min-width: 1224px) {
+   .slider-hero .splide__arrow--prev {
+    left: -30px;
+    }
+    .slider-hero .splide__arrow--next {
+          right: -30px;
+    }
+  }
 .input-field {
   border-width: 2px;
   --tw-border-opacity: 1;

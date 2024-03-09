@@ -1181,7 +1181,14 @@
       @apply bg-smokBlack py-2 px-3 flex;
     }
   }
-
+  @media (min-width: 1224px) {
+   .slider-hero .splide__arrow--prev {
+    left: -30px;
+    }
+    .slider-hero .splide__arrow--next {
+          right: -30px;
+    }
+  }
   .input-field {
     @apply border-lightTaupe focus:outline-none border-2;
   }
