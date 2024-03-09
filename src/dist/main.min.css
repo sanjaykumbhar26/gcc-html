@@ -2000,13 +2000,13 @@ li {
 .\!text-f18 {
   font-size: 18px !important;
 }
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
 .text-4xl {
   font-size: 2.25rem;
   line-height: 2.5rem;
-}
-.text-5xl {
-  font-size: 3rem;
-  line-height: 1;
 }
 .text-\[10px\] {
   font-size: 10px;
@@ -3292,6 +3292,12 @@ select {
   --tw-rotate: 180deg;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
+@media (min-width: 468px) {
+
+  .xs\:text-\[1\.95rem\] {
+    font-size: 1.95rem;
+  }
+}
 @media (min-width: 768px) {
 
   .md\:mb-0 {
@@ -3430,6 +3436,10 @@ select {
     padding-bottom: 2rem;
   }
 
+  .md\:text-\[1\.95rem\] {
+    font-size: 1.95rem;
+  }
+
   .md\:text-f14 {
     font-size: 14px;
   }
@@ -3444,6 +3454,14 @@ select {
 
   .md\:text-f24 {
     font-size: 24px;
+  }
+
+  .md\:text-f32 {
+    font-size: 32px;
+  }
+
+  .md\:text-f40 {
+    font-size: 40px;
   }
 
   .has-dropdown:hover .md\:hidden {
@@ -3883,6 +3901,10 @@ select {
     font-size: 26px;
   }
 
+  .lg\:text-f32 {
+    font-size: 32px;
+  }
+
   .lg\:text-f40 {
     font-size: 40px;
   }
@@ -4005,5 +4027,9 @@ select {
   .xl\:gap-x-5 {
     -moz-column-gap: 1.25rem;
          column-gap: 1.25rem;
+  }
+
+  .xl\:text-f32 {
+    font-size: 32px;
   }
 }
