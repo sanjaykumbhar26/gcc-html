@@ -353,6 +353,17 @@
     border-radius: 10px;
   }
 
+  .slider-hero .slider-img img {
+    max-width: 450px;
+    width: 100%;
+  }
+
+  .slider-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
   .slider-img img {
     border-radius: 10px;
   }
