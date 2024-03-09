@@ -11,7 +11,7 @@ jQuery(".tab").on("click", function (evt) {
 // Slider
 jQuery(document).ready(function () {
   var splide = new Splide('.slider-hero', {
-    type: 'loop',
+    type: 'slide',
     perPage: 1,
     paginationDirection: 'ltr',
   });
