@@ -3204,6 +3204,14 @@ select {
   .featuredInfo .tab.active {
     color: #a79a66;
   }
+    .tabs .tab.active {
+      border-left:3px solid #a79a66;
+      margin-bottom: 3px;
+    }
+    .tabs .tab {
+      margin-bottom: 3px;
+      border-left:3px solid #191919;
+    }
   }
 @media (max-width: 767px) {
     .slider-hero .splide__arrow--prev {
