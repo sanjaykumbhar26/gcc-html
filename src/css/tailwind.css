@@ -82,6 +82,7 @@
 
   input {
     @apply w-full p-2 border-4 border-solid border-darkGrey rounded-none bg-transparent text-lightGrey text-lg font-medium;
+    min-height: 60px;
   }
 
   p {
@@ -185,6 +186,26 @@
 }
 
 @layer utilities {
+:root {
+  --star-size: 24px;
+  --star-color: #979797;
+  --star-background: #fc0;
+}
+
+.Stars {
+  --percent: calc(var(--rating) / 5 * 100%);
+  display:flex;
+  font-size: var(--star-size);
+  line-height: 1;
+}
+
+.Stars::before {
+  content: "★★★★★";
+  letter-spacing: 3px;
+  background: linear-gradient(90deg, var(--star-background) var(--percent), var(--star-color) var(--percent));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 
   .notfound-header {
     position: relative;
@@ -1311,7 +1332,7 @@
   }
 
   .input-field {
-    @apply border-lightTaupe focus: outline-none border-2;
+    @apply border-lightTaupe focus:outline-none border-2;
   }
 
   .field-label {
