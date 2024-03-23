@@ -423,7 +423,6 @@ input {
   font-weight: 500;
   --tw-text-opacity: 1;
   color: rgb(151 151 151 / var(--tw-text-opacity));
-    min-height: 60px;
 }
 p {
   margin-bottom: 1.5rem;
@@ -713,9 +712,6 @@ table td button,
 }
 .top-4 {
   top: 1rem;
-}
-.top-5 {
-  top: 1.25rem;
 }
 .top-\[12px\] {
   top: 12px;
