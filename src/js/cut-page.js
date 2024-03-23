@@ -113,3 +113,18 @@ jQuery(document).ready(function () {
 });
 
 
+// dropdown
+// jQuery(document).ready(function () {
+//   jQuery(".button-toggle").click(function () {
+//     jQuery(this).closest('.parent').find(".toggle").toggleClass("active");
+//   });
+// });
+
+
+jQuery(document).ready(function () {
+  jQuery(".custom-toggle-button").click(function () {
+    jQuery(this).closest('.custom-parent').find(".custom-toggle-content").toggleClass("active");
+    jQuery(this).toggleClass("custom-toggled");
+  });
+});
+

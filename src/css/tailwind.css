@@ -186,26 +186,76 @@
 }
 
 @layer utilities {
-:root {
-  --star-size: 24px;
-  --star-color: #979797;
-  --star-background: #fc0;
+  :root {
+    --star-size: 24px;
+    --star-color: #979797;
+    --star-background: #fc0;
+    --ss-font-color:#fff;
+    --ss-animation-timing: 0.2s;
+  }
+
+  .ss-arrow path {
+    fill: none;
+    stroke: var(--ss-font-color);
+    stroke-width: 18;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    transition-timing-function: ease-out;
+    transition: var(--ss-animation-timing);
 }
 
-.Stars {
-  --percent: calc(var(--rating) / 5 * 100%);
-  display:flex;
-  font-size: var(--star-size);
-  line-height: 1;
-}
+  .stars {
+    --percent: calc(var(--rating) / 5 * 100%);
+    display: flex;
+    font-size: var(--star-size);
+    line-height: 1;
+  }
 
-.Stars::before {
-  content: "★★★★★";
-  letter-spacing: 3px;
-  background: linear-gradient(90deg, var(--star-background) var(--percent), var(--star-color) var(--percent));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
+  .stars::before {
+    content: "★★★★★";
+    letter-spacing: 3px;
+    background: linear-gradient(90deg, var(--star-background) var(--percent), var(--star-color) var(--percent));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .custom-toggle-button {
+    cursor: pointer;
+    margin-bottom: 20px;
+    width: 100%;
+    position: relative;
+    display: none;
+  }
+
+  .custom-toggle-button span {
+    background-color: #191919;
+    display: flex;
+    position: relative;
+    z-index: 1;
+    width: fit-content;
+    margin: 0 auto;
+    padding: 0 10px;
+        align-items: center;
+    column-gap: 10px;
+  }
+
+  .custom-toggle-button::after {
+    content: '';
+    width: 100%;
+    min-height: 30px;
+    border-bottom: solid 1px #a79a66;
+    display: block;
+    position: absolute;
+    top: -51%;
+  }
+  .custom-toggled svg{
+     transform: rotate(180deg);
+  }
+
+
+  .custom-toggle-content.active {
+    display: block;
+  }
 
   .notfound-header {
     position: relative;
@@ -602,6 +652,8 @@
   }
 
   @media (max-width: 1124px) {
+    
+  
     .splide__arrow svg {
       width: 30px !important;
     }
@@ -611,9 +663,20 @@
       z-index: 111 !important;
     }
 
+    .stars {
+      font-size: 24px !important;
+      margin-bottom: 0 !important;
+    }
+
   }
 
   @media (max-width: 1024px) {
+      .custom-toggle-content {
+      display: none;
+    }
+      .custom-toggle-button {
+        display: block;
+      }
     .slider-controls .prev {
       left: 0;
     }
