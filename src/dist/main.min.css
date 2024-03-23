@@ -2364,7 +2364,6 @@ table td button,
   }
 .custom-toggle-button {
     cursor: pointer;
-    margin-bottom: 20px;
     width: 100%;
     position: relative;
     display: none;
@@ -2393,6 +2392,10 @@ table td button,
   }
 .custom-toggled svg{
      transform: rotate(180deg);
+  }
+.custom-toggled  {
+        margin-bottom: 20px;
+
   }
 .custom-toggle-content.active {
     display: block;
@@ -2710,7 +2713,19 @@ footer ul,
   }
 .descriptive[data-readmore] {
     overflow: hidden;
+    position: relative;
   }
+.descriptive[data-readmore] p:last-child {
+      margin-bottom: 30px;
+    }
+.descriptive[data-readmore]::before {
+      width: 100%;
+      height: 100%;
+      content: '';
+      position: absolute;
+      bottom: 0;
+     background: linear-gradient(180deg, rgba(109,223,226,0) 80%, rgba(25,25,25,1) 100%);
+    }
 /* body::-webkit-scrollbar-track {
     background-color: #000;
     border-radius: 0;
@@ -3690,6 +3705,10 @@ select {
     margin-bottom: 0px;
   }
 
+  .lg\:mb-12 {
+    margin-bottom: 3rem;
+  }
+
   .lg\:ml-12 {
     margin-left: 3rem;
   }
@@ -3712,6 +3731,10 @@ select {
 
   .lg\:mt-0 {
     margin-top: 0px;
+  }
+
+  .lg\:mt-10 {
+    margin-top: 2.5rem;
   }
 
   .lg\:block {

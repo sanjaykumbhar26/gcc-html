@@ -38,7 +38,10 @@ window.onload = function () {
 // Read More
 jQuery('.descriptive').readmore({
   speed: 100,
-  collapsedHeight: 80,
+  collapsedHeight: 70,
+  collapsedMoreHeight: 150,
+  heightMargin: 26,
+  blockCSS: 'display: block; width: 100%;',
   lessLink: '<span class="readmore">Read less</span>'
 });
 
