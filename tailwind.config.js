@@ -21,6 +21,7 @@ module.exports = {
         lightTaupe: "#a79a66",
         lightgray: "#EAECF0",
         yellow: '#8d804a',
+        black: '#000'
       },
       fontFamily: {
         poppins: ['Poppins', "sans-serif"],
@@ -59,4 +60,8 @@ module.exports = {
       },
     },
   },
+  corePlugins: {
+    backgroundOpacity: false,
+    textOpacity: false,
+  }
 };
