@@ -977,6 +977,9 @@ table td button,
 .hidden {
   display: none;
 }
+.\!h-\[50px\] {
+  height: 50px !important;
+}
 .h-0 {
   height: 0px;
 }
@@ -1108,6 +1111,9 @@ table td button,
 }
 .min-h-full {
   min-height: 100%;
+}
+.\!w-\[50px\] {
+  width: 50px !important;
 }
 .w-0 {
   width: 0px;
@@ -1357,6 +1363,10 @@ table td button,
 }
 .max-w-\[auto\] {
   max-width: auto;
+}
+.max-w-\[max-content\] {
+  max-width: -moz-max-content;
+  max-width: max-content;
 }
 .max-w-fit {
   max-width: -moz-fit-content;
